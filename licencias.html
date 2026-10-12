@@ -54,7 +54,7 @@
           "name": "¿Cómo se paga la licencia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Los clientes en Chile reciben factura en pesos chilenos. Los clientes internacionales reciben una factura en dólares y pagan con tarjeta o transferencia. La licencia entra en vigor al recibirse el pago."
+            "text": "Cuando aceptas la cotización por escrito recibes una solicitud de pago por la licencia acordada: en dólares para clientes internacionales y en pesos chilenos para clientes en Chile. La licencia entra en vigor al recibirse el pago, y el archivo en resolución completa se entrega en ese momento."
           }
         }
       ]
@@ -93,7 +93,7 @@
                 desde el RAW original.
             </p>
             <div class="cta-row">
-                <a class="btn-whatsapp" href="#inquiry">Pedir cotizaci&oacute;n</a>
+                <a class="btn-whatsapp" href="#inquiry">Pedir una licencia</a>
                 <a class="btn-outline" href="galleries/">Ver galer&iacute;as</a>
             </div>
         </section>
@@ -113,7 +113,7 @@
                     <li>Entrega a 3000&nbsp;px o m&aacute;s, JPEG sRGB</li>
                 </ul>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Quiero%20licenciar%20una%20imagen%20para%20uso%20editorial%20en%20l%C3%ADnea%20(tapephoto.com%2Flicencias)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+                    <a class="btn-whatsapp" href="?use=online#inquiry">Pedir una licencia</a>
                     <a class="btn-outline" href="galleries/">Ver galer&iacute;as</a>
                 </div>
             </article>
@@ -132,7 +132,7 @@
                     <li>Archivo en resoluci&oacute;n completa desde el RAW original, Adobe RGB o sRGB</li>
                 </ul>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Quiero%20licenciar%20una%20imagen%20para%20uso%20editorial%20impreso%20(tapephoto.com%2Flicencias)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+                    <a class="btn-whatsapp" href="?use=print#inquiry">Pedir una licencia</a>
                     <a class="btn-outline" href="contacto.html">Formulario</a>
                 </div>
             </article>
@@ -149,10 +149,10 @@
                 <ul>
                     <li>Sets de 10 o m&aacute;s im&aacute;genes: cotizaci&oacute;n por set</li>
                     <li>Impresiones de decoraci&oacute;n para lobbies y oficinas a pedido</li>
-                    <li>Factura en CLP</li>
+                    <li>Cotizaci&oacute;n y pago en CLP para clientes en Chile</li>
                 </ul>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Quiero%20licenciar%20im%C3%A1genes%20de%20la%20Regi%C3%B3n%20de%20Coquimbo%20para%20mi%20negocio%20(tapephoto.com%2Flicencias)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+                    <a class="btn-whatsapp" href="?use=local#inquiry">Pedir una licencia</a>
                     <a class="btn-outline" href="galleries/coast-travel-wildlife.html">Ver paisajes</a>
                 </div>
             </article>
@@ -174,7 +174,7 @@
                     <li>Contrato de licencia por escrito antes de la entrega</li>
                 </ul>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Quiero%20cotizar%20el%20uso%20comercial%20de%20una%20imagen%20(tapephoto.com%2Flicencias)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+                    <a class="btn-whatsapp" href="?use=commercial#inquiry">Pedir una licencia</a>
                     <a class="btn-outline" href="mailto:carlos@netwebmedia.com?subject=Solicitud%20de%20licencia%20comercial%20-%20tapephoto.com">Email</a>
                 </div>
             </article>
@@ -245,7 +245,7 @@
                     </div>
                 <div class="form-group">
                     <label for="lic-use">Tipo de uso</label>
-                    <select id="lic-use" name="use" required><option value="">Selecciona...</option><option value="Editorial: artículo online">Editorial: artículo online</option><option value="Editorial: impreso">Editorial: impreso</option><option value="Libro, documental o televisión">Libro, documental o televisión</option><option value="Publicidad o campaña comercial">Publicidad o campaña comercial</option><option value="Uso para negocio local (Chile)">Uso para negocio local (Chile)</option><option value="Aún no lo sé">Aún no lo sé</option></select>
+                    <select id="lic-use" name="use" required><option value="">Selecciona...</option><option value="Editorial: artículo online" data-key="online">Editorial: artículo online</option><option value="Editorial: impreso" data-key="print">Editorial: impreso</option><option value="Libro, documental o televisión" data-key="broadcast">Libro, documental o televisión</option><option value="Publicidad o campaña comercial" data-key="commercial">Publicidad o campaña comercial</option><option value="Uso para negocio local (Chile)" data-key="local">Uso para negocio local (Chile)</option><option value="Aún no lo sé" data-key="unsure">Aún no lo sé</option></select>
                 </div>
                 <div class="form-group">
                     <label for="lic-media">Dónde aparecerá</label>
@@ -307,9 +307,10 @@
             <details class="faq-item">
                 <summary>&iquest;C&oacute;mo se paga la licencia?</summary>
                 <p>
-                    Los clientes en Chile reciben factura en pesos chilenos. Los clientes
-                    internacionales reciben una factura en d&oacute;lares y pagan con tarjeta o
-                    transferencia. La licencia entra en vigor al recibirse el pago.
+                    Cuando aceptas la cotizaci&oacute;n por escrito recibes una solicitud de pago por la
+                    licencia acordada: en d&oacute;lares para clientes internacionales y en pesos
+                    chilenos para clientes en Chile. La licencia entra en vigor al recibirse el pago,
+                    y el archivo en resoluci&oacute;n completa se entrega en ese momento.
                 </p>
             </details>
             <details class="faq-item">

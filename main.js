@@ -224,6 +224,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (refParam && refField && /^[a-z0-9._-]{2,90}$/i.test(refParam) && !refField.value) {
                 refField.value = (isES ? 'Galería / foto: ' : 'Gallery / photo: ') + refParam;
             }
+            // Licence-type cards link to ?use=<key>#inquiry. Each <option data-key> maps a key
+            // to its select value, so the same keys work in EN and ES. Unknown keys are ignored.
+            const useParam = new URLSearchParams(location.search).get('use');
+            const useField = contactForm.querySelector('select[name="use"]');
+            if (useParam && useField && /^[a-z]{2,20}$/.test(useParam)) {
+                const match = Array.from(useField.options).find((o) => o.getAttribute('data-key') === useParam);
+                if (match) useField.value = match.value;
+            }
         }
 
         function showError(message) {
