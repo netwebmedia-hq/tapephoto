@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://instagram.com/tapephotocom
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 51 Spanish-language blog articles published so far.
+- 52 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotografía aérea para agricultura: qué es y cuándo la necesitas](https://tapephoto.com/blog/drone-agricola-guia.html) [Drone]: Guía práctica para productores agrícolas del valle: cuándo contratar fotografía con drone, qué información obtienen y cómo preparar la sesión.
 - [Fotografía de casas de playa: qué esperar del proceso](https://tapephoto.com/blog/casas-de-playa-segunda-vivienda-que-esperar.html) [Inmobiliaria]: Guía sobre cómo funciona una sesión de fotos para casas de playa y segundas viviendas. Agendamiento, duración, entregas y qué preparar.
 - [Fotos para la memoria anual de una empresa: cómo planificarlas](https://tapephoto.com/blog/fotos-para-memoria-anual-y-reporte-de-sostenibilidad.html) [Empresas]: Cómo planificar las fotografías de una memoria anual o un reporte de sostenibilidad: qué mostrar, a quién retratar, permisos y cómo evitar el banco de imágenes.
 - [Fotografiar remodelaciones: errores comunes y cómo evitarlos](https://tapephoto.com/blog/antes-despues-remodelacion-errores.html) [Inmobiliaria]: Guía práctica para fotografiar antes y después de remodelaciones. Errores comunes, iluminación, ángulos y preparación del espacio.
@@ -42,7 +43,6 @@
 - [Video aéreo o foto aérea: cuándo conviene cada uno para una propiedad](https://tapephoto.com/blog/video-aereo-vs-foto-aerea-cuando-conviene-cada-uno.html) [Drone]: El drone puede entregar fotos fijas o video en movimiento, y no siempre conviene pedir los dos. Qué tipo de propiedad se beneficia más de cada formato y por qué el costo y el uso final deciden la elección.
 - [Qué significa "resolución para web" y por qué importa al publicar en un portal](https://tapephoto.com/blog/que-es-resolucion-para-web-y-por-que-importa.html) [Técnica]: Un fotógrafo entrega archivos en distintas resoluciones según el uso, y no siempre queda claro por qué. Una explicación simple de qué es la resolución para web, por qué existe, y qué pasa si se usa la equivocada.
 - [Drone para fotografía inmobiliaria: lo básico sobre permisos que un corredor debería saber](https://tapephoto.com/blog/permisos-de-vuelo-drone-en-chile-lo-basico.html) [Drone]: Antes de pedir tomas aéreas de una propiedad, vale la pena entender por qué el fotógrafo pregunta por zonas restringidas, altura máxima y cercanía a aeródromos. Una introducción general, no asesoría legal.
-- [Mejor época del año para fotografiar un negocio turístico en Coquimbo y La Serena](https://tapephoto.com/blog/mejor-epoca-del-ano-para-fotos-turisticas-en-coquimbo.html) [Turismo]: El paisaje de la región cambia bastante entre temporada alta y temporada baja. Cuándo conviene realmente fotografiar un hotel, una cabaña o un tour, y por qué la fecha ideal no siempre es la que parece obvia.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
