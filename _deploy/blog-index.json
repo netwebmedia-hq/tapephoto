@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-13",
   "items": [
+    {
+      "slug": "antes-despues-remodelacion-errores",
+      "title": "Fotografiar remodelaciones: errores comunes y cómo evitarlos",
+      "tag": "Inmobiliaria",
+      "description": "Guía práctica para fotografiar antes y después de remodelaciones. Errores comunes, iluminación, ángulos y preparación del espacio.",
+      "readTime": "8 min",
+      "published": "2026-10-13",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
     {
       "slug": "fotos-para-una-clinica-o-centro-de-salud",
       "title": "Fotos para una clínica o centro de salud: qué mostrar",
