@@ -87,6 +87,22 @@ const SUBJECTS = [
 
   // Técnica
   { key: 'sesion-con-mal-tiempo',   prompt: 'qué pasa si el día de la sesión está nublado o con lluvia',           tag: 'Técnica' },
+
+  // ─── Ampliación 2026-10-13 ─────────────────────────────────────────────────
+  // La cola se había secado (0 pendientes, último post el 07-10) y de los 28 subjects
+  // anteriores sólo 10 seguían sin cobertura: el resto ya tiene un post escrito a mano
+  // con otro slug (pisqueras, salud, cotización, Google, delivery, industrial, drone
+  // agrícola, retail). Un subject = un post, así que éstos son rubros y casos que el
+  // corpus de 49 posts no toca, verificados contra los slugs publicados.
+  { key: 'casas-de-playa-segunda-vivienda', prompt: 'fotografía de casas de playa y segundas viviendas para vender o arrendar en temporada', tag: 'Inmobiliaria' },
+  { key: 'proyecto-inmobiliario-showroom',  prompt: 'fotografía de un proyecto inmobiliario nuevo: showroom, departamento piloto y entorno', tag: 'Inmobiliaria' },
+  { key: 'negocio-antes-de-inaugurar',      prompt: 'las fotos que un negocio necesita antes de inaugurar',                tag: 'Empresas' },
+  { key: 'fotografia-belleza-spa',          prompt: 'fotografía para peluquerías, centros de estética y spa',              tag: 'Empresas' },
+  { key: 'fotografia-arquitectura-interiorismo', prompt: 'fotografía de proyectos para arquitectos y diseñadores de interiores', tag: 'Empresas' },
+  { key: 'fotografia-veterinarias',         prompt: 'fotografía para veterinarias y centros de mascotas',                  tag: 'Empresas' },
+  { key: 'fotografia-servicios-profesionales', prompt: 'fotografía para estudios jurídicos, contables y de consultoría',   tag: 'Empresas' },
+  { key: 'fotografia-eventos-deportivos',   prompt: 'cobertura fotográfica de eventos deportivos y corridas',              tag: 'Eventos' },
+  { key: 'fotografia-glamping-ecoturismo',  prompt: 'fotografía para glamping, camping y ecoturismo',                      tag: 'Turismo' },
 ];
 
 const ANGLES = [
