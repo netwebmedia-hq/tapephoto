@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 54 Spanish-language blog articles published so far.
+- 55 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Checklist antes de fotografiar vehículos para venta](https://tapephoto.com/blog/fotografia-automotriz-checklist.html) [Empresas]: Prepara tu automotora antes de la sesión fotográfica. Checklist completo para que las fotos del auto salgan bien y se venda más rápido.
 - [Fotografía aérea de obras: cuándo conviene y cuándo es innecesario](https://tapephoto.com/blog/drone-avance-obra-vale-la-pena.html) [Drone]: Guía práctica para saber si el registro aéreo mensual de tu obra justifica el costo. Criterios reales para tomar la decisión.
 - [Fotos de un salón de eventos para arrendarlo: qué mostrar](https://tapephoto.com/blog/fotos-de-un-salon-de-eventos-para-arrendarlo.html) [Empresas]: Qué fotografiar en un salón de eventos para que el cliente entienda capacidad, montaje y ambiente, y qué dejar claro sobre el uso de las imágenes.
 - [Fotografía aérea para agricultura: qué es y cuándo la necesitas](https://tapephoto.com/blog/drone-agricola-guia.html) [Drone]: Guía práctica para productores agrícolas del valle: cuándo contratar fotografía con drone, qué información obtienen y cómo preparar la sesión.
@@ -42,7 +43,6 @@
 - [Sesión de retakes: cuándo volver a fotografiar](https://tapephoto.com/blog/sesion-retakes-fotos-seguimiento.html) [Inmobiliaria]: Después de una sesión fotográfica inicial: cuándo se necesitan retakes, qué cambia en el mercado que lo justifica, y cuál es el plan para no desperdiciar dinero.
 - [Iluminación artificial: fotos de interiores sin luz natural](https://tapephoto.com/blog/iluminacion-artificial-interiores.html) [Técnica]: Cómo fotografiar espacios interiores sin ventanas o cuando no hay luz natural disponible. Errores comunes con ampolletas, temperatura de color y el equipamiento mínimo que realmente funciona.
 - [Fotos de locales comerciales y oficinas para arrendar](https://tapephoto.com/blog/fotos-de-locales-comerciales-y-oficinas-para-arrendar.html) [Inmobiliaria]: Un local u oficina vacío se ve peor en foto que en persona. Qué fotos necesita un aviso comercial, cómo preparar el espacio y qué mira realmente un arrendatario de negocio.
-- [Video aéreo o foto aérea: cuándo conviene cada uno para una propiedad](https://tapephoto.com/blog/video-aereo-vs-foto-aerea-cuando-conviene-cada-uno.html) [Drone]: El drone puede entregar fotos fijas o video en movimiento, y no siempre conviene pedir los dos. Qué tipo de propiedad se beneficia más de cada formato y por qué el costo y el uso final deciden la elección.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
