@@ -17,6 +17,7 @@
 const fs = require('fs');
 const path = require('path');
 const { callClaude, claudeConfigured } = require('./lib/claude-call.js');
+const { withHumanizeRules } = require('./lib/humanize-rules.js');
 
 process.chdir(path.join(__dirname, '..'));
 
@@ -279,7 +280,7 @@ async function generateOne(combo, apiKey) {
     model: MODEL,
     maxTokens: 12000,
     timeoutMs: REQUEST_TIMEOUT_MS,
-    system: SYSTEM_PROMPT,
+    system: withHumanizeRules(SYSTEM_PROMPT, 'es'),
     user: userPrompt,
   });
   return extractPost(data.content[0].text);
