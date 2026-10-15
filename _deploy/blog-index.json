@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "items": [
+    {
+      "slug": "fotografia-de-obra-terminada-para-estudios-de-arquitectura",
+      "title": "Fotografía de obra terminada para estudios de arquitectura",
+      "tag": "Empresas",
+      "description": "Cómo preparar la sesión fotográfica de una obra terminada: cuándo programarla, qué dejar listo, qué ángulos pedir y cómo usar las fotos en portafolio y portales.",
+      "readTime": "7 min",
+      "published": "2026-10-15",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
     {
       "slug": "fotografia-automotriz-checklist",
       "title": "Checklist antes de fotografiar vehículos para venta",

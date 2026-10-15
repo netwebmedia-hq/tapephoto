@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 55 Spanish-language blog articles published so far.
+- 56 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotografía de obra terminada para estudios de arquitectura](https://tapephoto.com/blog/fotografia-de-obra-terminada-para-estudios-de-arquitectura.html) [Empresas]: Cómo preparar la sesión fotográfica de una obra terminada: cuándo programarla, qué dejar listo, qué ángulos pedir y cómo usar las fotos en portafolio y portales.
 - [Checklist antes de fotografiar vehículos para venta](https://tapephoto.com/blog/fotografia-automotriz-checklist.html) [Empresas]: Prepara tu automotora antes de la sesión fotográfica. Checklist completo para que las fotos del auto salgan bien y se venda más rápido.
 - [Fotografía aérea de obras: cuándo conviene y cuándo es innecesario](https://tapephoto.com/blog/drone-avance-obra-vale-la-pena.html) [Drone]: Guía práctica para saber si el registro aéreo mensual de tu obra justifica el costo. Criterios reales para tomar la decisión.
 - [Fotos de un salón de eventos para arrendarlo: qué mostrar](https://tapephoto.com/blog/fotos-de-un-salon-de-eventos-para-arrendarlo.html) [Empresas]: Qué fotografiar en un salón de eventos para que el cliente entienda capacidad, montaje y ambiente, y qué dejar claro sobre el uso de las imágenes.
@@ -42,7 +43,6 @@
 - [Staging o mostrar as-is: cómo decidir](https://tapephoto.com/blog/staging-fotografia-como-decidir.html) [Inmobiliaria]: Cuándo vale la pena invertir en staging para una sesión de fotos, cuándo es mejor fotografiar el espacio actual y por qué la decisión no es siempre la que parecería obvia.
 - [Sesión de retakes: cuándo volver a fotografiar](https://tapephoto.com/blog/sesion-retakes-fotos-seguimiento.html) [Inmobiliaria]: Después de una sesión fotográfica inicial: cuándo se necesitan retakes, qué cambia en el mercado que lo justifica, y cuál es el plan para no desperdiciar dinero.
 - [Iluminación artificial: fotos de interiores sin luz natural](https://tapephoto.com/blog/iluminacion-artificial-interiores.html) [Técnica]: Cómo fotografiar espacios interiores sin ventanas o cuando no hay luz natural disponible. Errores comunes con ampolletas, temperatura de color y el equipamiento mínimo que realmente funciona.
-- [Fotos de locales comerciales y oficinas para arrendar](https://tapephoto.com/blog/fotos-de-locales-comerciales-y-oficinas-para-arrendar.html) [Inmobiliaria]: Un local u oficina vacío se ve peor en foto que en persona. Qué fotos necesita un aviso comercial, cómo preparar el espacio y qué mira realmente un arrendatario de negocio.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
