@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "items": [
+    {
+      "slug": "fotografiar-una-bodega-o-galpon-para-arriendo-o-venta",
+      "title": "Cómo fotografiar una bodega o galpón para arriendo o venta",
+      "tag": "Empresas",
+      "description": "Guía para fotografiar una bodega o galpón industrial: luz natural, piso despejado, altura, acceso de camiones, oficinas, exterior y qué retirar antes de la sesión.",
+      "readTime": "7 min",
+      "published": "2026-10-16",
+      "img": "/assets/photos/drone-ciudad-noche-sm.jpg",
+      "imgAlt": "Las luces de la ciudad vistas desde el aire de noche"
+    },
     {
       "slug": "fotografia-eventos-deportivos-guia",
       "title": "Fotografía de eventos deportivos: qué esperar y cómo prepararse",
