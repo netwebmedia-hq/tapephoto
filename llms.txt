@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 65 Spanish-language blog articles published so far.
+- 66 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotos de marca personal para corredores: qué esperar](https://tapephoto.com/blog/marca-personal-corredor-que-esperar.html) [Empresas]: Guía sobre sesiones de marca personal para corredores de propiedades: proceso, duración, entregables y cómo prepararse.
 - [Fotos de áreas comunes de un condominio: cómo prepararlas](https://tapephoto.com/blog/fotos-de-areas-comunes-de-un-condominio.html) [Inmobiliaria]: Piscina, quincho, gimnasio y hall: cómo preparar las fotos de áreas comunes de un edificio o condominio en La Serena o Coquimbo, y qué coordinar antes.
 - [Fotografía para veterinarias: qué esperar del proceso](https://tapephoto.com/blog/fotografia-veterinarias-que-esperar.html) [Empresas]: Guía práctica sobre cómo contratar fotografía profesional para tu clínica veterinaria o centro de mascotas. Agenda, duración y entregables.
 - [Fotografía profesional para estudios: cuándo es rentable](https://tapephoto.com/blog/fotografia-servicios-profesionales-vale-la-pena.html) [Empresas]: Guía práctica para abogados, contadores y consultores: cuándo contratar fotografía profesional genera retorno y cuándo no es necesario.
@@ -42,7 +43,6 @@
 - [Fotografiar remodelaciones: errores comunes y cómo evitarlos](https://tapephoto.com/blog/antes-despues-remodelacion-errores.html) [Inmobiliaria]: Guía práctica para fotografiar antes y después de remodelaciones. Errores comunes, iluminación, ángulos y preparación del espacio.
 - [Fotos para una clínica o centro de salud: qué mostrar](https://tapephoto.com/blog/fotos-para-una-clinica-o-centro-de-salud.html) [Empresas]: Qué fotografías necesita una clínica, consulta o centro de salud para su web y su perfil de Google: los espacios, el equipo profesional y el trato, cuidando siempre la privacidad de los pacientes.
 - [Fotografiar una pisquera o viña para recibir visitas](https://tapephoto.com/blog/fotografiar-una-pisquera-o-vina-para-turismo.html) [Turismo]: Qué fotos necesita una pisquera, viña o bodega del Valle del Elqui o del Limarí que recibe visitantes: el proceso, el paisaje, la sala de catas y las personas, más allá de la foto de botella.
-- [Drone para hoteles y cabañas: cómo mostrar el entorno](https://tapephoto.com/blog/drone-para-hoteles-y-cabanas-mostrar-el-entorno.html) [Drone]: Qué aporta una toma aérea a un hotel, cabaña o complejo turístico en La Serena, Coquimbo o el Valle del Elqui, qué planos conviene pedir y cuándo no hace falta volar.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
