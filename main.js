@@ -165,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
             errRate: 'Demasiados envíos desde esta conexión. Espera unos minutos e inténtalo de nuevo.',
             errNetwork: 'Error de red — tu mensaje no fue enviado.',
             fallback: 'También puedes escribirme directo: ',
-            or: ' o '
+            or: ' o ',
+            waText: 'Hola, vi tapephoto.com y quiero cotizar una sesión de fotos'
         } : {
             sending: 'Sending…',
             sentTitle: 'Message Sent.',
@@ -175,7 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
             errRate: 'Too many submissions from this connection. Please wait a few minutes and try again.',
             errNetwork: 'Network error — your message was not sent.',
             fallback: 'You can also reach me directly: ',
-            or: ' or '
+            or: ' or ',
+            waText: 'Hi, I found tapephoto.com and want a quote for a photo shoot'
         };
 
         // Which page produced the lead. Landing pages set data-source
@@ -246,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mail.href = 'mailto:carlos@netwebmedia.com';
             mail.textContent = 'carlos@netwebmedia.com';
             const wa = document.createElement('a');
-            wa.href = 'https://wa.me/14423854585';
+            wa.href = 'https://wa.me/14423854585?text=' + encodeURIComponent(T.waText);
             wa.target = '_blank';
             wa.rel = 'noopener';
             wa.textContent = 'WhatsApp +1 (442) 385-4585';

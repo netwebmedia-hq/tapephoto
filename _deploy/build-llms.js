@@ -16,13 +16,13 @@ function header(total) {
 
 ## About
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
-- Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
-- Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
+- Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
+- Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
 - ${total} Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](${SITE}/): selected work, local business photography overview, FAQ
-- [Services (English)](${SITE}/services.html): four services with starting prices and FAQ
+- [Services (English)](${SITE}/services.html): four services (aerial and drone, real estate, motorsport and events, business and brand) with FAQ and quote request
 - [Servicios (Español)](${SITE}/servicios.html): the same services in Spanish
 - [Fotografía inmobiliaria en La Serena y Coquimbo](${SITE}/fotografia-inmobiliaria-la-serena.html): interiors, exteriors and drone in one visit, for brokers and real estate firms
 - [Fotografía para hoteles y cabañas en La Serena](${SITE}/fotografia-hoteles-turismo-la-serena.html): rooms, common areas and aerials, ready for Booking and social media
