@@ -67,7 +67,7 @@ jobs:
           sleep 5
           for u in "https://tapephoto.com/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html" \
                    "https://tapephoto.com/fotografia-inmobiliaria-la-serena.html" \
-                   "https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html" \
+                   "https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html"                    "https://tapephoto.com/fotos-airbnb-la-serena.html" \
                    "https://tapephoto.com/fotografia-empresas-la-serena.html" \
                    "https://tapephoto.com/blog/"                    "https://tapephoto.com/galleries/"                    "https://tapephoto.com/galleries/san-diego-waterfront.html"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "$u")
