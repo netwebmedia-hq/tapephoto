@@ -89,7 +89,7 @@ CTA = """        <section class="gallery-cta">
             <h2>Need coverage like this?</h2>
             <p>Motorsport, events, aerials and commercial work — in Chile and abroad. Archive images available for <a href="../licensing.html">licensing</a>.</p>
             %(license)s            <a class="gallery-btn gallery-btn-ghost" href="../contact.html">Get in touch</a>
-            <a class="gallery-btn gallery-btn-ghost" href="https://wa.me/14423854585" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="gallery-btn gallery-btn-ghost" href="https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot" target="_blank" rel="noopener">WhatsApp</a>
         </section>
 """
 CTA_LICENSE = '<a class="gallery-btn" href="../licensing.html?ref=%s#inquiry">License this event</a>\n'
@@ -102,7 +102,7 @@ FOOTER = """    <footer class="footer">
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
                     <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
-                    <a href="https://wa.me/14423854585" target="_blank" rel="noopener">WhatsApp +1 (442) 385-4585</a>
+                    <a href="https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot" target="_blank" rel="noopener">WhatsApp +1 (442) 385-4585</a>
                 </div>
             </div>
             <div class="footer-links">
