@@ -2,6 +2,16 @@
   "updated": "2026-10-19",
   "items": [
     {
+      "slug": "proyecto-inmobiliario-showroom-vale-la-pena",
+      "title": "Fotografía de proyectos nuevos: cuándo invertir y cuándo esperar",
+      "tag": "Inmobiliaria",
+      "description": "Guía para desarrolladores: cuándo contratar fotografía profesional de showroom y departamento piloto, y cuándo no es necesario gastar.",
+      "readTime": "8 min",
+      "published": "2026-10-19",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
       "slug": "raw-o-jpg-que-archivo-conviene-recibir-del-fotografo",
       "title": "RAW o JPG: qué archivo te conviene recibir del fotógrafo",
       "tag": "Técnica",
