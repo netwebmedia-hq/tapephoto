@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "items": [
+    {
+      "slug": "raw-o-jpg-que-archivo-conviene-recibir-del-fotografo",
+      "title": "RAW o JPG: qué archivo te conviene recibir del fotógrafo",
+      "tag": "Técnica",
+      "description": "Qué diferencia hay entre RAW y JPG, cómo afecta al cielo de una ventana y al color de la luz en interiores, y qué conviene preguntar antes de la sesión.",
+      "readTime": "7 min",
+      "published": "2026-10-19",
+      "img": "/assets/photos/tecnica-equipo-sm.jpg",
+      "imgAlt": "Cámara montada en trípode lista para grabar"
+    },
     {
       "slug": "negocio-antes-de-inaugurar-guia",
       "title": "Fotos que necesita antes de inaugurar su negocio",

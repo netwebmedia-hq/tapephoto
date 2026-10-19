@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585)
 - Pricing published on the site: "starting at" CLP $100,000 (aerial and drone), CLP $150,000 (real estate photo + drone package), CLP $250,000 (motorsport and event coverage), CLP $150,000 (business and brand sessions); final quote via WhatsApp.
-- 67 Spanish-language blog articles published so far.
+- 68 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -23,6 +23,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [RAW o JPG: qué archivo te conviene recibir del fotógrafo](https://tapephoto.com/blog/raw-o-jpg-que-archivo-conviene-recibir-del-fotografo.html) [Técnica]: Qué diferencia hay entre RAW y JPG, cómo afecta al cielo de una ventana y al color de la luz en interiores, y qué conviene preguntar antes de la sesión.
 - [Fotos que necesita antes de inaugurar su negocio](https://tapephoto.com/blog/negocio-antes-de-inaugurar-guia.html) [Empresas]: Guía práctica de qué fotografías debe tener un negocio antes de abrir. Desde la fachada hasta detalles que venden.
 - [Fotos de marca personal para corredores: qué esperar](https://tapephoto.com/blog/marca-personal-corredor-que-esperar.html) [Empresas]: Guía sobre sesiones de marca personal para corredores de propiedades: proceso, duración, entregables y cómo prepararse.
 - [Fotos de áreas comunes de un condominio: cómo prepararlas](https://tapephoto.com/blog/fotos-de-areas-comunes-de-un-condominio.html) [Inmobiliaria]: Piscina, quincho, gimnasio y hall: cómo preparar las fotos de áreas comunes de un edificio o condominio en La Serena o Coquimbo, y qué coordinar antes.
@@ -42,7 +43,6 @@
 - [Fotografía de casas de playa: qué esperar del proceso](https://tapephoto.com/blog/casas-de-playa-segunda-vivienda-que-esperar.html) [Inmobiliaria]: Guía sobre cómo funciona una sesión de fotos para casas de playa y segundas viviendas. Agendamiento, duración, entregas y qué preparar.
 - [Fotos para la memoria anual de una empresa: cómo planificarlas](https://tapephoto.com/blog/fotos-para-memoria-anual-y-reporte-de-sostenibilidad.html) [Empresas]: Cómo planificar las fotografías de una memoria anual o un reporte de sostenibilidad: qué mostrar, a quién retratar, permisos y cómo evitar el banco de imágenes.
 - [Fotografiar remodelaciones: errores comunes y cómo evitarlos](https://tapephoto.com/blog/antes-despues-remodelacion-errores.html) [Inmobiliaria]: Guía práctica para fotografiar antes y después de remodelaciones. Errores comunes, iluminación, ángulos y preparación del espacio.
-- [Fotos para una clínica o centro de salud: qué mostrar](https://tapephoto.com/blog/fotos-para-una-clinica-o-centro-de-salud.html) [Empresas]: Qué fotografías necesita una clínica, consulta o centro de salud para su web y su perfil de Google: los espacios, el equipo profesional y el trato, cuidando siempre la privacidad de los pacientes.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
