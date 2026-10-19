@@ -18,6 +18,7 @@ const fs = require('fs');
 const path = require('path');
 
 const photos = require('./lib/photos.js');
+const pack = require('./lib/pack-cta.js');
 
 process.chdir(path.join(__dirname, '..'));
 
@@ -73,7 +74,7 @@ const HEADER = `    <header class="header">
             <a href="../services.html">Services</a>
             <a href="./">Blog</a>
             <a href="../about.html">About</a>
-            <a href="../contact.html">Contact</a>
+            <a href="../contacto.html">Contact</a>
             <a href="../servicios.html" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
         </nav>
     </header>`;
@@ -94,7 +95,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../services.html">Services</a>
                 <a href="./">Blog</a>
                 <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
+                <a href="../contacto.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>
             </div>
             <div class="footer-social">
@@ -221,7 +222,7 @@ ${body}
             <h2>Preguntas frecuentes</h2>
 ${faqHtml}
 
-            <div class="article-cta">
+${pack.wantsPackCta(post) ? pack.packCtaHtml() : ''}            <div class="article-cta">
                 <p class="article-cta-label">&iquest;Necesitas fotograf&iacute;a as&iacute; para tu propiedad o tu negocio?</p>
                 <div class="cta-row">
                     <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Le%C3%AD%20el%20art%C3%ADculo%20de%20TapePhoto%20(${encodeURIComponent(post.slug)})" target="_blank" rel="noopener">Escr&iacute;beme por WhatsApp</a>
