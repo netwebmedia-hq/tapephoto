@@ -317,23 +317,31 @@ def index_page(M, order, by_cat):
 
 
 def home_block(M, order, by_cat):
+    # The homepage's archive section (the scroll-craft darkroom page): real counts
+    # that tick up on entry, then the category index. Markup must match index.html.
     total = sum(len(g["photos"]) for g in order)
-    names = ", ".join(c["short"] for c in M["categories"])
-    cards = []
+    plural = lambda n, w: f"{n} {w}{'' if n == 1 else 's'}"
+    cats = []
     for c in M["categories"]:
         gs = by_cat[c["id"]]
-        g = next((x for x in gs if x["slug"] == c.get("home")), gs[0])
         cnt = sum(len(x["photos"]) for x in gs)
-        cards.append(card(g, "galleries/", c["name"], f"{cnt} photos in this category", False).replace('href="galleries/', 'href="galleries/', 1))
-    return f"""    <!-- Galleries: full event stories, curated from the Facebook albums and the iCloud library (rebuilt by _deploy/galleries/build-galleries.py) -->
-    <section id="galleries" class="home-galleries">
-        <div class="section-header">
-            <h2>Galleries</h2>
-            <p>{total} photographs in {len(order)} galleries — {names}</p>
+        cats.append(f'                <li><a href="galleries/#{c["id"]}"><span class="c">{esc(c["name"])}</span>'
+                    f'<span class="k">{plural(cnt, "photograph")} · {plural(len(gs), "gallery").replace("gallerys", "galleries")}</span></a></li>\n')
+    return f"""    <!-- Galleries: the archive in its real numbers (rebuilt by _deploy/galleries/build-galleries.py) -->
+    <section id="galleries" class="archive">
+        <div class="sc-wrap">
+            <div class="archive__head">
+                <h2>The archive</h2>
+            </div>
+            <div class="archive__nums">
+                <p><b data-sc-count="0 {total}">{total}</b>photographs</p>
+                <p><b data-sc-count="0 {len(order)}">{len(order)}</b>galleries</p>
+                <p><b data-sc-count="0 {len(M['categories'])}">{len(M['categories'])}</b>categories</p>
+            </div>
+            <ul class="archive__cats">
+{''.join(cats)}            </ul>
+            <p class="archive__links"><a class="btn" href="galleries/">All galleries</a> <a class="btn" href="licensing.html">How licensing works</a></p>
         </div>
-        <div class="gallery-cards home-cats">
-{''.join(cards)}        </div>
-        <div class="home-galleries-all"><a class="gallery-btn gallery-btn-ghost" href="galleries/">View all {len(order)} galleries</a></div>
     </section>
 """
 
