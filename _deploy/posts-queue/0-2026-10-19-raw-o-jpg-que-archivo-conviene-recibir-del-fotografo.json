@@ -1,0 +1,132 @@
+{
+  "title": "RAW o JPG: qué archivo te conviene recibir del fotógrafo",
+  "slug": "raw-o-jpg-que-archivo-conviene-recibir-del-fotografo",
+  "tag": "Técnica",
+  "description": "Qué diferencia hay entre RAW y JPG, cómo afecta al cielo de una ventana y al color de la luz en interiores, y qué conviene preguntar antes de la sesión.",
+  "lede": "Dos fotógrafos con la misma cámara pueden entregar fotos muy distintas de la misma cabaña. Buena parte de la diferencia parte en un ajuste que nadie suele mencionar al contratar: si la cámara guarda un RAW o un JPG. Esta guía explica qué cambia en el cielo de una ventana, en el color de las ampolletas y en lo que recibes.",
+  "readTime": "7 min",
+  "faq": [
+    {
+      "q": "¿Por qué mi foto se ve distinta en la cámara y en el computador?",
+      "a": "La pantalla de la cámara muestra una vista previa con ajustes automáticos, y el computador muestra la imagen con otro perfil de color y a mayor tamaño. En un archivo RAW la diferencia es más marcada porque el color y el contraste se definen después, en el revelado. Por eso la foto final se evalúa en el archivo revelado y no en la pantalla trasera."
+    },
+    {
+      "q": "¿Se puede arreglar una foto con el cielo quemado?",
+      "a": "Depende del archivo. Si el cielo quedó completamente blanco en el momento del disparo, no hay información que recuperar, sea RAW o JPG. Si quedó muy claro pero con algo de detalle, un RAW permite bajarlo en el revelado con mejores resultados que un JPG. Lo ideal es exponer bien en la cámara para evitar el problema."
+    },
+    {
+      "q": "¿Tengo derecho a pedir los archivos RAW?",
+      "a": "Es un tema de acuerdo entre las partes. Los archivos originales forman parte del proceso del fotógrafo, y la entrega de RAW suele pactarse por escrito antes de la sesión, junto con las condiciones de uso. Si los necesitas para que otro equipo los retoque, conviene decirlo al momento de acordar el trabajo."
+    }
+  ],
+  "sections": [
+    {
+      "type": "h2",
+      "text": "Una pieza de cielo que no se recupera"
+    },
+    {
+      "type": "p",
+      "text": "Una dueña de cabañas en el Valle del Elqui recibe sus fotos y abre la del living. Por la ventana entra el cielo de la tarde, y en la foto ese cielo es una mancha blanca sin una sola nube visible. En la sesión se veía azul y con textura. Pregunta si se puede arreglar. La respuesta depende de una decisión que se tomó antes de la entrega: en qué formato guardó el archivo la cámara."
+    },
+    {
+      "type": "p",
+      "text": "Ese formato casi nunca aparece en una cotización ni en una conversación con el cliente, y sin embargo explica por qué dos fotógrafos con el mismo equipo entregan resultados distintos. Esta guía cuenta qué pasa dentro de la cámara, qué diferencia hay entre RAW y JPG y qué conviene preguntarle a quien va a fotografiar tu propiedad, tu local o tu alojamiento."
+    },
+    {
+      "type": "h2",
+      "text": "Qué guarda cada formato"
+    },
+    {
+      "type": "p",
+      "text": "Un archivo JPG es una foto ya revelada. La cámara toma lo que captó el sensor, ajusta el balance de blancos, sube un poco el contraste y los colores, comprime todo y descarta lo que considera sobrante. El resultado se ve bien de inmediato y pesa poco, por eso es el formato de los celulares y de las cámaras en modo automático."
+    },
+    {
+      "type": "p",
+      "text": "Un archivo RAW es el dato casi crudo del sensor. Según el modelo de cámara, guarda bastante más información de luz y de color por cada punto de la imagen que un JPG, que trabaja con 8 bits por canal. A cambio, el RAW se ve plano y apagado al abrirlo, no se puede subir tal cual a un portal inmobiliario y necesita un programa de revelado para convertirse en una foto terminada."
+    },
+    {
+      "type": "p",
+      "text": "Por eso el RAW se parece a un negativo. La cámara no decide por ti cuánto contraste, qué temperatura de color ni cuánta saturación va a tener la imagen. Esas decisiones se toman después, con calma, en el computador."
+    },
+    {
+      "type": "h2",
+      "text": "Dónde se nota la diferencia en una propiedad"
+    },
+    {
+      "type": "p",
+      "text": "Los espacios que se fotografían para arriendo, venta o reserva tienen un problema que el ojo resuelve sin esfuerzo y la cámara no: hay zonas muy claras y zonas muy oscuras en la misma escena. La ventana contra el muro interior, el jardín contra el pasillo, la terraza contra el comedor. Con un JPG, la cámara tiene que elegir qué conservar y descarta el resto. Con un RAW, buena parte de esa información sigue en el archivo, y en el revelado se puede recuperar detalle en el cielo de la ventana o abrir una sombra sin que aparezca ruido exagerado."
+    },
+    {
+      "type": "p",
+      "text": "El segundo caso frecuente es el color de la luz. En un hotel o una cabaña conviven la luz del día por las ventanas, ampolletas cálidas en los veladores y a veces tubos fluorescentes en el pasillo. Cada fuente tiene una temperatura distinta. En un JPG, el balance de blancos queda fijado al momento del disparo, y si la cámara se equivocó, los blancos salen amarillos o verdosos y corregirlo degrada la imagen. En un RAW, el balance de blancos es un dato que se puede cambiar después sin pérdida, y se pueden ajustar por separado las zonas de la imagen donde el color se ve raro."
+    },
+    {
+      "type": "p",
+      "text": "El tercer caso es la fachada con luz dura. Una casa fotografiada a mediodía en La Serena tiene sombras cortas, cielo muy brillante y muros blancos que se queman con facilidad. Los muros blancos quemados son un problema típico de los JPG, porque el detalle del enlucido desaparece. Un RAW expuesto con cuidado conserva la textura del muro y deja margen para bajar el brillo del cielo en el revelado."
+    },
+    {
+      "type": "h2",
+      "text": "Lo que ocurre en la cámara durante la sesión"
+    },
+    {
+      "type": "p",
+      "text": "Cuando se fotografía pensando en un RAW, la exposición se mide mirando el histograma, que es el gráfico de barras que muestra cuánta luz hay en cada tono. El criterio habitual es no dejar que la barra de los tonos claros choque contra el borde derecho, porque un cielo quemado en el momento del disparo no tiene información que rescatar. Las sombras, en cambio, admiten más corrección, así que muchos fotógrafos prefieren una imagen algo oscura en pantalla y la levantan después."
+    },
+    {
+      "type": "p",
+      "text": "Eso explica por qué en una sesión se ve al fotógrafo mirando la pantalla trasera de la cámara con tanta atención y por qué a veces repite una toma que a ti te parecía igual a la anterior. Está comparando histogramas. También explica por qué en interiores con ventanas grandes se usa trípode: con la cámara fija se pueden tomar varias exposiciones de la misma escena y combinarlas, una técnica que el formato RAW facilita porque todos los archivos conservan margen de ajuste."
+    },
+    {
+      "type": "p",
+      "text": "Otro detalle práctico es la tarjeta de memoria. Los archivos RAW pesan bastante más que los JPG, de modo que una sesión larga de un hotel o de un evento consume más espacio y más tiempo de traspaso al computador. Quienes trabajan en RAW suelen llevar tarjetas de repuesto y respaldar el material apenas termina la jornada."
+    },
+    {
+      "type": "h2",
+      "text": "Qué recibes tú y en qué formato"
+    },
+    {
+      "type": "p",
+      "text": "Aquí conviene aclarar una confusión frecuente. Disparar en RAW y entregar RAW son decisiones separadas. Lo normal en trabajos comerciales es recibir archivos JPG ya revelados, con el color corregido, el recorte hecho y el tamaño preparado para el uso que le vas a dar. Si la foto es para un portal inmobiliario, para Google o para Instagram, el JPG final es el que sirve."
+    },
+    {
+      "type": "p",
+      "text": "Los archivos RAW son parte del trabajo del fotógrafo, igual que el borrador de un texto. Algunos los entregan si el cliente los pide por escrito y otros no, y ambas posturas son legítimas. Lo que conviene hacer antes de la sesión es preguntar qué se entrega, en qué formatos y bajo qué condiciones de uso. Si tienes un equipo propio de diseño o una agencia que va a retocar las imágenes, ese punto debe quedar acordado desde el comienzo, junto con los derechos de uso de las fotos."
+    },
+    {
+      "type": "p",
+      "text": "También sirve preguntar si el revelado incluye correcciones de perspectiva, porque las verticales inclinadas en una fachada o en un dormitorio se corrigen en el mismo programa. Y si en algún momento quieres una versión más cálida para redes y otra más neutra para un portal, el RAW permite sacar las dos desde el mismo archivo original sin repetir la sesión."
+    },
+    {
+      "type": "h2",
+      "text": "Cuándo el JPG alcanza"
+    },
+    {
+      "type": "p",
+      "text": "El RAW no resuelve todo y tampoco siempre es necesario. Si la escena tiene luz pareja, como un local con iluminación artificial uniforme o un retrato de equipo en un estudio con luz controlada, un JPG bien expuesto cumple su función y el flujo de trabajo es más rápido. Hay cámaras que graban RAW y JPG a la vez, y algunos fotógrafos usan esa opción en eventos donde necesitan enviar una selección el mismo día mientras conservan el archivo completo para el trabajo posterior."
+    },
+    {
+      "type": "p",
+      "text": "En el otro extremo, ninguna cantidad de revelado arregla una foto desenfocada, una composición torcida o una escena mal preparada. El RAW amplía el margen de corrección de la luz y del color, y el resto de la calidad sigue dependiendo de la preparación del espacio, del lente y del criterio de quien dispara."
+    },
+    {
+      "type": "h2",
+      "text": "Preguntas útiles antes de contratar"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "¿En qué formato dispara la cámara durante la sesión?",
+        "¿Qué archivos se entregan: JPG revelados, RAW o ambos?",
+        "¿El revelado incluye corrección de color, de perspectiva y de exposición?",
+        "¿Los archivos vienen en tamaño para web, para impresión o en ambos?",
+        "¿Cuánto tiempo se conservan los originales y quién los guarda?"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Con esas cinco respuestas claras, la conversación con el fotógrafo se vuelve concreta y las fotos que llegan a tu correo se parecen a lo que viste el día de la sesión, con el cielo azul de la ventana incluido."
+    }
+  ],
+  "topic": "raw o jpg: que archivo conviene recibir del fotografo y como cambia el resultado en interiores y fachadas",
+  "created": "2026-10-19"
+}
