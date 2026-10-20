@@ -2,6 +2,16 @@
   "updated": "2026-10-20",
   "items": [
     {
+      "slug": "tour-virtual-360-guia",
+      "title": "Tours virtuales 360°: cómo mostrar tu propiedad sin que nadie visite",
+      "tag": "Inmobiliaria",
+      "description": "Qué son los tours virtuales 360°, cómo funcionan, cuándo conviene usarlos y qué esperar cuando contratas este servicio de fotografía.",
+      "readTime": "8 min",
+      "published": "2026-10-20",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
       "slug": "fotos-para-presentacion-a-inversionistas",
       "title": "Fotos para una presentación a inversionistas o socios",
       "tag": "Empresas",
