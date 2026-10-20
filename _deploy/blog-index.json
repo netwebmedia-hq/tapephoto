@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "items": [
+    {
+      "slug": "fotos-para-presentacion-a-inversionistas",
+      "title": "Fotos para una presentación a inversionistas o socios",
+      "tag": "Empresas",
+      "description": "Qué fotos necesita una presentación a inversionistas, bancos o socios: equipo, operación, producto y lugar. Cómo preparar la sesión para que cada imagen respalde un dato del documento.",
+      "readTime": "7 min",
+      "published": "2026-10-20",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "sesion-con-mal-tiempo-errores",
       "title": "Sesión fotográfica con mal clima: errores que se pueden evitar",

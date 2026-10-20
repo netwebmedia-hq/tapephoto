@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 70 Spanish-language blog articles published so far.
+- 71 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotos para una presentación a inversionistas o socios](https://tapephoto.com/blog/fotos-para-presentacion-a-inversionistas.html) [Empresas]: Qué fotos necesita una presentación a inversionistas, bancos o socios: equipo, operación, producto y lugar. Cómo preparar la sesión para que cada imagen respalde un dato del documento.
 - [Sesión fotográfica con mal clima: errores que se pueden evitar](https://tapephoto.com/blog/sesion-con-mal-tiempo-errores.html) [Técnica]: Lluvia y nubes no arruinan una sesión. Descubre qué sale mal habitualmente y cómo prepararse para fotografiar cuando el clima no acompaña.
 - [Fotografía de proyectos nuevos: cuándo invertir y cuándo esperar](https://tapephoto.com/blog/proyecto-inmobiliario-showroom-vale-la-pena.html) [Inmobiliaria]: Guía para desarrolladores: cuándo contratar fotografía profesional de showroom y departamento piloto, y cuándo no es necesario gastar.
 - [RAW o JPG: qué archivo te conviene recibir del fotógrafo](https://tapephoto.com/blog/raw-o-jpg-que-archivo-conviene-recibir-del-fotografo.html) [Técnica]: Qué diferencia hay entre RAW y JPG, cómo afecta al cielo de una ventana y al color de la luz en interiores, y qué conviene preguntar antes de la sesión.
@@ -44,7 +45,6 @@
 - [Fotografía aérea de obras: cuándo conviene y cuándo es innecesario](https://tapephoto.com/blog/drone-avance-obra-vale-la-pena.html) [Drone]: Guía práctica para saber si el registro aéreo mensual de tu obra justifica el costo. Criterios reales para tomar la decisión.
 - [Fotos de un salón de eventos para arrendarlo: qué mostrar](https://tapephoto.com/blog/fotos-de-un-salon-de-eventos-para-arrendarlo.html) [Empresas]: Qué fotografiar en un salón de eventos para que el cliente entienda capacidad, montaje y ambiente, y qué dejar claro sobre el uso de las imágenes.
 - [Fotografía aérea para agricultura: qué es y cuándo la necesitas](https://tapephoto.com/blog/drone-agricola-guia.html) [Drone]: Guía práctica para productores agrícolas del valle: cuándo contratar fotografía con drone, qué información obtienen y cómo preparar la sesión.
-- [Fotografía de casas de playa: qué esperar del proceso](https://tapephoto.com/blog/casas-de-playa-segunda-vivienda-que-esperar.html) [Inmobiliaria]: Guía sobre cómo funciona una sesión de fotos para casas de playa y segundas viviendas. Agendamiento, duración, entregas y qué preparar.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
