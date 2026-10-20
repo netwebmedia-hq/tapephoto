@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 72 Spanish-language blog articles published so far.
+- 73 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Video corporativo corto: errores que ahuyentan clientes](https://tapephoto.com/blog/video-corporativo-errores.html) [Empresas]: Los videos corporativos para redes y web fracasan por razones evitables. Aprende qué no hacer y cómo grabar contenido que funcione.
 - [Tours virtuales 360°: cómo mostrar tu propiedad sin que nadie visite](https://tapephoto.com/blog/tour-virtual-360-guia.html) [Inmobiliaria]: Qué son los tours virtuales 360°, cómo funcionan, cuándo conviene usarlos y qué esperar cuando contratas este servicio de fotografía.
 - [Fotos para una presentación a inversionistas o socios](https://tapephoto.com/blog/fotos-para-presentacion-a-inversionistas.html) [Empresas]: Qué fotos necesita una presentación a inversionistas, bancos o socios: equipo, operación, producto y lugar. Cómo preparar la sesión para que cada imagen respalde un dato del documento.
 - [Sesión fotográfica con mal clima: errores que se pueden evitar](https://tapephoto.com/blog/sesion-con-mal-tiempo-errores.html) [Técnica]: Lluvia y nubes no arruinan una sesión. Descubre qué sale mal habitualmente y cómo prepararse para fotografiar cuando el clima no acompaña.
@@ -44,7 +45,6 @@
 - [Fotografía de obra terminada para estudios de arquitectura](https://tapephoto.com/blog/fotografia-de-obra-terminada-para-estudios-de-arquitectura.html) [Empresas]: Cómo preparar la sesión fotográfica de una obra terminada: cuándo programarla, qué dejar listo, qué ángulos pedir y cómo usar las fotos en portafolio y portales.
 - [Checklist antes de fotografiar vehículos para venta](https://tapephoto.com/blog/fotografia-automotriz-checklist.html) [Empresas]: Prepara tu automotora antes de la sesión fotográfica. Checklist completo para que las fotos del auto salgan bien y se venda más rápido.
 - [Fotografía aérea de obras: cuándo conviene y cuándo es innecesario](https://tapephoto.com/blog/drone-avance-obra-vale-la-pena.html) [Drone]: Guía práctica para saber si el registro aéreo mensual de tu obra justifica el costo. Criterios reales para tomar la decisión.
-- [Fotos de un salón de eventos para arrendarlo: qué mostrar](https://tapephoto.com/blog/fotos-de-un-salon-de-eventos-para-arrendarlo.html) [Empresas]: Qué fotografiar en un salón de eventos para que el cliente entienda capacidad, montaje y ambiente, y qué dejar claro sobre el uso de las imágenes.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt

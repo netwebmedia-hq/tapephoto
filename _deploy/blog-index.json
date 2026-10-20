@@ -2,6 +2,16 @@
   "updated": "2026-10-20",
   "items": [
     {
+      "slug": "video-corporativo-errores",
+      "title": "Video corporativo corto: errores que ahuyentan clientes",
+      "tag": "Empresas",
+      "description": "Los videos corporativos para redes y web fracasan por razones evitables. Aprende qué no hacer y cómo grabar contenido que funcione.",
+      "readTime": "7 min",
+      "published": "2026-10-20",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
+    {
       "slug": "tour-virtual-360-guia",
       "title": "Tours virtuales 360°: cómo mostrar tu propiedad sin que nadie visite",
       "tag": "Inmobiliaria",
