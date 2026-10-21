@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "items": [
+    {
+      "slug": "ordenar-y-respaldar-las-fotos-que-entrega-el-fotografo",
+      "title": "Cómo ordenar y respaldar las fotos que entrega tu fotógrafo",
+      "tag": "Técnica",
+      "description": "Una guía simple para recibir, nombrar, ordenar y respaldar las fotos de una sesión, para que tu negocio las encuentre y las use durante años.",
+      "readTime": "7 min",
+      "published": "2026-10-21",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "video-corporativo-errores",
       "title": "Video corporativo corto: errores que ahuyentan clientes",
