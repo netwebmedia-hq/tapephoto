@@ -2,6 +2,16 @@
   "updated": "2026-10-21",
   "items": [
     {
+      "slug": "video-recorrido-checklist",
+      "title": "Checklist antes del video recorrido de tu propiedad",
+      "tag": "Inmobiliaria",
+      "description": "Prepara tu propiedad para un video recorrido profesional. Checklist práctico de lo que debe estar listo antes de que llegue el fotógrafo.",
+      "readTime": "8 min",
+      "published": "2026-10-21",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
+    {
       "slug": "ordenar-y-respaldar-las-fotos-que-entrega-el-fotografo",
       "title": "Cómo ordenar y respaldar las fotos que entrega tu fotógrafo",
       "tag": "Técnica",
