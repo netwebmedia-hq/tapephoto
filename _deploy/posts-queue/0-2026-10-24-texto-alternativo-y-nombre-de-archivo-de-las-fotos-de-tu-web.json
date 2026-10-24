@@ -1,0 +1,168 @@
+{
+  "title": "Texto alternativo y nombre de archivo de tus fotos web",
+  "tag": "Técnica",
+  "description": "Cómo nombrar tus fotos y escribir el texto alternativo para que se entiendan en tu sitio, en Google y con lector de pantalla.",
+  "lede": "Las fotos de tu sitio web llegan con nombres como IMG_4821 y sin descripción. Esta guía muestra cómo renombrar los archivos y escribir el texto alternativo de cada imagen, con ejemplos para propiedades, alojamientos, locales y equipos.",
+  "readTime": "6 min",
+  "faq": [
+    {
+      "q": "El texto alternativo mejora mi posición en Google",
+      "a": "Ayuda a que el buscador entienda de qué trata la imagen, y eso puede facilitar que aparezca en búsquedas de imágenes. No es un botón que asegure una posición. Funciona mejor junto con un contenido útil, fotos de buen peso y una página ordenada."
+    },
+    {
+      "q": "Debo poner palabras clave en el texto alternativo",
+      "a": "Conviene que el texto describa la foto con palabras naturales, y si el lugar o el servicio forman parte de lo que se ve, mencionarlos tiene sentido. Llenar el campo de palabras sueltas suena mal para quien usa lector de pantalla y los buscadores lo interpretan como un intento de forzar el resultado."
+    },
+    {
+      "q": "Tengo cientos de fotos sin descripción, por dónde empiezo",
+      "a": "Parte por las páginas con más visitas, como la portada, los servicios y las fichas principales. Luego sigue con las galerías más largas. Avanzar de a poco, con una rutina fija para cada foto nueva, es más realista que intentar corregir todo de una vez."
+    }
+  ],
+  "sections": [
+    {
+      "type": "p",
+      "text": "Una dueña de cabañas en Coquimbo sube sus fotos nuevas al sitio web. Los archivos se llaman IMG_4821.jpg, IMG_4822.jpg y así hasta el final. Meses después, alguien que usa un lector de pantalla visita la página y escucha \"imagen, IMG 4821\" doce veces seguidas. Otra persona busca en Google Imágenes \"cabañas con tinaja en Coquimbo\" y ninguna de esas fotos tiene cómo aparecer, porque nada en el archivo ni en la página dice qué muestran."
+    },
+    {
+      "type": "p",
+      "text": "Ese detalle, que parece menor, se resuelve en minutos si se hace al momento de subir cada foto. Esta guía explica qué son el nombre de archivo y el texto alternativo, cómo escribirlos para fotos de propiedades, locales, alojamientos y eventos, y qué errores conviene evitar."
+    },
+    {
+      "type": "h2",
+      "text": "Qué es el texto alternativo y para qué sirve"
+    },
+    {
+      "type": "p",
+      "text": "El texto alternativo, o atributo alt, es una descripción corta de la imagen que se guarda en el código de la página. No se ve en pantalla a simple vista. Lo usan tres tipos de lectores: las personas que navegan con lector de pantalla, los buscadores que intentan entender de qué trata la imagen, y el propio navegador cuando la foto no logra cargar y muestra el texto en su lugar."
+    },
+    {
+      "type": "p",
+      "text": "Por eso conviene escribirlo pensando en una persona que no ve la foto. Si alguien te llamara por teléfono y te pidiera describir esa imagen en una frase, lo que dirías es tu texto alternativo."
+    },
+    {
+      "type": "h2",
+      "text": "El nombre del archivo también cuenta"
+    },
+    {
+      "type": "p",
+      "text": "Antes de subir la foto, el archivo tiene un nombre. Las cámaras y los teléfonos asignan números sin sentido. Cambiarlos a una descripción simple ayuda a ordenar tu propio material y le da al buscador una pista adicional sobre el contenido."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Usa minúsculas y guiones entre palabras: sala-living-departamento-la-serena.jpg",
+        "Evita tildes, eñes y espacios, porque algunos sistemas los convierten en símbolos raros en la dirección web",
+        "Describe lo que se ve, no la fecha ni el número de la cámara",
+        "Mantén el nombre corto: de tres a seis palabras alcanzan"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Si recibes un lote grande de fotos del fotógrafo, vale la pena renombrarlas todas en una sola pasada antes de subirlas, con una lógica fija: lugar, espacio y detalle. Así el archivo del dormitorio principal queda como dormitorio-principal-cabana-coquimbo.jpg en vez de una secuencia numérica."
+    },
+    {
+      "type": "h2",
+      "text": "Cómo escribir un buen texto alternativo"
+    },
+    {
+      "type": "p",
+      "text": "Un texto alternativo útil responde a una pregunta simple: ¿qué hay en esta foto y por qué está en esta página? La respuesta cabe, por lo general, en una frase de entre ocho y quince palabras."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Describe lo concreto: \"Terraza de madera con vista a la bahía de Coquimbo al atardecer\"",
+        "Menciona el lugar cuando es real y relevante, por ejemplo la comuna o el barrio",
+        "Incluye el contexto que da sentido a la imagen: \"Cocina equipada del departamento de dos dormitorios\"",
+        "Escribe en lenguaje natural, como hablarías con una persona",
+        "Omite expresiones como \"foto de\" o \"imagen de\", porque el lector de pantalla ya anuncia que es una imagen"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Una pregunta práctica es hasta dónde detallar. Para una galería de diez fotos de una misma casa, no hace falta que cada descripción repita el nombre completo de la propiedad. Basta con distinguir cada espacio: living, cocina, baño, terraza, fachada. La página ya aporta el resto del contexto."
+    },
+    {
+      "type": "h2",
+      "text": "Ejemplos según el tipo de negocio"
+    },
+    {
+      "type": "p",
+      "text": "Una inmobiliaria con una ficha de propiedad suele tener varias decenas de imágenes entre las que elegir. Conviene que cada una nombre el espacio y un rasgo visible: \"Living comedor con ventanal hacia el patio\", \"Dormitorio principal con closet empotrado\". Así quien navega con lector de pantalla puede recorrer la propiedad sin ver la imagen."
+    },
+    {
+      "type": "p",
+      "text": "Un hotel o una cabaña necesita que el texto transmita el ambiente que el huésped va a encontrar: \"Habitación matrimonial con vista al valle\", \"Tinaja de madera junto al quincho\". Se trata de describir lo que hay, sin adjetivos de venta."
+    },
+    {
+      "type": "p",
+      "text": "Un restaurante o una cafetería puede describir el plato o el local: \"Plato de pescado con ensalada de la casa\", \"Barra del café con tres taburetes junto a la ventana\". Si hay texto visible dentro de la foto, como una pizarra con el menú, conviene repetir lo esencial en el alt o, mejor aún, publicarlo también como texto normal en la página."
+    },
+    {
+      "type": "p",
+      "text": "Una empresa de servicios que muestra a su equipo puede indicar qué hace cada persona: \"Equipo técnico revisando una instalación en terreno\". Si la persona retratada tiene nombre y cargo, y está de acuerdo, el nombre mejora la descripción."
+    },
+    {
+      "type": "h2",
+      "text": "Errores frecuentes"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Dejar el campo vacío en fotos que aportan información al contenido",
+        "Repetir la misma frase en todas las imágenes de la página",
+        "Llenar el alt de palabras clave sueltas, como \"cabañas coquimbo arriendo turismo\", que además suena mal en un lector de pantalla",
+        "Usar el nombre de archivo original de la cámara como único texto",
+        "Describir algo que la foto no muestra, por ejemplo mencionar una vista que sale tapada por un edificio"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Las imágenes puramente decorativas, como una línea separadora o un fondo de textura, pueden llevar el alt vacío a propósito. Así el lector de pantalla las salta y no interrumpe la lectura con ruido."
+    },
+    {
+      "type": "h2",
+      "text": "Dónde se configura en la práctica"
+    },
+    {
+      "type": "p",
+      "text": "En WordPress, Wix, Shopify y la mayoría de los administradores de contenido, el campo aparece al seleccionar la imagen, con el nombre \"Texto alternativo\" o \"Alt text\". En Google Business y en redes como Instagram el campo existe, aunque suele estar algo más escondido en las opciones avanzadas de cada publicación. Revisa dónde está en tu plataforma y úsalo cada vez que subas una foto nueva."
+    },
+    {
+      "type": "p",
+      "text": "Si tu sitio ya tiene decenas de fotos sin descripción, no hace falta corregir todo en un día. Empieza por las páginas que más se visitan, como la portada, la página de servicios y las fichas de producto o propiedad, y avanza de a poco."
+    },
+    {
+      "type": "h2",
+      "text": "Cómo se relaciona con la sesión de fotos"
+    },
+    {
+      "type": "p",
+      "text": "Cuando coordinas una sesión, conviene saber de antemano en qué lugares vas a publicar las fotos: tu web, portales, redes, Google. Esa información te ayuda a decidir qué espacios y detalles pedir, y también a armar después las descripciones con calma, porque ya sabes qué muestra cada imagen. Si la sesión incluye un listado de tomas, ese mismo listado sirve de base para los nombres de archivo y los textos alternativos."
+    },
+    {
+      "type": "p",
+      "text": "También conviene revisar el peso y la resolución de los archivos antes de subirlos, tema que se explica en la guía sobre resolución para web. Una foto bien descrita pero demasiado pesada igual retrasa la carga de la página, y eso lo notan tanto los visitantes como los buscadores."
+    },
+    {
+      "type": "h2",
+      "text": "Una rutina simple para cada foto nueva"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Renombra el archivo con una descripción breve, sin tildes ni espacios",
+        "Sube la imagen y completa el campo de texto alternativo con una frase concreta",
+        "Revisa que el texto no repita el de la imagen anterior",
+        "Lee en voz alta lo escrito: si suena natural, está bien"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Con esa rutina, el material que ya produjiste trabaja más para tu negocio: se encuentra mejor, lo entienden más personas y queda ordenado para cuando necesites reutilizarlo en otra publicación."
+    }
+  ],
+  "slug": "texto-alternativo-y-nombre-de-archivo-de-las-fotos-de-tu-web",
+  "topic": "nombre de archivo y texto alternativo (alt) de las fotos de un sitio web, ejemplos por rubro",
+  "created": "2026-10-24"
+}
