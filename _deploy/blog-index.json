@@ -2,6 +2,16 @@
   "updated": "2026-10-24",
   "items": [
     {
+      "slug": "fotografia-retail-guia",
+      "title": "Fotografía de tiendas y vitrinas: qué esperar al contratar",
+      "tag": "Empresas",
+      "description": "Guía para dueños de tiendas sobre qué es la fotografía retail profesional, cómo prepararla y qué resultados se obtienen para vender más.",
+      "readTime": "8 min",
+      "published": "2026-10-24",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
+    {
       "slug": "texto-alternativo-y-nombre-de-archivo-de-las-fotos-de-tu-web",
       "title": "Texto alternativo y nombre de archivo de tus fotos web",
       "tag": "Técnica",

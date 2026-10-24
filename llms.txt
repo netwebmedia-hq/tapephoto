@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 83 Spanish-language blog articles published so far.
+- 84 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotografía de tiendas y vitrinas: qué esperar al contratar](https://tapephoto.com/blog/fotografia-retail-guia.html) [Empresas]: Guía para dueños de tiendas sobre qué es la fotografía retail profesional, cómo prepararla y qué resultados se obtienen para vender más.
 - [Texto alternativo y nombre de archivo de tus fotos web](https://tapephoto.com/blog/texto-alternativo-y-nombre-de-archivo-de-las-fotos-de-tu-web.html) [Técnica]: Cómo nombrar tus fotos y escribir el texto alternativo para que se entiendan en tu sitio, en Google y con lector de pantalla.
 - [Fotografía para viñas y pisqueras: cuándo invertir](https://tapephoto.com/blog/fotografia-pisqueras-vale-la-pena.html) [Empresas]: Guía para productores sobre cuándo la fotografía profesional genera retorno en viñas y pisqueras, y cuándo no es necesaria.
 - [Fotografía industrial y minera: errores que cuestan dinero](https://tapephoto.com/blog/fotografia-industrial-errores.html) [Empresas]: Los errores más comunes en fotografía industrial minera y cómo evitarlos. Guía para documentar operaciones con profesionalismo.
@@ -44,7 +45,6 @@
 - [Fotos que necesita antes de inaugurar su negocio](https://tapephoto.com/blog/negocio-antes-de-inaugurar-guia.html) [Empresas]: Guía práctica de qué fotografías debe tener un negocio antes de abrir. Desde la fachada hasta detalles que venden.
 - [Fotos de marca personal para corredores: qué esperar](https://tapephoto.com/blog/marca-personal-corredor-que-esperar.html) [Empresas]: Guía sobre sesiones de marca personal para corredores de propiedades: proceso, duración, entregables y cómo prepararse.
 - [Fotos de áreas comunes de un condominio: cómo prepararlas](https://tapephoto.com/blog/fotos-de-areas-comunes-de-un-condominio.html) [Inmobiliaria]: Piscina, quincho, gimnasio y hall: cómo preparar las fotos de áreas comunes de un edificio o condominio en La Serena o Coquimbo, y qué coordinar antes.
-- [Fotografía para veterinarias: qué esperar del proceso](https://tapephoto.com/blog/fotografia-veterinarias-que-esperar.html) [Empresas]: Guía práctica sobre cómo contratar fotografía profesional para tu clínica veterinaria o centro de mascotas. Agenda, duración y entregables.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
