@@ -328,6 +328,10 @@ a { color: inherit; }
 .archive__cats a { display: flex; justify-content: space-between; gap: var(--sc-4); align-items: baseline; padding: var(--sc-4) 0; border-top: 1px solid var(--sc-hairline); text-decoration: none; }
 .archive__cats .c { font-family: var(--sc-font-display); font-size: var(--sc-t-xl); line-height: 1.2; }
 .archive__cats .k { color: var(--sc-ink-soft); font-size: var(--sc-t-sm); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.archive__cats a { flex-wrap: wrap; padding-bottom: var(--sc-6); }
+.archive__cats .t { flex-basis: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--sc-2); margin-top: var(--sc-2); }
+.archive__cats .t img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; background: #1a1b1c; transition: opacity 0.3s ease; }
+.archive__cats a:hover .t img { opacity: 0.85; }
 .archive__links { margin-top: var(--sc-7); display: flex; flex-wrap: wrap; gap: var(--sc-3); }
 @media (hover: hover) and (pointer: fine) {
   .archive__cats a:hover .c { color: #fff; text-decoration: underline; text-decoration-color: var(--sc-accent); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }

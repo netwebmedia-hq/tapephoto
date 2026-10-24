@@ -89,7 +89,7 @@ CTA = """        <section class="gallery-cta">
             <h2>Need coverage like this?</h2>
             <p>Motorsport, events, aerials and commercial work — in Chile and abroad. Archive images available for <a href="../licensing.html">licensing</a>.</p>
             %(license)s            <a class="gallery-btn gallery-btn-ghost" href="../contact.html">Get in touch</a>
-            <a class="gallery-btn gallery-btn-ghost" href="https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="gallery-btn gallery-btn-ghost" href="https://wa.me/14423854585?text=Hi%%2C%%20I%%20found%%20tapephoto.com%%20and%%20want%%20a%%20quote%%20for%%20a%%20photo%%20shoot" target="_blank" rel="noopener">WhatsApp</a>
         </section>
 """
 CTA_LICENSE = '<a class="gallery-btn" href="../licensing.html?ref=%s#inquiry">License this event</a>\n'
@@ -316,6 +316,16 @@ def index_page(M, order, by_cat):
     return "".join(out)
 
 
+def home_picks(gs, n=3):
+    # Up to n homepage thumbnails per category: each gallery's cover first, then
+    # evenly spaced frames from the category's remaining photos.
+    picks = [(g, g["photos"][g["cover"]]) for g in gs][:n]
+    rest = [(g, ph) for g in gs for ph in g["photos"] if all(ph is not q for _, q in picks)]
+    need = min(n - len(picks), len(rest))
+    step = len(rest) / need if need > 0 else 0
+    return picks + [rest[int(i * step + step / 2)] for i in range(max(need, 0))]
+
+
 def home_block(M, order, by_cat):
     # The homepage's archive section (the scroll-craft darkroom page): real counts
     # that tick up on entry, then the category index. Markup must match index.html.
@@ -325,8 +335,11 @@ def home_block(M, order, by_cat):
     for c in M["categories"]:
         gs = by_cat[c["id"]]
         cnt = sum(len(x["photos"]) for x in gs)
+        thumbs = "".join(f'<img src="galleries/{img_url(g, ph, sm=True)}" width="{ph["sw"]}" height="{ph["sh"]}" alt="" loading="lazy" decoding="async">'
+                         for g, ph in home_picks(gs))
         cats.append(f'                <li><a href="galleries/#{c["id"]}"><span class="c">{esc(c["name"])}</span>'
-                    f'<span class="k">{plural(cnt, "photograph")} · {plural(len(gs), "gallery").replace("gallerys", "galleries")}</span></a></li>\n')
+                    f'<span class="k">{plural(cnt, "photograph")} · {plural(len(gs), "gallery").replace("gallerys", "galleries")}</span>'
+                    f'<span class="t">{thumbs}</span></a></li>\n')
     return f"""    <!-- Galleries: the archive in its real numbers (rebuilt by _deploy/galleries/build-galleries.py) -->
     <section id="galleries" class="archive">
         <div class="sc-wrap">
