@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "items": [
+    {
+      "slug": "autorizacion-de-imagen-personas-en-fotos-de-tu-negocio",
+      "title": "Autorización de imagen: personas en las fotos de tu negocio",
+      "tag": "Empresas",
+      "description": "Qué hacer cuando en las fotos de tu negocio aparecen trabajadores, clientes o huéspedes: cómo pedir autorización, qué guardar y cuándo conviene evitar caras.",
+      "readTime": "7 min",
+      "published": "2026-10-25",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotografia-salud-que-esperar",
       "title": "Fotografía para clínicas: qué esperar del proceso",

@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 85 Spanish-language blog articles published so far.
+- 86 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## All blog articles (Spanish, newest first)
 
+- [Autorización de imagen: personas en las fotos de tu negocio](https://tapephoto.com/blog/autorizacion-de-imagen-personas-en-fotos-de-tu-negocio.html) [Empresas]: Qué hacer cuando en las fotos de tu negocio aparecen trabajadores, clientes o huéspedes: cómo pedir autorización, qué guardar y cuándo conviene evitar caras.
 - [Fotografía para clínicas: qué esperar del proceso](https://tapephoto.com/blog/fotografia-salud-que-esperar.html) [Empresas]: Guía práctica sobre cómo contratar fotografía profesional para tu clínica o centro de salud. Agenda, duración y entregables.
 - [Fotografía de tiendas y vitrinas: qué esperar al contratar](https://tapephoto.com/blog/fotografia-retail-guia.html) [Empresas]: Guía para dueños de tiendas sobre qué es la fotografía retail profesional, cómo prepararla y qué resultados se obtienen para vender más.
 - [Texto alternativo y nombre de archivo de tus fotos web](https://tapephoto.com/blog/texto-alternativo-y-nombre-de-archivo-de-las-fotos-de-tu-web.html) [Técnica]: Cómo nombrar tus fotos y escribir el texto alternativo para que se entiendan en tu sitio, en Google y con lector de pantalla.
