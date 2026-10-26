@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "items": [
+    {
+      "slug": "fotos-para-imprimir-vs-fotos-para-web-que-cambia",
+      "title": "Fotos para imprimir: qué cambia respecto a las de la web",
+      "tag": "Técnica",
+      "description": "Una foto que se ve bien en el sitio web puede salir borrosa o con colores distintos en un folleto o un gráfico. Qué pedir al fotógrafo antes de imprimir.",
+      "readTime": "6 min",
+      "published": "2026-10-26",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fotos-menu-delivery-checklist",
       "title": "Fotos de menú para delivery: qué preparar antes de la sesión",
