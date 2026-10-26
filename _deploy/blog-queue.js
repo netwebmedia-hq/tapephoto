@@ -27,6 +27,8 @@ const MODEL = 'claude-haiku-4-5-20251001';
 const COUNT_DEFAULT = 10;          // weekly refill vs ~7/week drain = small buffer
 const MIN_WORDS = 750;             // hard floor; the prompt aims for ~1100
 const MAX_ATTEMPTS = 3;            // retries per topic on invalid/short output
+// Currency amounts and payment terms; generic words like "precio" or "gratis" stay allowed.
+const PRICE_RE = /\$\s?\d|\b(CLP|USD|UF)\b|\d[\d.,]*\s*(mil\s+pesos|pesos|lucas|d[oó]lares)|\bpago por adelantado\b|\b(sin|con) anticipo\b|\babono (del|de un)\b/i;
 const REQUEST_TIMEOUT_MS = 180000;
 
 // ─── CLI ─────────────────────────────────────────────────────────────────────
@@ -224,6 +226,9 @@ REGLAS EDITORIALES — OBLIGATORIAS, NO NEGOCIABLES
 1. NUNCA inventes precios, tarifas ni valores de sesión. TapePhoto cotiza caso a caso.
    Si el tema exige hablar de costo, escribe alrededor de él (qué hace variar el precio:
    metros cuadrados, cantidad de ambientes, si incluye drone) y remite a cotizar.
+   Tampoco cifras de ejemplo (ni en pesos, dólares ni UF) ni condiciones de pago
+   (anticipos, abonos, pago por adelantado). Para comparar propuestas usa términos
+   relativos: la cotización más alta, la más baja.
 2. NUNCA inventes estadísticas, estudios, porcentajes ni citas. Si no puedes respaldar un
    número, escribe la idea sin el número o di explícitamente que varía.
 3. NUNCA inventes datos del mercado inmobiliario chileno, plazos de venta ni cifras de
@@ -346,6 +351,9 @@ function validate(post, takenTitles) {
     ? s.items.reduce((m, it) => m + it.split(/\s+/).length, 0)
     : s.text.split(/\s+/).length), 0);
   if (words < MIN_WORDS) return `only ${words} words (minimum ${MIN_WORDS})`;
+  // No prices to prospects (Carlos's rule): rule 1 alone let sample CLP figures through.
+  const price = JSON.stringify(post).match(PRICE_RE);
+  if (price) return `mentions a price or payment term: "${price[0]}"`;
   return null;
 }
 
