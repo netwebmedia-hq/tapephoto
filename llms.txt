@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 90 Spanish-language blog articles published so far.
+- 91 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Inventario fotográfico al entregar o recibir un arriendo](https://tapephoto.com/blog/inventario-fotografico-al-entregar-o-recibir-un-arriendo.html) [Inmobiliaria]: Cómo registrar con fotos el estado de una casa o departamento el día de la entrega, qué fotografiar, cómo ordenarlas y por qué un registro serio evita discusiones por la garantía en La Serena y Coquimbo.
 - [Fotos para un estudio de abogados o contadores](https://tapephoto.com/blog/fotos-para-un-estudio-de-abogados-o-contadores.html) [Empresas]: Qué fotografiar para la web y LinkedIn de un estudio de abogados, contadores o consultora en La Serena y Coquimbo, cuidando siempre la confidencialidad.
 - [Fotos para imprimir: qué cambia respecto a las de la web](https://tapephoto.com/blog/fotos-para-imprimir-vs-fotos-para-web-que-cambia.html) [Técnica]: Una foto que se ve bien en el sitio web puede salir borrosa o con colores distintos en un folleto o un gráfico. Qué pedir al fotógrafo antes de imprimir.
 - [Fotos de menú para delivery: qué preparar antes de la sesión](https://tapephoto.com/blog/fotos-menu-delivery-checklist.html) [Empresas]: Checklist práctico para preparar tu restaurante o local de comidas antes de fotografiar el menú para apps de delivery. Qué tener listo.
@@ -44,7 +45,6 @@
 - [Cómo ordenar y respaldar las fotos que entrega tu fotógrafo](https://tapephoto.com/blog/ordenar-y-respaldar-las-fotos-que-entrega-el-fotografo.html) [Técnica]: Una guía simple para recibir, nombrar, ordenar y respaldar las fotos de una sesión, para que tu negocio las encuentre y las use durante años.
 - [Video corporativo corto: errores que ahuyentan clientes](https://tapephoto.com/blog/video-corporativo-errores.html) [Empresas]: Los videos corporativos para redes y web fracasan por razones evitables. Aprende qué no hacer y cómo grabar contenido que funcione.
 - [Tours virtuales 360°: cómo mostrar tu propiedad sin que nadie visite](https://tapephoto.com/blog/tour-virtual-360-guia.html) [Inmobiliaria]: Qué son los tours virtuales 360°, cómo funcionan, cuándo conviene usarlos y qué esperar cuando contratas este servicio de fotografía.
-- [Fotos para una presentación a inversionistas o socios](https://tapephoto.com/blog/fotos-para-presentacion-a-inversionistas.html) [Empresas]: Qué fotos necesita una presentación a inversionistas, bancos o socios: equipo, operación, producto y lugar. Cómo preparar la sesión para que cada imagen respalde un dato del documento.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt

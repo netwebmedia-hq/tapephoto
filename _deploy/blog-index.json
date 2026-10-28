@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "items": [
+    {
+      "slug": "inventario-fotografico-al-entregar-o-recibir-un-arriendo",
+      "title": "Inventario fotográfico al entregar o recibir un arriendo",
+      "tag": "Inmobiliaria",
+      "description": "Cómo registrar con fotos el estado de una casa o departamento el día de la entrega, qué fotografiar, cómo ordenarlas y por qué un registro serio evita discusiones por la garantía en La Serena y Coquimbo.",
+      "readTime": "7 min",
+      "published": "2026-10-28",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
     {
       "slug": "fotos-para-un-estudio-de-abogados-o-contadores",
       "title": "Fotos para un estudio de abogados o contadores",
