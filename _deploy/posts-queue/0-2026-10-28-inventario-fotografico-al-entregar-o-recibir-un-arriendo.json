@@ -1,0 +1,51 @@
+{
+  "title": "Inventario fotográfico al entregar o recibir un arriendo",
+  "slug": "inventario-fotografico-al-entregar-o-recibir-un-arriendo",
+  "tag": "Inmobiliaria",
+  "description": "Cómo registrar con fotos el estado de una casa o departamento el día de la entrega, qué fotografiar, cómo ordenarlas y por qué un registro serio evita discusiones por la garantía en La Serena y Coquimbo.",
+  "lede": "Un arrendatario devuelve un departamento en Coquimbo después de dos años. El dueño ve una mancha en el piso flotante y descuenta la garantía. El arrendatario jura que la mancha estaba cuando llegó. Ninguno tiene una foto fechada de ese rincón. El inventario fotográfico del día de la entrega existe para que esa conversación no ocurra.",
+  "readTime": "7 min",
+  "faq": [
+    { "q": "que fotos hay que sacar al entregar un departamento en arriendo", "a": "Una toma general de cada recinto desde la puerta, luego los detalles: pisos, muros, cielos, ventanas y sus marcos, puertas y cerraduras, enchufes e interruptores, artefactos de cocina y baño, llaves de agua, calefont o termo, y cualquier daño existente visto de cerca y de lejos. Incluye medidores con la lectura visible y las llaves entregadas." },
+    { "q": "sirven las fotos del celular como prueba del estado de un arriendo", "a": "Sirven si son claras, están fechadas y ambas partes las reconocen. Lo que da valor al registro no es la cámara sino el método: fotos de cada recinto y de cada daño, un listado que las acompañe, y una copia enviada a la otra parte el mismo día, idealmente firmada como anexo del contrato o del acta de entrega." },
+    { "q": "quien hace el inventario fotografico de un arriendo, el dueño o el arrendatario", "a": "Puede hacerlo cualquiera de los dos, el corredor o un fotógrafo contratado, pero lo importante es que se haga con ambas partes presentes o que la otra parte reciba y acepte el registro al momento de la entrega. Un registro hecho a solas días después pierde fuerza." }
+  ],
+  "sections": [
+    { "type": "h2", "text": "Para qué sirve un inventario fotográfico" },
+    { "type": "p", "text": "El acta de entrega de un arriendo suele ser una hoja con frases como \"en buen estado\" o \"con uso normal\". Esas frases no describen nada. Cuando termina el contrato, el dueño recuerda una propiedad impecable y el arrendatario recuerda una propiedad con detalles, y los dos tienen razón a medias. El inventario fotográfico reemplaza la memoria por un registro: así estaba cada recinto el día que se entregaron las llaves." },
+    { "type": "p", "text": "En La Serena y Coquimbo, donde muchas propiedades se arriendan por temporada o a personas que llegan por trabajo y se van en uno o dos años, la rotación es alta y las entregas se hacen rápido. Ese apuro es justo lo que produce discusiones después. Una hora de registro al inicio ahorra semanas de mensajes al final." },
+    { "type": "h2", "text": "Qué fotografiar, recinto por recinto" },
+    { "type": "p", "text": "El orden importa tanto como las fotos. Recorre la propiedad siempre en el mismo sentido, desde la puerta de entrada, y repite el mismo esquema en cada recinto para que después cualquiera pueda encontrar la foto que busca." },
+    { "type": "ul", "items": [
+      "Una toma general desde la puerta, que muestre el recinto completo y permita ubicar los detalles.",
+      "Pisos: una foto por zona, y de cerca cualquier rayón, mancha, tabla levantada o cerámica trizada.",
+      "Muros y cielos: manchas de humedad, grietas, perforaciones de cuadros, pintura descascarada, especialmente en esquinas y detrás de las puertas.",
+      "Ventanas y puertas: vidrios, marcos, sellos, manillas, cerraduras y cómo cierran. Una foto del vidrio con luz lateral muestra trizaduras que de frente no se ven.",
+      "Instalaciones: cada enchufe e interruptor, el tablero eléctrico, las llaves de paso, el calefont o termo y su etiqueta, la red húmeda si existe.",
+      "Cocina y baños: artefactos por dentro y por fuera, griferías, sifones, juntas de silicona, muebles abiertos y cerrados, la campana y el horno.",
+      "Exterior, si lo hay: patio, cierres, portón, reja, terraza, estacionamiento y bodega con su numeración.",
+      "Medidores de agua, luz y gas con la lectura legible en la misma foto que el número del medidor.",
+      "Las llaves y controles que se entregan, todas juntas sobre una superficie clara, contadas."
+    ] },
+    { "type": "p", "text": "Si la propiedad se arrienda amoblada, cada mueble y electrodoméstico suma dos fotos: una general y una del estado real, con la puerta abierta o el cajón afuera. Es tedioso y es exactamente lo que evita pagar un refrigerador que ya venía con el sello roto." },
+    { "type": "h2", "text": "Cómo fotografiar para que la foto sirva" },
+    { "type": "p", "text": "Un registro de estado no es una foto de portal. No busca que la propiedad se vea linda, busca que se vea como está. Eso cambia algunas decisiones técnicas." },
+    { "type": "ul", "items": [
+      "Luz pareja: abre cortinas y enciende todas las luces. No uses flash directo sobre superficies brillantes, porque tapa justo el detalle que quieres mostrar.",
+      "Dos distancias por daño: una foto que ubique el daño dentro del recinto y otra de cerca. Sin la primera, nadie sabe de qué pared es esa grieta.",
+      "Una referencia de tamaño: una moneda, una llave o una huincha junto a la mancha o el rayón.",
+      "Encuadre derecho, sin ángulos creativos. La foto debe parecerse a lo que ve una persona de pie.",
+      "Fecha y hora activadas en el equipo, y si el teléfono lo permite, la ubicación. Los datos quedan guardados dentro del archivo.",
+      "Nada de filtros ni retoques. Un archivo editado es un archivo que la otra parte puede cuestionar."
+    ] },
+    { "type": "h2", "text": "Ordenar, nombrar y entregar" },
+    { "type": "p", "text": "El registro vale si se puede consultar dos años después. Un rollo de doscientas fotos sueltas en un teléfono no se puede consultar. El mismo día de la entrega, pasa las fotos a una carpeta con el nombre de la propiedad y la fecha, y dentro una subcarpeta por recinto. Renombra los archivos de forma que se entiendan sin abrirlos: living-general, living-piso-rayon-ventana, cocina-horno-interior." },
+    { "type": "p", "text": "Luego arma un listado breve que acompañe a las fotos: por recinto, los daños o detalles encontrados y el nombre de la foto que los muestra. Ese listado, firmado por ambas partes y adjunto al acta de entrega, es el documento. Las fotos son su respaldo. Envía una copia completa a la otra parte por un medio que deje constancia y guarda la tuya en dos lugares, por ejemplo el computador y una nube." },
+    { "type": "h2", "text": "El día de la devolución" },
+    { "type": "p", "text": "Al terminar el contrato se repite el recorrido con el mismo orden, los mismos encuadres y la misma lista. Así cada foto de salida se compara con una foto de entrada tomada desde el mismo punto. Lo que aparece en la segunda y no en la primera es responsabilidad del período de arriendo; lo que ya estaba, no. El desgaste normal por uso se distingue mejor cuando se ven las dos imágenes juntas." },
+    { "type": "p", "text": "Si el arrendatario no puede estar presente, conviene acordar por escrito que el registro de salida se hará igual y enviarlo el mismo día, para que tenga oportunidad de observar algo antes de que se toque la garantía." },
+    { "type": "h2", "text": "Cuándo conviene encargarlo a un fotógrafo" },
+    { "type": "p", "text": "En un departamento vacío y pequeño, el dueño o el corredor pueden hacer un registro correcto con un teléfono y método. Hay casos donde un fotógrafo profesional aporta más de lo que cuesta su tiempo: propiedades amobladas con muchas piezas y equipamiento, casas grandes con exterior, arriendos de temporada con alta rotación donde el mismo registro se repite varias veces al año, o propiedades que se arriendan a distancia y donde el dueño no estará presente. En esos casos el valor está en la constancia: el mismo recorrido, la misma luz y el mismo nombre de archivos en cada entrega, con el registro listo y ordenado el mismo día." },
+    { "type": "p", "text": "Lo que no cambia, lo haga quien lo haga, es la regla de fondo: fotografiar todo, en orden, el día de la entrega, y que la otra parte lo reciba. Un registro que vive solo en el teléfono de una de las partes vale la mitad." }
+  ]
+}
