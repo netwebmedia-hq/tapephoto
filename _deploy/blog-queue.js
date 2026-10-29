@@ -106,6 +106,18 @@ const SUBJECTS = [
   { key: 'fotografia-servicios-profesionales', prompt: 'fotografía para estudios jurídicos, contables y de consultoría',   tag: 'Empresas' },
   { key: 'fotografia-eventos-deportivos',   prompt: 'cobertura fotográfica de eventos deportivos y corridas',              tag: 'Eventos' },
   { key: 'fotografia-glamping-ecoturismo',  prompt: 'fotografía para glamping, camping y ecoturismo',                      tag: 'Turismo' },
+
+  // ─── Ampliación 2026-10-29 ─────────────────────────────────────────────────
+  // La cola volvió a 0 y quedaban 3 combinaciones. Verificados contra los 92 slugs
+  // publicados: ninguno cubre tienda online, contenido mensual, anuncios pagados,
+  // la web de una pyme, propiedades de lujo, cervecerías ni fundaciones.
+  { key: 'fotos-tienda-online',             prompt: 'fotos de producto para tienda online y Mercado Libre',                tag: 'Empresas' },
+  { key: 'contenido-mensual-redes',         prompt: 'una sesión mensual de fotos para tener contenido propio en redes sociales', tag: 'Empresas' },
+  { key: 'fotos-para-anuncios',             prompt: 'fotos pensadas para anuncios pagados en Instagram, Facebook y Google', tag: 'Empresas' },
+  { key: 'fotos-sitio-web-pyme',            prompt: 'las fotos que necesita el sitio web de una pyme, página por página',  tag: 'Empresas' },
+  { key: 'propiedades-de-lujo',             prompt: 'fotografía de propiedades de alto valor y casas de lujo',             tag: 'Inmobiliaria' },
+  { key: 'fotografia-cervecerias',          prompt: 'fotografía para cervecerías artesanales y destilerías del valle',     tag: 'Turismo' },
+  { key: 'fotografia-fundaciones-ong',      prompt: 'fotografía para fundaciones, ONG y proyectos sociales',               tag: 'Empresas' },
 ];
 
 const ANGLES = [
