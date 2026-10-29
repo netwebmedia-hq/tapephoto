@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "items": [
+    {
+      "slug": "fotos-nocturnas-y-hora-azul-para-hoteles-y-restaurantes",
+      "title": "Fotos nocturnas y de hora azul para hoteles y restaurantes",
+      "tag": "Turismo",
+      "description": "Qué es la hora azul, por qué las fotos de un hotel o restaurante al anochecer se ven distintas a las nocturnas, cómo prepararse y qué esperar de la sesión.",
+      "readTime": "7 min",
+      "published": "2026-10-29",
+      "img": "/assets/photos/turismo-ciudad-sm.jpg",
+      "imgAlt": "Panorámica urbana desde un cerro"
+    },
     {
       "slug": "inventario-fotografico-al-entregar-o-recibir-un-arriendo",
       "title": "Inventario fotográfico al entregar o recibir un arriendo",
