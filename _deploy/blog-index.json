@@ -2,6 +2,16 @@
   "updated": "2026-10-31",
   "items": [
     {
+      "slug": "fotografia-hoteles-checklist",
+      "title": "Checklist: qué preparar antes de la sesión de fotografía en tu alojamiento",
+      "tag": "Turismo",
+      "description": "Guía práctica para preparar un hotel, cabaña o alojamiento turístico antes de la sesión fotográfica. Qué revisar, limpiar y organizar.",
+      "readTime": "9 min",
+      "published": "2026-10-31",
+      "img": "/assets/photos/turismo-atardecer-sm.jpg",
+      "imgAlt": "Atardecer sobre la bahía"
+    },
+    {
       "slug": "fotografia-fundaciones-ong-que-esperar",
       "title": "Fotografía para fundaciones y ONG: qué esperar del proceso",
       "tag": "Empresas",
