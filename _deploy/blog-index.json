@@ -1,6 +1,16 @@
 {
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "items": [
+    {
+      "slug": "fotos-sitio-web-pyme-guia",
+      "title": "Fotos que necesita tu sitio web: guía página por página",
+      "tag": "Empresas",
+      "description": "Qué fotografías debe tener cada sección de tu sitio web y por qué. Una guía concreta para pymes que quieren vender más sin gastar en lo innecesario.",
+      "readTime": "9 min",
+      "published": "2026-11-01",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fotografia-hoteles-checklist",
       "title": "Checklist: qué preparar antes de la sesión de fotografía en tu alojamiento",
