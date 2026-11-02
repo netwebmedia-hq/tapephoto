@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 100 Spanish-language blog articles published so far.
+- 101 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Home / portfolio](https://tapephoto.com/): selected work, local business photography overview, FAQ
@@ -25,6 +25,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Licencia royalty-free o derechos gestionados: cuál conviene](https://tapephoto.com/blog/licencia-royalty-free-o-derechos-gestionados.html) [Empresas]: Qué significa cada licencia de imagen, en qué casos sirve una u otra y qué preguntar antes de usar una foto en tu web, un folleto o una campaña.
 - [Errores comunes en fotos de producto para tienda online](https://tapephoto.com/blog/fotos-tienda-online-errores.html) [Empresas]: Qué falla en las fotos de producto en Mercado Libre y tiendas online, por qué reduce ventas y cómo corregirlo sin gastar mucho.
 - [Fotos que necesita tu sitio web: guía página por página](https://tapephoto.com/blog/fotos-sitio-web-pyme-guia.html) [Empresas]: Qué fotografías debe tener cada sección de tu sitio web y por qué. Una guía concreta para pymes que quieren vender más sin gastar en lo innecesario.
 - [Checklist: qué preparar antes de la sesión de fotografía en tu alojamiento](https://tapephoto.com/blog/fotografia-hoteles-checklist.html) [Turismo]: Guía práctica para preparar un hotel, cabaña o alojamiento turístico antes de la sesión fotográfica. Qué revisar, limpiar y organizar.
@@ -44,7 +45,6 @@
 - [Fotografía de tiendas y vitrinas: qué esperar al contratar](https://tapephoto.com/blog/fotografia-retail-guia.html) [Empresas]: Guía para dueños de tiendas sobre qué es la fotografía retail profesional, cómo prepararla y qué resultados se obtienen para vender más.
 - [Texto alternativo y nombre de archivo de tus fotos web](https://tapephoto.com/blog/texto-alternativo-y-nombre-de-archivo-de-las-fotos-de-tu-web.html) [Técnica]: Cómo nombrar tus fotos y escribir el texto alternativo para que se entiendan en tu sitio, en Google y con lector de pantalla.
 - [Fotografía para viñas y pisqueras: cuándo invertir](https://tapephoto.com/blog/fotografia-pisqueras-vale-la-pena.html) [Empresas]: Guía para productores sobre cuándo la fotografía profesional genera retorno en viñas y pisqueras, y cuándo no es necesaria.
-- [Fotografía industrial y minera: errores que cuestan dinero](https://tapephoto.com/blog/fotografia-industrial-errores.html) [Empresas]: Los errores más comunes en fotografía industrial minera y cómo evitarlos. Guía para documentar operaciones con profesionalismo.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt

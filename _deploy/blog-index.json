@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "items": [
+    {
+      "slug": "licencia-royalty-free-o-derechos-gestionados",
+      "title": "Licencia royalty-free o derechos gestionados: cuál conviene",
+      "tag": "Empresas",
+      "description": "Qué significa cada licencia de imagen, en qué casos sirve una u otra y qué preguntar antes de usar una foto en tu web, un folleto o una campaña.",
+      "readTime": "7 min",
+      "published": "2026-11-02",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
     {
       "slug": "fotos-tienda-online-errores",
       "title": "Errores comunes en fotos de producto para tienda online",
