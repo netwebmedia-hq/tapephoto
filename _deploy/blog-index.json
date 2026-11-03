@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "items": [
+    {
+      "slug": "retrato-corporativo-guia",
+      "title": "Retratos corporativos y fotos de perfil: guía para la primera vez",
+      "tag": "Empresas",
+      "description": "Qué son los retratos corporativos, cuándo contratarlos, cómo prepararse y qué esperar de una sesión profesional. Todo lo que necesitas saber.",
+      "readTime": "8 min",
+      "published": "2026-11-03",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
     {
       "slug": "propiedades-de-lujo-checklist",
       "title": "Preparar una casa de lujo para fotografía: checklist antes de la sesión",
