@@ -32,6 +32,9 @@ jobs:
       - name: Verify gallery credits and embedded rights metadata
         run: node _ci/validate-gallery-credits.mjs
 
+      - name: Verify no public prices
+        run: node _ci/validate-no-prices.mjs
+
       - name: Preflight — verify secrets
         run: |
           if [ -z "${{ secrets.FTP_HOST }}" ] || [ -z "${{ secrets.FTP_USER }}" ] || [ -z "${{ secrets.FTP_PASSWORD }}" ]; then
@@ -69,7 +72,8 @@ jobs:
                    "https://tapephoto.com/fotografia-inmobiliaria-la-serena.html" \
                    "https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html"                    "https://tapephoto.com/fotos-airbnb-la-serena.html" \
                    "https://tapephoto.com/fotografia-empresas-la-serena.html" \
-                   "https://tapephoto.com/blog/"                    "https://tapephoto.com/galleries/"                    "https://tapephoto.com/galleries/san-diego-waterfront.html"; do
+                   "https://tapephoto.com/blog/"                    "https://tapephoto.com/galleries/"                    "https://tapephoto.com/galleries/san-diego-waterfront.html" \
+                   "https://tapephoto.com/prints.html" "https://tapephoto.com/impresiones.html"; do
             code=$(curl -s -o /dev/null -w "%{http_code}" -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" "$u")
             echo "$u → HTTP $code"
             [ "$code" = "200" ] || { echo "::error::$u returned $code"; exit 1; }

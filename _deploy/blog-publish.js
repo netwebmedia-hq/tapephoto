@@ -73,6 +73,7 @@ const HEADER = `    <header class="header">
             <a href="../index.html#work">Work</a>
             <a href="../services.html">Services</a>
             <a href="./">Blog</a>
+            <a href="../prints.html">Prints</a>
             <a href="../about.html">About</a>
             <a href="../contacto.html">Contact</a>
             <a href="../servicios.html" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
@@ -94,6 +95,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../index.html#work">Work</a>
                 <a href="../services.html">Services</a>
                 <a href="./">Blog</a>
+                <a href="../prints.html">Prints</a>
                 <a href="../about.html">About</a>
                 <a href="../contacto.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>

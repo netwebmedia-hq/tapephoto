@@ -78,6 +78,7 @@ HEADER = """    <header class="header">
             <a href="../services.html">Services</a>
             <a href="../licensing.html">Licensing</a>
             <a href="../blog/">Blog</a>
+            <a href="../prints.html">Prints</a>
             <a href="../about.html">About</a>
             <a href="../contact.html">Contact</a>
             <a href="../servicios.html" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
@@ -111,6 +112,7 @@ FOOTER = """    <footer class="footer">
                 <a href="../galleries/">Galleries</a>
                 <a href="../services.html">Services</a>
                 <a href="../licensing.html">Licensing</a>
+                <a href="../prints.html">Prints</a>
                 <a href="../about.html">About</a>
                 <a href="../contact.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>
@@ -215,7 +217,7 @@ def gallery_page(g, cat, order):
                 <img src="{img_url(g, p, True)}" data-full="{img_url(g, p)}" alt="{esc(p['alt'])} (photo {i} of {n})" width="{p['sw']}" height="{p['sh']}" loading="{'eager' if i <= 3 else 'lazy'}" decoding="async">
             </figure>
 """)
-    out.append("        </section>\n\n" + CTA % {"license": CTA_LICENSE % g["slug"]} + """
+    out.append("        </section>\n\n" + CTA % {"license": CTA_LICENSE % g["slug"] + (CTA_PRINT if g["slug"] in PRINT_GALLERIES else "")} + """
         <section class="gallery-more">
             <h2>More galleries</h2>
             <div class="gallery-more-links">
@@ -353,7 +355,7 @@ def home_block(M, order, by_cat):
             </div>
             <ul class="archive__cats">
 {''.join(cats)}            </ul>
-            <p class="archive__links"><a class="btn" href="galleries/">All galleries</a> <a class="btn" href="licensing.html">How licensing works</a></p>
+            <p class="archive__links"><a class="btn" href="galleries/">All galleries</a> <a class="btn" href="licensing.html">How licensing works</a> <a class="btn" href="prints.html">Prints</a></p>
         </div>
     </section>
 """

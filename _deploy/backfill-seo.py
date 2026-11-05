@@ -401,23 +401,11 @@ def patch_sitemap():
 # image" and describe scope instead. (Service pages and schema Offers are a separate decision.)
 LICENCE_COPY = {
     "licensing.html": [
-        ("From USD $75 per image ", "Quoted per image "),
-        ("From USD $150 per image ", "Quoted per image "),
-        ("Books, textbooks and exhibitions: from USD $300 per image", "Books, textbooks and exhibitions: quoted per image"),
-        ("Documentary, broadcast and streaming: from USD $350 per image", "Documentary, broadcast and streaming: quoted per image"),
-        ("From CLP $60,000 per image ", "Quoted per image "),
-        ("Sets of 10 or more: from CLP $450,000", "Sets of 10 or more: quoted as a set"),
         ("Rate card, usage terms and a 24-hour quote.", "Licence types, usage terms and a 24-hour quote."),
         ("Rate card and 24-hour quotes.", "Licence types and 24-hour quotes."),
         ("Unlicensed use is invoiced at three times the applicable rate.", "Unlicensed use is invoiced retroactively under the applicable licence terms."),
     ],
     "licencias.html": [
-        ("Desde USD $75 por imagen ", "Cotizaci&oacute;n por imagen "),
-        ("Desde USD $150 por imagen ", "Cotizaci&oacute;n por imagen "),
-        ("Libros, textos de estudio y exposiciones: desde USD $300 por imagen", "Libros, textos de estudio y exposiciones: cotizaci&oacute;n por imagen"),
-        ("Documental, televisi&oacute;n y streaming: desde USD $350 por imagen", "Documental, televisi&oacute;n y streaming: cotizaci&oacute;n por imagen"),
-        ("Desde CLP $60.000 por imagen ", "Cotizaci&oacute;n por imagen "),
-        ("Sets de 10 o m&aacute;s im&aacute;genes: desde CLP $450.000", "Sets de 10 o m&aacute;s im&aacute;genes: cotizaci&oacute;n por set"),
         ("Tarifas, condiciones de uso y cotizaci&oacute;n en 24 horas.", "Tipos de licencia, condiciones de uso y cotizaci&oacute;n en 24 horas."),
         ("El uso sin licencia se factura al triple de la tarifa", "El uso sin licencia se factura de forma retroactiva seg&uacute;n la licencia"),
     ],
