@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-05",
   "items": [
+    {
+      "slug": "fotos-reales-de-chile-para-tu-marca-que-revisar",
+      "title": "Fotos reales de Chile para tu marca: qué revisar",
+      "tag": "Empresas",
+      "description": "Antes de usar una foto de Chile en tu web o tus avisos, revisa que el lugar sea el correcto, los permisos de imagen y la licencia. Guía para marcas.",
+      "readTime": "7 min",
+      "published": "2026-11-05",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fotos-para-anuncios-vale-la-pena",
       "title": "Fotografía profesional para anuncios pagados: cuándo conviene",
