@@ -142,3 +142,6 @@ RewriteRule ^((?:images|galleries/img)/.+)\.(jpe?g)$ $1.$2.webp [T=image/webp,L]
 # web-readable (sibling property climalerta.com served it 200 on 2026-09-01).
 # The action reads it back over FTP, so an HTTP 404 costs deploys nothing.
 RedirectMatch 404 (^|/)\.ftp-deploy-sync-state
+
+# HTML was served as bare "text/html"; say UTF-8 in the header too (the meta tag already does).
+AddDefaultCharset UTF-8
