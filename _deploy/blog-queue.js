@@ -281,6 +281,8 @@ REGLAS EDITORIALES — OBLIGATORIAS, NO NEGOCIABLES
 4. Nada de nombres de clientes, marcas ni propiedades específicas. Habla en general.
 5. El objetivo es ser útil primero. Un artículo que enseña a preparar bien una propiedad
    vale más que uno que solo vende la sesión.
+6. Para hablar de dinero escribe "dinero", nunca "plata" ("gastar dinero", no "gastar plata").
+   "Plata" solo vale como metal (joyería, platería).
 
 JSON — the format matters as much as the text
 - Devuelve SOLO un objeto JSON válido. Sin texto antes ni después, sin bloques de código.

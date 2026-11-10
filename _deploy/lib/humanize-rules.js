@@ -28,6 +28,7 @@ const ES = `ESTILO DE ESCRITURA. Estas reglas aplican a cada frase.
 - Palabras vetadas: crucial, fundamental (como énfasis), panorama (abstracto), "sin duda", potenciar, "en el mundo acelerado de hoy". Usa "es", "son" y "tiene" en vez de "se erige como", "funge como", "cuenta con".
 - Sin significancia inflada ("marca un hito", "un legado duradero", "el futuro es prometedor") ni lenguaje de venta ("impresionante", "imperdible", "de renombre"). Sin párrafo de despedida; cierra con el último dato útil.
 - Sin negritas en cada ítem de lista, sin emojis, sin flechas decorativas, títulos en minúscula salvo la primera palabra y los nombres propios.
+- Para hablar de dinero escribe "dinero", nunca "plata". "Plata" solo vale como metal.
 - Varía el largo de las frases. Alterna cortas y largas. Usa verbos simples y sustantivos concretos.`;
 
 function humanizeRules(lang) {
