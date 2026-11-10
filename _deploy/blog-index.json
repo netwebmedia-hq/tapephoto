@@ -2,6 +2,16 @@
   "updated": "2026-11-10",
   "items": [
     {
+      "slug": "catalogo-uniforme-corredora-guia",
+      "title": "Cómo mantener un estilo fotográfico uniforme en tus publicaciones",
+      "tag": "Inmobiliaria",
+      "description": "Guía para corredoras: por qué la consistencia visual importa y cómo lograrlo con fotografía profesional en cada propiedad.",
+      "readTime": "9 min",
+      "published": "2026-11-10",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
+    {
       "slug": "banos-y-cocinas-en-la-publicacion-inmobiliaria",
       "title": "Baños y cocinas: los espacios más difíciles de fotografiar",
       "tag": "Inmobiliaria",
