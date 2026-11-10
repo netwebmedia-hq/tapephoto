@@ -99,6 +99,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../about.html">About</a>
                 <a href="../contacto.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>
+                <a href="../terms.html">Terms</a>
             </div>
             <div class="footer-social">
                 <h2></h2>
@@ -188,6 +189,9 @@ function renderPost(post) {
     <meta property="og:image:width" content="${photo.width}">
     <meta property="og:image:height" content="${photo.height}">
     <meta property="og:image:alt" content="${esc(photo.alt_es)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${esc(post.title)}">
+    <meta name="twitter:description" content="${esc(post.description)}">
     <meta name="twitter:image" content="${photoUrl}">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -202,6 +206,7 @@ ${JSON.stringify(articleLd, null, 2)}
     <script type="application/ld+json">
 ${JSON.stringify(faqLd, null, 2)}
     </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
     <script src="../analytics.js" defer></script>
 </head>
@@ -280,6 +285,10 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <meta property="og:description" content="Gu&iacute;as de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo.">
     <meta property="og:url" content="${ORIGIN}/blog/">
     <meta property="og:image" content="${ORIGIN}/images/tape_lifestyle_setup.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog TapePhoto — Fotograf&iacute;a Inmobiliaria y Comercial en La Serena">
+    <meta name="twitter:description" content="Gu&iacute;as de fotograf&iacute;a inmobiliaria, corporativa, de hoteles y drone en La Serena y Coquimbo.">
+    <meta name="twitter:image" content="${ORIGIN}/images/tape_lifestyle_setup.jpg">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -290,6 +299,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
     <script src="../analytics.js" defer></script>
 </head>

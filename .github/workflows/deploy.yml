@@ -35,6 +35,12 @@ jobs:
       - name: Verify no public prices
         run: node _ci/validate-no-prices.mjs
 
+      - name: Verify Twitter card tags
+        run: python3 _deploy/backfill-twitter-tags.py --check
+
+      - name: Consent banner self-test
+        run: node --test _ci/consent.test.mjs
+
       - name: Preflight — verify secrets
         run: |
           if [ -z "${{ secrets.FTP_HOST }}" ] || [ -z "${{ secrets.FTP_USER }}" ] || [ -z "${{ secrets.FTP_PASSWORD }}" ]; then

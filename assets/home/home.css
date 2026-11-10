@@ -451,3 +451,21 @@ html.index-open, html.index-open body { overflow: hidden; }
       transparent 62%);
   }
 }
+
+/* ===================================================== FIRST-PAINT GEOMETRY ==
+   scrollcraft.js turns each pinned act into a block of span*100vh with a sticky 100svh
+   stage, but it runs at the end of <body>. On a slow connection the page painted first in
+   natural flow and then jumped to the pinned layout: a whole-viewport shift (CLS 1.0 in the
+   2026-11-10 Lighthouse run). These rules give the same geometry before the script runs.
+   The engine's own inline heights and .sc-stage rules land on identical values, so nothing
+   moves when it starts. Spans mirror data-sc-span in index.html (2, 3.2, 3.8). */
+[data-sc-act="pin"], [data-sc-act="pan"], [data-sc-act="scrub"] { position: relative; }
+[data-sc-act="pin"] > [data-sc-stage], [data-sc-act="pan"] > [data-sc-stage], [data-sc-act="scrub"] > [data-sc-stage] {
+  position: sticky; top: 0;
+  height: 100vh; height: 100svh;
+  overflow: clip;
+  z-index: var(--sc-z-stage);
+}
+[data-sc-act="pin"][data-sc-span="2"], [data-sc-act="pan"][data-sc-span="2"] { height: 200vh; }
+[data-sc-act="pin"][data-sc-span="3.2"], [data-sc-act="pan"][data-sc-span="3.2"] { height: 320vh; }
+[data-sc-act="pin"][data-sc-span="3.8"], [data-sc-act="pan"][data-sc-span="3.8"] { height: 380vh; }

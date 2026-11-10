@@ -25,9 +25,19 @@
   </url>
   <url>
     <loc>https://tapephoto.com/about.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/sobre-mi.html"/>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/sobre-mi.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/about.html"/>
   </url>
   <url>
     <loc>https://tapephoto.com/contact.html</loc>
@@ -900,5 +910,21 @@
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/terms.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/terminos.html"/>
+  </url>
+  <url>
+    <loc>https://tapephoto.com/terminos.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/terminos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/terms.html"/>
   </url>
 </urlset>
