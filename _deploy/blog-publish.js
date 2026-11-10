@@ -99,6 +99,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../about.html">About</a>
                 <a href="../contacto.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>
+                <a href="../terms.html">Terms</a>
             </div>
             <div class="footer-social">
                 <h2></h2>
