@@ -118,6 +118,39 @@ const SUBJECTS = [
   { key: 'propiedades-de-lujo',             prompt: 'fotografía de propiedades de alto valor y casas de lujo',             tag: 'Inmobiliaria' },
   { key: 'fotografia-cervecerias',          prompt: 'fotografía para cervecerías artesanales y destilerías del valle',     tag: 'Turismo' },
   { key: 'fotografia-fundaciones-ong',      prompt: 'fotografía para fundaciones, ONG y proyectos sociales',               tag: 'Empresas' },
+  // ─── Ampliación 2026-11-10 ─────────────────────────────────────────────────
+  // La cola llevaba en 0 desde el 11-02 y el generador reportó 0 combinaciones
+  // libres. Verificados contra los 110 slugs publicados: ninguno cubre estos
+  // rubros ni estos casos.
+  { key: 'planos-y-plantas-propiedad',      prompt: 'planos y plantas 2D de una propiedad como complemento de las fotos',  tag: 'Inmobiliaria' },
+  { key: 'catalogo-uniforme-corredora',     prompt: 'un estilo fotográfico uniforme para todas las publicaciones de una corredora', tag: 'Inmobiliaria' },
+  { key: 'reels-verticales-propiedades',    prompt: 'video vertical corto de una propiedad para Reels y TikTok',           tag: 'Inmobiliaria' },
+  { key: 'fotografia-constructoras',        prompt: 'fotografía para constructoras: obras entregadas y portafolio',        tag: 'Empresas' },
+  { key: 'fotografia-cafeterias-panaderias', prompt: 'fotografía para cafeterías, panaderías y pastelerías',               tag: 'Turismo' },
+  { key: 'fotografia-moda-tiendas-ropa',    prompt: 'fotografía para tiendas de ropa y marcas de moda locales',            tag: 'Empresas' },
+  { key: 'fotografia-joyeria-artesania',    prompt: 'fotografía de joyería, artesanía y piezas pequeñas',                  tag: 'Empresas' },
+  { key: 'fotografia-talleres-mecanicos',   prompt: 'fotografía para talleres mecánicos y servicios técnicos',             tag: 'Empresas' },
+  { key: 'fotografia-coworking',            prompt: 'fotografía para coworks y oficinas compartidas',                      tag: 'Empresas' },
+  { key: 'fotografia-transporte-logistica', prompt: 'fotografía para empresas de transporte, flotas y logística',          tag: 'Empresas' },
+  { key: 'fotografia-energia-solar',        prompt: 'fotografía para instaladores de paneles solares y proyectos de energía', tag: 'Empresas' },
+  { key: 'fotografia-pesca-acuicultura',    prompt: 'fotografía para caletas, pesca y cultivos marinos de la región',      tag: 'Empresas' },
+  { key: 'fotos-para-licitaciones',         prompt: 'fotos para licitaciones, propuestas y presentaciones comerciales',    tag: 'Empresas' },
+  { key: 'fotos-para-prensa',               prompt: 'fotos para comunicados de prensa y medios locales',                   tag: 'Empresas' },
+  { key: 'fotos-marca-empleadora',          prompt: 'fotos para reclutar: mostrar el lugar de trabajo y al equipo',        tag: 'Empresas' },
+  { key: 'fotos-para-franquicias',          prompt: 'fotografía coherente para franquicias y negocios con varias sucursales', tag: 'Empresas' },
+  { key: 'fotografia-instituciones-publicas', prompt: 'fotografía para municipios e instituciones públicas',               tag: 'Empresas' },
+  { key: 'fotografia-artistas-musicos',     prompt: 'fotografía de prensa para músicos, artistas y bandas',                tag: 'Empresas' },
+  { key: 'fotografia-conferencistas-autores', prompt: 'retratos para conferencistas, autores y consultores independientes', tag: 'Empresas' },
+  { key: 'fotografia-surf-deportes-acuaticos', prompt: 'fotografía para escuelas de surf y deportes acuáticos',            tag: 'Turismo' },
+  { key: 'fotografia-campos-de-golf',       prompt: 'fotografía para campos de golf y clubes deportivos',                  tag: 'Turismo' },
+  { key: 'fotografia-museos-centros-culturales', prompt: 'fotografía para museos, galerías y centros culturales',          tag: 'Turismo' },
+  { key: 'fotografia-mercados-rutas-gastronomicas', prompt: 'fotografía de mercados y rutas gastronómicas locales',        tag: 'Turismo' },
+  { key: 'fotografia-graduaciones',         prompt: 'cobertura fotográfica de graduaciones y licenciaturas',               tag: 'Eventos' },
+  { key: 'celular-vs-fotografo',            prompt: 'fotos con celular frente a contratar un fotógrafo profesional',       tag: 'Técnica' },
+  { key: 'imagenes-ia-vs-fotos-reales',     prompt: 'imágenes generadas con IA frente a fotos reales del negocio',         tag: 'Técnica' },
+  { key: 'cada-cuanto-renovar-fotos',       prompt: 'cada cuánto conviene renovar las fotos de un negocio',                tag: 'Técnica' },
+  { key: 'guia-de-estilo-fotografico',      prompt: 'una guía de estilo fotográfico para que la marca se vea siempre igual', tag: 'Técnica' },
+  { key: 'fondo-blanco-vs-ambientada',      prompt: 'producto en fondo blanco frente a foto ambientada',                   tag: 'Técnica' },
 ];
 
 const ANGLES = [
