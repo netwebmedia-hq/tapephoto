@@ -219,6 +219,7 @@ a { color: inherit; }
   font-size: clamp(2.4rem, 1.4rem + 2.6vw, 4.4rem); line-height: 1.02; letter-spacing: var(--sc-track-tight); text-wrap: balance;
 }
 .placard__lede { margin: var(--sc-4) 0 var(--sc-6); font-size: var(--sc-t-lg); line-height: 1.45; color: var(--sc-ink); text-wrap: pretty; }
+.placard__cta { margin: 0 0 var(--sc-6); }
 .placard .label { padding-top: var(--sc-5); border-top: 1px solid var(--sc-hairline-strong); }
 .near {
   position: absolute; z-index: 4; right: -12vw; top: -17vh; width: 32vw;
@@ -378,6 +379,7 @@ a { color: inherit; }
   .placard { left: var(--sc-gutter); right: var(--sc-gutter); width: auto; bottom: clamp(1.5rem, 5vh, 3rem); }
   .placard__title { font-size: var(--sc-t-2xl); }
   .placard__lede { font-size: var(--sc-t-base); margin: var(--sc-3) 0 var(--sc-4); }
+  .placard__cta { margin-bottom: var(--sc-4); }
   .placard .label { padding-top: var(--sc-3); }
   .placard .label__note { display: none; }
   .near { width: 52vw; right: -16vw; top: 37vh; }
@@ -402,6 +404,7 @@ a { color: inherit; }
 }
 @media (max-width: 860px) and (max-height: 700px) {
   .placard__lede { display: none; }
+  .placard__cta { margin-top: var(--sc-3); }
 }
 
 /* ===================================================== REDUCED MOTION ====
