@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "items": [
+    {
+      "slug": "banos-y-cocinas-en-la-publicacion-inmobiliaria",
+      "title": "Baños y cocinas: los espacios más difíciles de fotografiar",
+      "tag": "Inmobiliaria",
+      "description": "Cómo preparar el baño y la cocina antes de la sesión de fotos de una propiedad: espejos, luz mezclada, mesones despejados y humedad costera en La Serena y Coquimbo.",
+      "readTime": "7 min",
+      "published": "2026-11-10",
+      "img": "/assets/photos/inmobiliaria-cover-sm.jpg",
+      "imgAlt": "Portada: bloques isométricos superpuestos"
+    },
     {
       "slug": "fotografiar-la-costa-de-coquimbo-con-neblina-y-luz-baja-que-esperar",
       "title": "Fotografiar la costa de Coquimbo con neblina y luz baja: qué esperar",
