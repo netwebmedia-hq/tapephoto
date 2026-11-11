@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "items": [
+    {
+      "slug": "fotografia-cafeterias-panaderias-que-esperar",
+      "title": "Fotografía para cafeterías y panaderías: qué esperar del proceso",
+      "tag": "Empresas",
+      "description": "Guía sobre cómo funciona una sesión de fotografía para cafeterías, panaderías y pastelerías. Agenda, duración y qué recibes al final.",
+      "readTime": "8 min",
+      "published": "2026-11-11",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "catalogo-uniforme-corredora-guia",
       "title": "Cómo mantener un estilo fotográfico uniforme en tus publicaciones",

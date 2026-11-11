@@ -927,4 +927,10 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://tapephoto.com/terminos.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tapephoto.com/terms.html"/>
   </url>
+  <url>
+    <loc>https://tapephoto.com/blog/fotografia-cafeterias-panaderias-que-esperar.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
