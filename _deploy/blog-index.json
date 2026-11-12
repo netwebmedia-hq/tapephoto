@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "items": [
+    {
+      "slug": "fotografia-coworking-errores",
+      "title": "Fotografía de coworks: errores que ahuyentan inquilinos",
+      "tag": "Empresas",
+      "description": "Cómo fotografiar espacios de trabajo compartido sin que se vea vacío, sucio o desorganizado. Errores frecuentes y soluciones prácticas.",
+      "readTime": "8 min",
+      "published": "2026-11-12",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fotografia-constructoras-errores",
       "title": "Fotografía para constructoras: errores en obras y portafolio",
