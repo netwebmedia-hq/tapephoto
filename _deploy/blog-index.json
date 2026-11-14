@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "items": [
+    {
+      "slug": "reels-verticales-propiedades-checklist",
+      "title": "Prepara tu propiedad para video vertical: checklist antes del fotógrafo",
+      "tag": "Inmobiliaria",
+      "description": "Qué ordenar, limpiar y revisar en tu propiedad antes de grabar un video corto para Reels y TikTok. Checklist práctico para maximizar el resultado.",
+      "readTime": "8 min",
+      "published": "2026-11-14",
+      "img": "/assets/photos/inmobiliaria-aerea-sm.jpg",
+      "imgAlt": "Vista aérea de un sector residencial"
+    },
     {
       "slug": "planos-y-plantas-propiedad-vale-la-pena",
       "title": "Planos 2D: cuándo agregan valor a tus fotos de propiedad",
