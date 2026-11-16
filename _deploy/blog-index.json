@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "items": [
+    {
+      "slug": "como-elegir-la-foto-de-portada-de-tu-publicacion",
+      "title": "La foto de portada: cómo elegir la primera imagen",
+      "tag": "Técnica",
+      "description": "La primera foto es lo que se ve en el listado y la miniatura, y decide si te consultan o siguen de largo. Cómo elegirla en portales, Booking, Airbnb y Google.",
+      "readTime": "7 min",
+      "published": "2026-11-16",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "preparar-food-truck-carro-de-comida-sesion-de-fotos-avenida-del-mar",
       "title": "Cómo preparar un food truck o carro de comida para una sesión de fotos",
