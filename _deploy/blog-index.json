@@ -2,6 +2,16 @@
   "updated": "2026-11-16",
   "items": [
     {
+      "slug": "cada-cuanto-renovar-fotos-guia",
+      "title": "Cada cuánto renovar las fotos de tu negocio",
+      "tag": "Empresas",
+      "description": "Guía para saber cuándo es momento de actualizar las fotografías de tu negocio. Criterios, señales y frecuencia recomendada.",
+      "readTime": "7 min",
+      "published": "2026-11-16",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
+    {
       "slug": "como-elegir-la-foto-de-portada-de-tu-publicacion",
       "title": "La foto de portada: cómo elegir la primera imagen",
       "tag": "Técnica",
