@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Aperture mark from images/logo.svg with fixed colours (that file uses
-       currentColor, which a favicon has no context to resolve). -->
-  <rect width="64" height="64" rx="14" fill="#0A0A0A"/>
-  <g transform="translate(32 32) scale(0.9)" fill="none" stroke="#FFFFFF" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">
-    <circle r="26"/>
-    <g fill="#FFFFFF" fill-opacity="0.12" stroke-width="2.4">
-      <path d="M 0 -22 L 19 -11 L 11 0 Z"/>
-      <path d="M 19 -11 L 19 11 L 11 0 Z"/>
-      <path d="M 19 11 L 0 22 L 11 0 Z" transform="rotate(60)"/>
-      <path d="M 0 -22 L 19 -11 L 11 0 Z" transform="rotate(120)"/>
-      <path d="M 19 -11 L 19 11 L 11 0 Z" transform="rotate(120)"/>
-      <path d="M 19 11 L 0 22 L 11 0 Z" transform="rotate(180)"/>
-    </g>
-    <path d="M 0 -22 L 11 0 M 19 -11 L 11 0 M 19 11 L 11 0 M 0 22 L 11 0 M -19 11 L 11 0 M -19 -11 L 11 0" opacity="0.7" stroke-width="2.4"/>
-    <circle r="5.5" stroke-width="2.6"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="tapephoto"><rect width="64" height="64" rx="12" fill="#0a0a0a"/><g transform="translate(17.81 49.27) scale(0.05180 -0.05180)"><path fill="#ffffff" transform="translate(0 0)" d="M190 681V514H338V494H190V107Q190 60 207.0 41.0Q224 22 254 22Q284 22 306.0 46.5Q328 71 344 129L364 124Q354 66 324.5 26.0Q295 -14 234 -14Q200 -14 178.0 -5.5Q156 3 139 19Q117 42 108.5 74.0Q100 106 100 159V494H4V514H100V667Q125 668 148.0 671.0Q171 674 190 681Z"/><path fill="#ff6450" transform="translate(354 0)" d="M126 114Q152 114 171.0 95.0Q190 76 190 50Q190 24 171.0 5.0Q152 -14 126 -14Q100 -14 81.0 5.0Q62 24 62 50Q62 76 81.0 95.0Q100 114 126 114Z"/></g></svg>
