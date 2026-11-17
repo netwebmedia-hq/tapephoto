@@ -81,12 +81,15 @@ body {
 .logo {
     font-family: var(--serif);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--white);
     text-decoration: none;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     text-transform: lowercase;
 }
+
+/* Safelight period: the red full stop is the mark (matches images/logo-white.svg). */
+.logo::after { content: "."; color: #ff6450; }
 
 .logo-mark {
     display: inline-flex;
