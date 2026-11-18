@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "items": [
+    {
+      "slug": "fotografia-artistas-musicos-checklist",
+      "title": "Checklist para fotos de prensa: qué preparar antes de la sesión",
+      "tag": "Eventos",
+      "description": "Guía práctica para músicos y artistas: cómo preparar vestuario, espacio y equipo antes de la sesión de fotografía de prensa.",
+      "readTime": "8 min",
+      "published": "2026-11-18",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "fondo-blanco-vs-ambientada-errores",
       "title": "Producto en fondo blanco o ambientado: errores y cómo evitarlos",
