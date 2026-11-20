@@ -181,6 +181,7 @@ a { color: inherit; }
   transform-origin: 50% 0;
 }
 .print img { display: block; width: 100%; }
+.print__film { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #1a1b1c; }
 .peg {
   position: absolute; top: -22px; width: 9px; height: 34px; z-index: 2;
   background: linear-gradient(90deg, #4a403d, #2a2322 60%, #1d1817);

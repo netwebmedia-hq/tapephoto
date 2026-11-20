@@ -120,6 +120,9 @@
     return { a: a, id: id, el: document.getElementById(id), seen: false };
   });
   var hero = $('#fr-01'), line = $('#work'), trayAct = $('#fr-09');
+  // Fr. 01 plays a silent excerpt of the film; with reduced motion it stays on its poster frame.
+  var film = $('.print__film', hero);
+  if (film && reduce) { film.removeAttribute('autoplay'); film.pause(); }
   function onCentre(r) { return r.top < vh() * 0.62 && r.bottom > vh() * 0.38; }
   function frameState(f) {
     var r = f.el.getBoundingClientRect();
