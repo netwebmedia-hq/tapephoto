@@ -123,6 +123,11 @@
   // Fr. 01 plays a silent excerpt of the film; with reduced motion it stays on its poster frame.
   var film = $('.print__film', hero);
   if (film && reduce) { film.removeAttribute('autoplay'); film.pause(); }
+  else if (film) {
+    // Some browsers hold autoplay for a tab opened in the background; start it once the page is seen.
+    var kick = function () { if (film.paused && document.visibilityState === 'visible') { var p = film.play(); if (p && p.catch) p.catch(function () {}); } };
+    kick(); document.addEventListener('visibilitychange', kick); window.addEventListener('pageshow', kick);
+  }
   function onCentre(r) { return r.top < vh() * 0.62 && r.bottom > vh() * 0.38; }
   function frameState(f) {
     var r = f.el.getBoundingClientRect();
