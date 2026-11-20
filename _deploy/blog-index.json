@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "items": [
+    {
+      "slug": "fotografia-graduaciones-errores",
+      "title": "Fotografía de graduaciones: errores comunes y cómo evitarlos",
+      "tag": "Eventos",
+      "description": "Guía para contratar fotografía profesional en graduaciones. Qué sale mal, cómo planificar y qué exigir al fotógrafo.",
+      "readTime": "8 min",
+      "published": "2026-11-20",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotografia-energia-solar-vale-la-pena",
       "title": "Fotografía para proyectos solares: cuándo vale la pena",
