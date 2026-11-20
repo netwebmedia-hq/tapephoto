@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
-- 136 Spanish-language blog articles published so far.
+- 137 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Inicio (Español)](https://tapephoto.com/): home page in Spanish, selected work, local business photography overview, FAQ
@@ -28,6 +28,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotografía para municipios e instituciones públicas](https://tapephoto.com/blog/fotografia-instituciones-publicas-guia.html) [Empresas]: Guía completa para contratar fotografía profesional en instituciones públicas. Qué documentar, cómo evaluar propuestas y por qué importa la calidad.
 - [Exteriores de una casa en venta: qué preparar para las fotos](https://tapephoto.com/blog/exteriores-casa-en-venta-la-serena-coquimbo-patio-quincho-terraza-vista.html) [Inmobiliaria]: Guía para propietarios en La Serena y Coquimbo: cómo preparar patio, quincho, terraza, piscina y vista antes de la sesión, y qué esperar el día de las fotos.
 - [Fotografía de graduaciones: errores comunes y cómo evitarlos](https://tapephoto.com/blog/fotografia-graduaciones-errores.html) [Eventos]: Guía para contratar fotografía profesional en graduaciones. Qué sale mal, cómo planificar y qué exigir al fotógrafo.
 - [Fotografía para proyectos solares: cuándo vale la pena](https://tapephoto.com/blog/fotografia-energia-solar-vale-la-pena.html) [Empresas]: Guía para instaladores de paneles solares: cuándo contratar fotografía profesional y cuándo no es necesario. Criterios prácticos para decidir.
@@ -47,7 +48,6 @@
 - [Planos 2D: cuándo agregan valor a tus fotos de propiedad](https://tapephoto.com/blog/planos-y-plantas-propiedad-vale-la-pena.html) [Inmobiliaria]: Guía para saber si contratar planos 2D junto con fotografía profesional vale la pena. Cuándo suma, cuándo es gasto innecesario.
 - [Fotografía para colegios y jardines: qué preparar](https://tapephoto.com/blog/fotografia-para-colegios-y-jardines-que-preparar.html) [Empresas]: Autorizaciones, jornada, luz y lista de tomas: qué debe tener listo un colegio o jardín infantil de La Serena y Coquimbo antes de la sesión.
 - [Fotografía de flotas y transporte: qué esperar del proceso](https://tapephoto.com/blog/fotografia-transporte-logistica-que-esperar.html) [Empresas]: Guía práctica sobre cómo funciona una sesión de fotografía para empresas de transporte y logística: agendamiento, duración y entregables.
-- [Fotografía de joyería y artesanía: qué esperar al contratar](https://tapephoto.com/blog/fotografia-joyeria-artesania-guia.html) [Empresas]: Guía para contratar fotografía profesional de joyería, artesanía y piezas pequeñas. Qué hace diferencia, cómo preparar tus productos, cuándo vale la pena.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt
