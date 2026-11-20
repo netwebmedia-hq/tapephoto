@@ -12,7 +12,7 @@ const SITE = 'https://tapephoto.com';
 function header(total) {
   return `# TapePhoto
 
-> TapePhoto (tapephoto.com) is the photography site of Carlos Martinez, a photographer based in Coquimbo, Chile. The portfolio covers motorsport, concerts, aerial drone, street and travel photography; the services pages cover photography for businesses, hotels and tourism, and real estate in La Serena, Coquimbo and the Coquimbo Region. The portfolio is in English; the local-business pages and the blog are in Spanish.
+> TapePhoto (tapephoto.com) is the photography site of Carlos Martinez, a photographer based in Coquimbo, Chile. The portfolio covers motorsport, concerts, aerial drone, street and travel photography; the services pages cover photography for businesses, hotels and tourism, and real estate in La Serena, Coquimbo and the Coquimbo Region. The home page, the local-business pages and the blog are in Spanish (the home page also has an English version at /en/); the portfolio and licensing pages also exist in English.
 
 ## About
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
@@ -21,7 +21,8 @@ function header(total) {
 - ${total} Spanish-language blog articles published so far.
 
 ## Main pages
-- [Home / portfolio](${SITE}/): selected work, local business photography overview, FAQ
+- [Inicio (Español)](${SITE}/): home page in Spanish, selected work, local business photography overview, FAQ
+- [Home (English)](${SITE}/en/): the same home page in English
 - [Services (English)](${SITE}/services.html): four services (aerial and drone, real estate, motorsport and events, business and brand) with FAQ and quote request
 - [Servicios (Español)](${SITE}/servicios.html): the same services in Spanish
 - [Fotografía inmobiliaria en La Serena y Coquimbo](${SITE}/fotografia-inmobiliaria-la-serena.html): interiors, exteriors and drone in one visit, for brokers and real estate firms

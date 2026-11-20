@@ -74,7 +74,7 @@ jobs:
       - name: Smoke check
         run: |
           sleep 5
-          for u in "https://tapephoto.com/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html" \
+          for u in "https://tapephoto.com/" "https://tapephoto.com/en/" "https://tapephoto.com/services.html" "https://tapephoto.com/servicios.html" \
                    "https://tapephoto.com/fotografia-inmobiliaria-la-serena.html" \
                    "https://tapephoto.com/fotografia-hoteles-turismo-la-serena.html"                    "https://tapephoto.com/fotos-airbnb-la-serena.html" \
                    "https://tapephoto.com/fotografia-empresas-la-serena.html" \

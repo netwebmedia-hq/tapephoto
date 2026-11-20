@@ -68,12 +68,12 @@ def bootstrap():
 
 # --------------------------------------------------------------------------- shared chrome
 HEADER = """    <header class="header">
-        <a href="../index.html" class="logo">tapephoto</a>
+        <a href="/en/" class="logo">tapephoto</a>
         <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
             <span></span><span></span>
         </button>
         <nav class="nav" id="site-nav">
-            <a href="../index.html#work">Work</a>
+            <a href="/en/#work">Work</a>
             <a href="../galleries/">Galleries</a>
             <a href="../services.html">Services</a>
             <a href="../licensing.html">Licensing</a>
@@ -99,7 +99,7 @@ CTA_PLAIN = '<a class="gallery-btn" href="../contact.html">Get in touch</a>\n'
 FOOTER = """    <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="../index.html" class="logo">tapephoto</a>
+                <a href="/en/" class="logo">tapephoto</a>
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
                     <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
@@ -108,7 +108,7 @@ FOOTER = """    <footer class="footer">
             </div>
             <div class="footer-links">
                 <h3>Navigate</h3>
-                <a href="../index.html#work">Work</a>
+                <a href="/en/#work">Work</a>
                 <a href="../galleries/">Galleries</a>
                 <a href="../services.html">Services</a>
                 <a href="../licensing.html">Licensing</a>
@@ -204,7 +204,7 @@ def gallery_page(g, cat, order):
     out = [head(title, desc, url, f"{SITE}/galleries/{img_url(g, cover)}", cover["w"], cover["h"], ld)]
     out.append('<body class="gallery-body">\n' + HEADER + '\n    <main class="gallery-page">\n')
     out.append(f"""        <section class="gallery-hero">
-            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="./">Galleries</a> / <a href="./#{cat['id']}">{esc(cat['name'])}</a> / <span>{esc(g['title'])}</span></nav>
+            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <a href="./">Galleries</a> / <a href="./#{cat['id']}">{esc(cat['name'])}</a> / <span>{esc(g['title'])}</span></nav>
             <p class="gallery-kicker">{esc(kicker)}</p>
             <h1>{esc(g['title'])}</h1>
             <p class="gallery-intro">{esc(g['intro'])}</p>
@@ -281,7 +281,7 @@ def index_page(M, order, by_cat):
     out.append('<body class="gallery-body">\n' + HEADER + f"""
     <main class="gallery-page">
         <section class="gallery-hero">
-            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span>Galleries</span></nav>
+            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <span>Galleries</span></nav>
             <p class="gallery-kicker">{total} photographs · {len(order)} galleries · {ncat} categories</p>
             <h1>Galleries</h1>
             <p class="gallery-intro">{esc(M['intro'])}</p>
@@ -390,12 +390,9 @@ def build():
                     sys.exit(f"missing image {f}")
         (GAL / f"{g['slug']}.html").write_text(gallery_page(g, cats[g["category"]], order), encoding="utf-8", newline="\n")
     (GAL / "index.html").write_text(index_page(M, order, by_cat), encoding="utf-8", newline="\n")
-    home = ROOT / "index.html"
-    h = home.read_text(encoding="utf-8")
-    h, k = re.subn(r"    <!-- Galleries:.*?</section>\n", lambda _: home_block(M, order, by_cat), h, count=1, flags=re.S)
-    if not k:
-        sys.exit("homepage gallery block not found")
-    home.write_text(h, encoding="utf-8", newline="\n")
+    # The homepages (index.html in Spanish, en/index.html in English) are hand-authored twins with
+    # their own alt text, so this script no longer rewrites their archive block. Update the counts
+    # in both pages by hand when the galleries change.
     sitemap(order)
     print(f"built {len(order)} galleries, {sum(len(g['photos']) for g in order)} photos, {len(M['categories'])} categories")
 
