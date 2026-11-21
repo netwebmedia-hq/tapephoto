@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "items": [
+    {
+      "slug": "fotografia-mercados-rutas-gastronomicas-checklist",
+      "title": "Checklist antes de fotografiar tu mercado o ruta gastronómica",
+      "tag": "Empresas",
+      "description": "Qué preparar antes de la sesión de fotografía en mercados y rutas gastronómicas. Checklist práctico para maximizar resultados.",
+      "readTime": "8 min",
+      "published": "2026-11-21",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotografia-instituciones-publicas-guia",
       "title": "Fotografía para municipios e instituciones públicas",
