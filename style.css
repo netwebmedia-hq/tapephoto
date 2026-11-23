@@ -1988,3 +1988,23 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
     .services-chips { gap: 12px 10px; margin-top: 22px; }
     .services-chips a { padding: 0 16px; }
 }
+
+/* ============ Joni r5 (2026-11-23) ============ */
+/* ES / EN toggle in the header, the same one the home carries. */
+.lang-nav { display: flex; align-items: center; gap: 4px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; color: var(--white); margin-left: 24px; }
+.lang-nav a { color: inherit; text-decoration: none; opacity: 0.72; display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; }
+.lang-nav a:hover { opacity: 1; }
+.lang-nav a[aria-current="page"], .lang-nav a[aria-pressed="true"] { opacity: 1; text-decoration: underline; text-underline-offset: 0.45em; text-decoration-color: #ff6450; }
+@media (max-width: 768px) {
+    .lang-nav { margin-left: auto; margin-right: 8px; order: 1; }
+    .menu-toggle { order: 2; }
+}
+
+/* Landing heroes: the content starts below the fixed header (86px on phones, about 90px on desktop)
+   instead of being pushed up behind it when the text is taller than the hero. */
+.lp-hero { padding-top: 120px; }
+.lp-hero .lp-eyebrow { line-height: 1.5; }
+@media (max-width: 860px) {
+    .lp-hero { padding: 112px 24px 48px; }
+    .lp-hero .lp-eyebrow { font-size: 0.78rem; letter-spacing: 0.1em; margin-bottom: 14px; }
+}

@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261124"
+CSS_V = "20261126"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
@@ -126,6 +126,7 @@ HEADER = f"""    <header class="header">
         </button>
         <nav class="nav" id="site-nav">
 {links(NAV, "            ")}        </nav>
+        <nav class="lang-nav" aria-label="Idioma / Language"><a href="/galleries/" data-lang-set="es" lang="es" hreflang="es" aria-pressed="false" title="Espa&ntilde;ol">ES</a><span aria-hidden="true">/</span><a href="/galleries/" data-lang-set="en" lang="en" hreflang="en" aria-pressed="false" title="English: this page switches language in place">EN</a></nav>
     </header>
 """
 
@@ -165,16 +166,6 @@ FOOTER = f"""    <footer class="footer">
     <div class="nwm-credit">{bi('Made by <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">Want a site like this? Get a free audit &rarr;</a>', 'Hecho por <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · desde 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">&iquest;Quieres un sitio como este? Pide una auditor&iacute;a gratis</a>')}</div>
     </footer>
 """
-
-LANGBAR = f"""            <div class="gallery-langbar">
-                <div class="lang-toggle" role="group" aria-label="Idioma / Language">
-                    <button type="button" class="lang-btn" data-lang-set="es" lang="es" aria-pressed="false">ES</button>
-                    <button type="button" class="lang-btn" data-lang-set="en" lang="en" aria-pressed="false">EN</button>
-                </div>
-                <p class="gallery-es">{bia('href="/en/"', "&larr; Back to TapePhoto", 'href="/"', "&larr; Volver a TapePhoto")}</p>
-            </div>
-"""
-
 
 def head(title, desc, canonical, og_img, og_w, og_h, ld, title_es):
     return f"""<!DOCTYPE html>
@@ -253,7 +244,7 @@ def gallery_page(g, cat, order):
                 f"{x['title']} | Galer\u00edas TapePhoto")]
     out.append('<body class="gallery-body">\n' + HEADER + '\n    <main class="gallery-page">\n')
     out.append(f"""        <section class="gallery-hero">
-""" + LANGBAR + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / {bia('href="./"', "Galleries", 'href="./"', "Galer&iacute;as")} / {bia(f'href="./#{cat["id"]}"', esc(cat['name']), f'href="./#{cat["id"]}"', esc(cat_es['name']))} / <span>{bi(esc(g['title']), esc(x['title']))}</span></nav>
+""" + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / {bia('href="./"', "Galleries", 'href="./"', "Galer&iacute;as")} / {bia(f'href="./#{cat["id"]}"', esc(cat['name']), f'href="./#{cat["id"]}"', esc(cat_es['name']))} / <span>{bi(esc(g['title']), esc(x['title']))}</span></nav>
             <p class="gallery-kicker">{bi(esc(kicker), esc(kicker_es(g, n)))}</p>
             <h1>{bi(esc(g['title']), esc(x['title']))}</h1>
             <p class="gallery-intro">{bi(esc(g['intro']), esc(x['intro']))}</p>
@@ -334,7 +325,7 @@ def index_page(M, order, by_cat):
     out.append('<body class="gallery-body">\n' + HEADER + f"""
     <main class="gallery-page">
         <section class="gallery-hero">
-""" + LANGBAR + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / <span>{bi("Galleries", "Galer&iacute;as")}</span></nav>
+""" + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / <span>{bi("Galleries", "Galer&iacute;as")}</span></nav>
             <p class="gallery-kicker">{bi(f"{total} photographs · {len(order)} galleries · {ncat} categories", f"{total} fotograf&iacute;as · {len(order)} galer&iacute;as · {ncat} categor&iacute;as")}</p>
             <h1>{bi("Galleries", "Galer&iacute;as")}</h1>
             <p class="gallery-intro">{bi(esc(M['intro']), esc(ES['intro']))}</p>
