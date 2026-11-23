@@ -54,18 +54,20 @@
       t: 'Cookies de analítica',
       b: 'Medimos visitas con Google Analytics. Sin cookies si no aceptas; con cookies solo si aceptas.',
       more: 'Política de privacidad',
+      s: 'Analítica sin cookies si no aceptas.', ms: 'Privacidad',
       ok: 'Aceptar', no: 'Rechazar', url: '/privacidad.html#analytics'
     } : {
       t: 'Analytics cookies',
       b: 'We measure visits with Google Analytics: cookieless unless you accept.',
       more: 'Privacy policy',
+      s: 'Cookieless analytics unless you accept.', ms: 'Privacy',
       ok: 'Accept', no: 'Reject', url: '/privacy.html#analytics'
     };
     function mountBanner() {
       if (document.getElementById('consent-banner') || !document.body) return;
       if (!document.getElementById('consent-css')) {
         var css = document.createElement('link');
-        css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=1';
+        css.id = 'consent-css'; css.rel = 'stylesheet'; css.href = '/consent.css?v=2';
         document.head.appendChild(css);
       }
       var box = document.createElement('div');
@@ -74,9 +76,19 @@
       box.setAttribute('aria-label', TXT.t);
       var p = document.createElement('p');
       p.className = 'consent-text';
-      p.appendChild(document.createTextNode(TXT.b + ' '));
+      // Phones (consent.css): one short line + link, so the bar stays about 72px tall.
+      var full = document.createElement('span');
+      full.className = 'consent-full'; full.textContent = TXT.b + ' ';
+      var short = document.createElement('span');
+      short.className = 'consent-short'; short.textContent = TXT.s + ' ';
+      p.appendChild(full); p.appendChild(short);
       var a = document.createElement('a');
-      a.href = TXT.url; a.textContent = TXT.more;
+      a.href = TXT.url;
+      var more = document.createElement('span');
+      more.className = 'consent-more'; more.textContent = TXT.more;
+      var moreShort = document.createElement('span');
+      moreShort.className = 'consent-more-short'; moreShort.textContent = TXT.ms;
+      a.appendChild(more); a.appendChild(moreShort);
       p.appendChild(a);
       var row = document.createElement('div');
       row.className = 'consent-actions';

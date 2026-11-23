@@ -18,9 +18,14 @@
   border: 1px solid #f2f2f2; border-radius: 8px;
 }
 #consent-banner .consent-btn:hover, #consent-banner .consent-btn:focus-visible { background: #f2f2f2; color: #14171c; }
+#consent-banner .consent-short, #consent-banner .consent-more-short { display: none; }
+/* Phones: one line of text + link, then two equal side-by-side buttons (44px tall): about 72px in all. */
 @media (max-width: 560px) {
-  #consent-banner { padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px)); }
-  #consent-banner { font-size: 13px; gap: 8px; }
-  #consent-banner .consent-actions { width: 100%; }
-  #consent-banner .consent-btn { flex: 1; }
+  #consent-banner { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 4px;
+    padding: 4px 12px calc(4px + env(safe-area-inset-bottom, 0px)); font-size: 12px; line-height: 16px; }
+  #consent-banner .consent-text { max-width: none; white-space: nowrap; text-align: center; }
+  #consent-banner .consent-full, #consent-banner .consent-more { display: none; }
+  #consent-banner .consent-short, #consent-banner .consent-more-short { display: inline; }
+  #consent-banner .consent-actions { width: 100%; gap: 8px; }
+  #consent-banner .consent-btn { flex: 1 1 0; min-width: 0; min-height: 44px; padding: 0 12px; }
 }

@@ -496,3 +496,9 @@ html.index-open, html.index-open body { overflow: hidden; }
   .foot nav { gap: 0 var(--sc-5); }
   .foot p a, .nwm-credit a, .commissions__more a { display: inline-block; padding-block: 14px; margin-block: -14px; }
 }
+
+/* ================= Joni r2 (2026-11-23): clothesline and floating print ===== */
+/* The line stops (and fades) short of the placard copy, so it never runs through the label or headline at any desktop size. */
+.hang .wire { right: -4vw; -webkit-mask-image: linear-gradient(90deg, #000 78%, transparent); mask-image: linear-gradient(90deg, #000 78%, transparent); }
+/* The blurred floating print was cut off at the top right and ran under the header controls; it is decoration, so it is gone. */
+.near { display: none; }

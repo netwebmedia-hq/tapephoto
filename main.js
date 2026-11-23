@@ -350,7 +350,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const sections = Array.from(document.querySelectorAll('.gallery-section'));
         const status = document.getElementById('gallery-search-status');
         const runSearch = () => {
-            const terms = gallerySearch.value.toLowerCase().split(/\s+/).filter(Boolean);
+            const es = (document.documentElement.lang || 'en').toLowerCase().indexOf('es') === 0;
+            // Accent-insensitive, so "aereas" finds "aéreas" (the cards carry both spellings).
+            const terms = gallerySearch.value.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').split(/\s+/).filter(Boolean);
             let shown = 0;
             cards.forEach((card) => {
                 const hay = card.getAttribute('data-keywords');
@@ -361,7 +363,9 @@ document.addEventListener('DOMContentLoaded', () => {
             sections.forEach((sec) => { sec.hidden = !sec.querySelector('.gallery-card:not([hidden])'); });
             if (status) {
                 status.textContent = terms.length
-                    ? (shown ? shown + ' ' + (shown === 1 ? 'gallery matches' : 'galleries match') : 'No gallery matches. Try another word, or ask for a contact sheet.')
+                    ? (shown
+                        ? (es ? shown + (shown === 1 ? ' galería coincide' : ' galerías coinciden') : shown + ' ' + (shown === 1 ? 'gallery matches' : 'galleries match'))
+                        : (es ? 'Ninguna galería coincide. Prueba con otra palabra o pide una hoja de contactos.' : 'No gallery matches. Try another word, or ask for a contact sheet.'))
                     : '';
             }
         };

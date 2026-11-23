@@ -10,7 +10,7 @@ galleries (in display order within a category), each with its photos. Image file
 live in galleries/img/<slug>/<slug>-NN.jpg (1600px long edge) + -sm.jpg (800px);
 their provenance is in galleries/credits.json.
 """
-import html, json, re, sys
+import html, json, re, sys, unicodedata
 from PIL import Image
 from datetime import date
 from pathlib import Path
@@ -19,12 +19,37 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261123"
+CSS_V = "20261124"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
 
 esc = lambda s: html.escape(s, quote=True)
+
+# Spanish copy for every gallery page lives in es.json; each page carries both languages and
+# gallery-lang.js shows one (browser language, Spanish referrer, or the visitor's ES / EN toggle).
+ES = json.loads(Path(__file__).with_name("es.json").read_text(encoding="utf-8"))
+
+
+def bi(en, es):
+    """Both languages inline; CSS (.bi) hides the one that does not match <html lang>."""
+    return f'<span class="bi" lang="en">{en}</span><span class="bi" lang="es">{es}</span>'
+
+
+def bia(en_attrs, en_text, es_attrs, es_text, cls=""):
+    """Two sibling anchors, one per language (hrefs differ: services.html / servicios.html)."""
+    c = (cls + " " if cls else "") + "bi"
+    return f'<a class="{c}" lang="en" {en_attrs}>{en_text}</a><a class="{c}" lang="es" {es_attrs}>{es_text}</a>'
+
+
+def es_gallery(g):
+    e = ES["galleries"][g["slug"]]
+    return dict(title=e["title"], kicker=e["kicker"], intro=e["intro"], label=ES["labels"][g["label"]])
+
+
+def kicker_es(g, n):
+    x = es_gallery(g)
+    return " · ".join([x["label"]] + ([x["kicker"]] if x["kicker"] else []) + [f"{n} fotos"])
 
 # Galleries whose CTA also offers a print request (matches the published pages).
 PRINT_GALLERIES = frozenset({"andes-glaciers", "coast-travel-wildlife"})
@@ -71,75 +96,89 @@ def bootstrap():
 
 
 # --------------------------------------------------------------------------- shared chrome
-HEADER = """    <header class="header">
-        <a href="/en/" class="logo">tapephoto</a>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+WA_EN = "https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot"
+WA_ES = "https://wa.me/14423854585?text=Hola%2C%20encontr%C3%A9%20tapephoto.com%20y%20quiero%20cotizar%20una%20sesi%C3%B3n%20de%20fotos"
+WA_ATTRS = 'target="_blank" rel="noopener"'
+
+# (English href, English text, Spanish href, Spanish text)
+NAV = [("/en/#work", "Work", "/#work", "Portafolio"),
+       ("../galleries/", "Galleries", "../galleries/", "Galer&iacute;as"),
+       ("../services.html", "Services", "../servicios.html", "Servicios"),
+       ("../licensing.html", "Licensing", "../licencias.html", "Licencias"),
+       ("../blog/", "Blog", "../blog/", "Blog"),
+       ("../prints.html", "Prints", "../impresiones.html", "Impresiones"),
+       ("../about.html", "About", "../sobre-mi.html", "Sobre m&iacute;"),
+       ("../contact.html", "Contact", "../contacto.html", "Contacto")]
+FOOT_NAV = NAV + [("../privacy.html", "Privacy", "../privacidad.html", "Privacidad"),
+                  ("../terms.html", "Terms", "../terminos.html", "T&eacute;rminos")]
+
+
+def links(items, indent):
+    return "".join(f"{indent}{bia(f'href={chr(34)}{eh}{chr(34)}', et, f'href={chr(34)}{sh}{chr(34)}', st)}\n" for eh, et, sh, st in items)
+
+
+LOGO = bia('href="/en/"', "tapephoto", 'href="/"', "tapephoto", "logo")
+
+HEADER = f"""    <header class="header">
+        {LOGO}
+        <button class="menu-toggle" aria-label="Menu / Men&uacute;" aria-expanded="false" aria-controls="site-nav">
             <span></span><span></span>
         </button>
         <nav class="nav" id="site-nav">
-            <a href="/en/#work">Work</a>
-            <a href="../galleries/">Galleries</a>
-            <a href="../services.html">Services</a>
-            <a href="../licensing.html">Licensing</a>
-            <a href="../blog/">Blog</a>
-            <a href="../prints.html">Prints</a>
-            <a href="../about.html">About</a>
-            <a href="../contact.html">Contact</a>
-            <a href="/" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
-        </nav>
+{links(NAV, "            ")}        </nav>
     </header>
 """
 
-CTA = """        <section class="gallery-cta">
-            <h2>Need coverage like this?</h2>
-            <p>Motorsport, events, aerials and commercial work — in Chile and abroad. Archive images available for <a href="../licensing.html">licensing</a>.</p>
-            %(license)s            <a class="gallery-btn gallery-btn-ghost" href="../contact.html">Get in touch</a>
-            <a class="gallery-btn gallery-btn-ghost" href="https://wa.me/14423854585?text=Hi%%2C%%20I%%20found%%20tapephoto.com%%20and%%20want%%20a%%20quote%%20for%%20a%%20photo%%20shoot" target="_blank" rel="noopener">WhatsApp</a>
+CTA = f"""        <section class="gallery-cta">
+            <h2>{bi("Need coverage like this?", "&iquest;Necesitas una cobertura como esta?")}</h2>
+            <p>{bi('Motorsport, events, aerials and commercial work &mdash; in Chile and abroad. Archive images available for <a href="../licensing.html">licensing</a>.', 'Automovilismo, eventos, tomas a&eacute;reas y trabajo comercial &mdash; en Chile y en el extranjero. Im&aacute;genes del archivo disponibles para <a href="../licencias.html">licenciar</a>.')}</p>
+            @@LICENSE@@            {bia('href="../contact.html"', "Get in touch", 'href="../contacto.html"', "Escr&iacute;beme", "gallery-btn gallery-btn-ghost")}
+            {bia(f'href="{WA_EN}" {WA_ATTRS}', "WhatsApp", f'href="{WA_ES}" {WA_ATTRS}', "WhatsApp", "gallery-btn gallery-btn-ghost")}
         </section>
-"""
-CTA_LICENSE = '<a class="gallery-btn" href="../licensing.html?ref=%s#inquiry">License this event</a>\n'
-CTA_PLAIN = '<a class="gallery-btn" href="../prints.html">Prints from the archive</a>\n'
+""".replace("&mdash;", "—").replace("%", "%%").replace("@@LICENSE@@", "%(license)s")
+CTA_LICENSE = (bia('href="../licensing.html?ref=%s#inquiry"', "License this event", 'href="../licencias.html?ref=%s#inquiry"', "Licenciar este evento", "gallery-btn") + "\n").replace("%s", "%(slug)s")
+CTA_PLAIN = bia('href="../prints.html"', "Prints from the archive", 'href="../impresiones.html"', "Impresiones del archivo", "gallery-btn") + "\n"
 
-FOOTER = """    <footer class="footer">
+FOOTER = f"""    <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="/en/" class="logo">tapephoto</a>
+                {LOGO}
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
                     <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
-                    <a href="https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot" target="_blank" rel="noopener">WhatsApp +1 (442) 385-4585</a>
+                    {bia(f'href="{WA_EN}" {WA_ATTRS}', "WhatsApp +1 (442) 385-4585", f'href="{WA_ES}" {WA_ATTRS}', "WhatsApp +1 (442) 385-4585")}
                 </div>
             </div>
             <div class="footer-links">
-                <h3>Navigate</h3>
-                <a href="/en/#work">Work</a>
-                <a href="../galleries/">Galleries</a>
-                <a href="../services.html">Services</a>
-                <a href="../licensing.html">Licensing</a>
-                <a href="../prints.html">Prints</a>
-                <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
-                <a href="../privacy.html">Privacy</a>
-                <a href="../terms.html">Terms</a>
-            </div>
+                <h3>{bi("Navigate", "Navegar")}</h3>
+{links(FOOT_NAV, "                ")}            </div>
             <div class="footer-social">
-                <h3>Follow</h3>
+                <h3>{bi("Follow", "Sigue")}</h3>
                 <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="me noopener">Instagram &mdash; @tapephotocom</a>
                 <a href="https://www.facebook.com/tapephoto" target="_blank" rel="me noopener">Facebook</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TapePhoto &mdash; all photographs by Carlos Martinez. All rights reserved. <a href="../licensing.html">Licensing</a></p>
-            <p>A <a href="https://dongaston.com/" rel="noopener">Don Gast&oacute;n</a> company</p>
+            <p>{bi('&copy; 2026 TapePhoto &mdash; all photographs by Carlos Martinez. All rights reserved. <a href="../licensing.html">Licensing</a>', '&copy; 2026 TapePhoto &mdash; todas las fotograf&iacute;as son de Carlos Martinez. Todos los derechos reservados. <a href="../licencias.html">Licencias</a>')}</p>
+            <p>{bi('A <a href="https://dongaston.com/" rel="noopener">Don Gast&oacute;n</a> company', 'Una empresa de <a href="https://dongaston.com/" rel="noopener">Don Gast&oacute;n</a>')}</p>
         </div>
-    <div class="nwm-credit">Made by <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">Want a site like this? Get a free audit →</a></div>
+    <div class="nwm-credit">{bi('Made by <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">Want a site like this? Get a free audit &rarr;</a>', 'Hecho por <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · desde 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">&iquest;Quieres un sitio como este? Pide una auditor&iacute;a gratis</a>')}</div>
     </footer>
 """
 
+LANGBAR = f"""            <div class="gallery-langbar">
+                <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+                    <button type="button" class="lang-btn" data-lang-set="es" lang="es" aria-pressed="false">ES</button>
+                    <button type="button" class="lang-btn" data-lang-set="en" lang="en" aria-pressed="false">EN</button>
+                </div>
+                <p class="gallery-es">{bia('href="/en/"', "&larr; Back to TapePhoto", 'href="/"', "&larr; Volver a TapePhoto")}</p>
+            </div>
+"""
 
-def head(title, desc, canonical, og_img, og_w, og_h, ld):
+
+def head(title, desc, canonical, og_img, og_w, og_h, ld, title_es):
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-title-es="{esc(title_es)}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,6 +200,7 @@ def head(title, desc, canonical, og_img, og_w, og_h, ld):
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../style.css?v={CSS_V}">
+    <script src="../gallery-lang.js?v={CSS_V}"></script>
     <script type="application/ld+json">
 {json.dumps(ld, indent=2, ensure_ascii=False)}
     </script>
@@ -207,42 +247,44 @@ def gallery_page(g, cat, order):
             {"@type": "ListItem", "position": 3, "name": cat["name"], "item": f"{SITE}/galleries/#{cat['id']}"},
             {"@type": "ListItem", "position": 4, "name": g["title"], "item": url}]}]}
     kicker = " · ".join([g["label"]] + ([g["kicker"]] if g["kicker"] else []) + [f"{n} photos"])
-    out = [head(title, desc, url, f"{SITE}/galleries/{img_url(g, cover)}", cover["w"], cover["h"], ld)]
+    x = es_gallery(g)
+    cat_es = ES["categories"][cat["id"]]
+    out = [head(title, desc, url, f"{SITE}/galleries/{img_url(g, cover)}", cover["w"], cover["h"], ld,
+                f"{x['title']} | Galer\u00edas TapePhoto")]
     out.append('<body class="gallery-body">\n' + HEADER + '\n    <main class="gallery-page">\n')
     out.append(f"""        <section class="gallery-hero">
-            <p class="gallery-es"><a href="/" lang="es" hreflang="es">Volver a TapePhoto en espa&ntilde;ol &rarr;</a></p>
-            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <a href="./">Galleries</a> / <a href="./#{cat['id']}">{esc(cat['name'])}</a> / <span>{esc(g['title'])}</span></nav>
-            <p class="gallery-kicker">{esc(kicker)}</p>
-            <h1>{esc(g['title'])}</h1>
-            <p class="gallery-intro">{esc(g['intro'])}</p>
+""" + LANGBAR + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / {bia('href="./"', "Galleries", 'href="./"', "Galer&iacute;as")} / {bia(f'href="./#{cat["id"]}"', esc(cat['name']), f'href="./#{cat["id"]}"', esc(cat_es['name']))} / <span>{bi(esc(g['title']), esc(x['title']))}</span></nav>
+            <p class="gallery-kicker">{bi(esc(kicker), esc(kicker_es(g, n)))}</p>
+            <h1>{bi(esc(g['title']), esc(x['title']))}</h1>
+            <p class="gallery-intro">{bi(esc(g['intro']), esc(x['intro']))}</p>
         </section>
 
-        <section class="gallery-masonry" aria-label="{esc(g['title'])} photographs">
+        <section class="gallery-masonry" aria-label="{esc(g['title'])} photographs" data-aria-es="Fotograf&iacute;as: {esc(x['title'])}">
 """)
     for i, p in enumerate(g["photos"], 1):
-        out.append(f"""            <figure class="photo-item gallery-item" tabindex="0" role="button" aria-label="Open photo {i} of {n} full size">
+        out.append(f"""            <figure class="photo-item gallery-item" tabindex="0" role="button" aria-label="Open photo {i} of {n} full size" data-aria-es="Abrir foto {i} de {n} en tama&ntilde;o completo">
                 <img src="{img_url(g, p, True)}" data-full="{img_url(g, p)}" alt="{esc(p['alt'])} (photo {i} of {n})" width="{p['sw']}" height="{p['sh']}" loading="{'eager' if i <= 3 else 'lazy'}" decoding="async">
             </figure>
 """)
-    out.append("        </section>\n\n" + CTA % {"license": CTA_LICENSE % g["slug"] + (CTA_PRINT if g["slug"] in PRINT_GALLERIES else "")} + """
+    out.append("        </section>\n\n" + CTA % {"license": CTA_LICENSE % {"slug": g["slug"]} + (CTA_PRINT if g["slug"] in PRINT_GALLERIES else "")} + f"""
         <section class="gallery-more">
-            <h2>More galleries</h2>
+            <h2>{bi("More galleries", "M&aacute;s galer&iacute;as")}</h2>
             <div class="gallery-more-links">
 """)
     for o in order:
         if o["slug"] != g["slug"]:
-            out.append(f'                <a href="{o["slug"]}.html">{esc(o["title"])}</a>\n')
+            out.append("                " + bia(f'href="{o["slug"]}.html"', esc(o["title"]), f'href="{o["slug"]}.html"', esc(ES["galleries"][o["slug"]]["title"])) + "\n")
     out.append("""            </div>
         </section>
     </main>
 
-""" + FOOTER + """
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
-        <button class="lightbox-close" aria-label="Close">&times;</button>
-        <button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
-        <button class="lightbox-next" aria-label="Next">&rsaquo;</button>
+""" + FOOTER + f"""
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" data-aria-es="Visor de fotos">
+        <button class="lightbox-close" aria-label="Close" data-aria-es="Cerrar">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous" data-aria-es="Anterior">&lsaquo;</button>
+        <button class="lightbox-next" aria-label="Next" data-aria-es="Siguiente">&rsaquo;</button>
         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lightbox-img">
-        <a class="lightbox-license" href="../licensing.html#inquiry">License this photo</a>
+        <a class="lightbox-license" href="../licensing.html#inquiry">{bi("License this photo", "Licenciar esta foto")}</a>
     </div>
 
     <script src="../main.js" defer></script>
@@ -257,13 +299,17 @@ def card(g, prefix, label, count_text, eager, keywords=False):
     kw = ""
     if keywords:
         meta = " · ".join([g["label"]] + ([g["kicker"]] if g["kicker"] else []) + [f"{len(g['photos'])} photos"])
-        kw = f' data-keywords="{esc(" ".join([g["title"], g["label"], g["cover_alt"], meta, g["intro"]]).lower())}"'
+        x = es_gallery(g)
+        words = " ".join([g["title"], g["label"], g["cover_alt"], meta, g["intro"], x["title"], x["label"], x["kicker"], x["intro"]]).lower()
+        # accent-stripped copy too, so "aereas" finds "a\u00e9reas" (main.js strips accents from the query)
+        words += " " + "".join(ch for ch in unicodedata.normalize("NFD", words) if unicodedata.category(ch) != "Mn")
+        kw = f' data-keywords="{esc(words)}"'
     return f"""            <a class="gallery-card" href="{prefix}{g['slug']}.html"{kw}>
                 <img src="{prefix}{img_url(g, p, True)}" alt="{esc(g['cover_alt'])}" width="{p['sw']}" height="{p['sh']}" loading="{'eager' if eager else 'lazy'}" decoding="async">
                 <span class="gallery-card-body">
-                    <span class="photo-category">{esc(label)}</span>
-                    <span class="gallery-card-title">{esc(g['title'])}</span>
-                    <span class="gallery-card-count">{count_text}</span>
+                    <span class="photo-category">{bi(esc(label), esc(es_gallery(g)['label']))}</span>
+                    <span class="gallery-card-title">{bi(esc(g['title']), esc(es_gallery(g)['title']))}</span>
+                    <span class="gallery-card-count">{bi(count_text, count_text.replace(" photos", " fotos").replace(" photo", " foto"))}</span>
                 </span>
             </a>
 """
@@ -283,22 +329,21 @@ def index_page(M, order, by_cat):
                       for c in M["categories"] for g in by_cat[c["id"]]]}
     out = [head("Photo Galleries | TapePhoto - Carlos Martinez Photography", desc, f"{SITE}/galleries/",
                 f"{SITE}/galleries/{img_url(first, first['photos'][first['cover']])}",
-                first["photos"][first["cover"]]["w"], first["photos"][first["cover"]]["h"], ld)]
-    jump = " ".join(f'<a href="#{c["id"]}">{esc(c["name"])}</a>' for c in M["categories"])
+                first["photos"][first["cover"]]["w"], first["photos"][first["cover"]]["h"], ld, ES["index_title"])]
+    jump = " ".join(f'<a href="#{c["id"]}">{bi(esc(c["name"]), esc(ES["categories"][c["id"]]["name"]))}</a>' for c in M["categories"])
     out.append('<body class="gallery-body">\n' + HEADER + f"""
     <main class="gallery-page">
         <section class="gallery-hero">
-            <p class="gallery-es"><a href="/" lang="es" hreflang="es">Volver a TapePhoto en espa&ntilde;ol &rarr;</a></p>
-            <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <span>Galleries</span></nav>
-            <p class="gallery-kicker">{total} photographs · {len(order)} galleries · {ncat} categories</p>
-            <h1>Galleries</h1>
-            <p class="gallery-intro">{esc(M['intro'])}</p>
-            <nav class="gallery-jump" aria-label="Categories">{jump}</nav>
+""" + LANGBAR + f"""            <nav class="gallery-crumbs" aria-label="Breadcrumb">{bia('href="/en/"', "Home", 'href="/"', "Inicio")} / <span>{bi("Galleries", "Galer&iacute;as")}</span></nav>
+            <p class="gallery-kicker">{bi(f"{total} photographs · {len(order)} galleries · {ncat} categories", f"{total} fotograf&iacute;as · {len(order)} galer&iacute;as · {ncat} categor&iacute;as")}</p>
+            <h1>{bi("Galleries", "Galer&iacute;as")}</h1>
+            <p class="gallery-intro">{bi(esc(M['intro']), esc(ES['intro']))}</p>
+            <nav class="gallery-jump" aria-label="Categories" data-aria-es="Categor&iacute;as">{jump}</nav>
         </section>
 
         <div class="gallery-search" role="search">
-            <label for="gallery-search">Search the archive</label>
-            <input id="gallery-search" type="search" placeholder="Event, place or subject: rally, Tijuana, aerial, portrait..." autocomplete="off">
+            <label for="gallery-search">{bi("Search the archive", "Buscar en el archivo")}</label>
+            <input id="gallery-search" type="search" placeholder="Event, place or subject: rally, Tijuana, aerial, portrait..." data-placeholder-es="Evento, lugar o tema: rally, Tijuana, a&eacute;reas, retrato..." autocomplete="off">
             <p id="gallery-search-status" class="gallery-search-status" role="status" aria-live="polite"></p>
         </div>
 """)
@@ -309,8 +354,8 @@ def index_page(M, order, by_cat):
         out.append(f"""
         <section class="gallery-section" id="{c['id']}">
             <div class="gallery-section-head">
-                <h2>{esc(c['name'])}</h2>
-                <p>{esc(c['blurb'])} · {cnt} photos</p>
+                <h2>{bi(esc(c['name']), esc(ES['categories'][c['id']]['name']))}</h2>
+                <p>{bi(esc(c['blurb']) + f" · {cnt} photos", esc(ES['categories'][c['id']]['blurb']) + f" · {cnt} fotos")}</p>
             </div>
             <div class="gallery-cards">
 """)

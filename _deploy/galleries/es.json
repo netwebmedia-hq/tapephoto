@@ -1,0 +1,115 @@
+{
+ "_note": "Chilean Spanish for every gallery page (same URLs as the English ones; build-galleries.py renders both languages into one page). Proper names stay as they are. Edit here, then run build-galleries.py.",
+ "index_title": "Galerías de fotos | TapePhoto - Fotografía de Carlos Martinez",
+ "intro": "Historias completas desde el camino, en siete capítulos: etapas del mundial de rally en el bosque chileno, buggies de raid en el Atacama, IndyCar en las calles de Long Beach, días de carrera y desfiles, rostros, la luz de la frontera en Tijuana, torres de vidrio en San Diego, la costa desde el aire y los Andes. Cada fotograma es trabajo mío, reeditado y recortado para la web.",
+ "labels": {
+  "Motorsport": "Automovilismo",
+  "Events": "Eventos",
+  "Portraits": "Retratos",
+  "Street": "Calle",
+  "Architecture": "Arquitectura",
+  "Aerial": "Aéreas",
+  "Landscapes": "Paisajes"
+ },
+ "categories": {
+  "motorsport": {"name": "Automovilismo", "blurb": "Rally, IndyCar, raid y enduro: ripio, asfalto, arena y aire."},
+  "events": {"name": "Eventos y espectáculos en vivo", "blurb": "Días de carrera, desfiles, salas de póker y escenarios."},
+  "portraits": {"name": "Retratos", "blurb": "Rostros, estudio y calle."},
+  "street": {"name": "Calle y ciudades", "blurb": "Fronteras, bulevares y noches de salida."},
+  "architecture": {"name": "Arquitectura y ciudades", "blurb": "Torres, costaneras y plazas bajo luz dura."},
+  "aerial": {"name": "Aéreas y dron", "blurb": "La costa y la ciudad desde arriba."},
+  "landscapes": {"name": "Paisajes y viajes", "blurb": "Los Andes, el Pacífico, islas y fauna."}
+ },
+ "galleries": {
+  "wrc-rally-chile-2019": {
+   "title": "WRC Rally Chile 2019",
+   "kicker": "Concepción, Chile · mayo de 2019",
+   "intro": "Copec Rally Chile, sexta fecha del Campeonato Mundial de Rally de la FIA 2019 y la primera vez que el WRC corrió en Chile. Caminos de ripio rápidos entre los bosques de pino de la región del Biobío, sol bajo de otoño y polvo suspendido en la luz mucho después de que pasaba cada auto."
+  },
+  "rally-raid-atacama": {
+   "title": "Rally Raid — Desierto de Atacama",
+   "kicker": "Atacama, Chile",
+   "intro": "Un buggy de rally raid estilo Dakar probado en las dunas y el fesh-fesh del Atacama: saltos a todo gas, paredes de arena, el equipo desenterrándolo y el horizonte largo y vacío que hace del desierto el lugar más duro del planeta para correr."
+  },
+  "indycar-long-beach-2018": {
+   "title": "Gran Premio de Long Beach 2018",
+   "kicker": "Long Beach, California · abril de 2018",
+   "intro": "IndyCar e IMSA en las calles de Long Beach. Obturador lento, un paneo firme y muchas fotos descartadas para mantener nítido el auto mientras los muros de concreto, las tribunas y los letreros de los auspiciadores se funden en velocidad."
+  },
+  "isde-chile-enduro": {
+   "title": "ISDE Chile — Seis Días de Enduro",
+   "kicker": "Costa de Chile",
+   "intro": "Los Seis Días Internacionales de Enduro de la FIM, la competencia off-road más antigua del calendario de la FIM, realizada en la costa central de Chile. Pilotos en el aire sobre laderas compactas, arena levantada en las curvas y una final en la playa donde el paneo convierte las dunas en pinceladas."
+  },
+  "mtb-enduro-chile": {
+   "title": "Enduro en bicicleta de montaña — Chile",
+   "kicker": "Región de Coquimbo, Chile",
+   "intro": "Carreras de downhill y enduro en los cerros secos de la región de Coquimbo: cactus, polvo, un salto de tierra frente al público y ciclistas que igual se la juegan."
+  },
+  "del-mar-opening-day-2018": {
+   "title": "Día de apertura en Del Mar",
+   "kicker": "Del Mar, California",
+   "intro": "Día de apertura en el hipódromo de Del Mar, donde el pasto se encuentra con las olas: el concurso de sombreros, el paddock, la carrera vista desde el techo y la fiesta que sigue mucho después de la última carrera."
+  },
+  "st-patricks-parade-hermosa-beach": {
+   "title": "Desfile de San Patricio — Hermosa Beach",
+   "kicker": "Hermosa Beach, California",
+   "intro": "El desfile de San Patricio de Hermosa Beach por Pier Avenue: bandas de marcha, bailarines folclóricos, autos clásicos, gaiteros, payasos, Darth Vader con la 501st y todo un pueblo vestido de verde."
+  },
+  "lebowski-fest-la-2013": {
+   "title": "Lebowski Fest LA 2013",
+   "kicker": "Los Ángeles · marzo de 2013",
+   "intro": "Lebowski Fest en Los Ángeles: una noche de música en vivo en el Saban Theatre y una fiesta de bowling llena de Dudes, Walters, Jesuses, nihilistas y valquirias."
+  },
+  "poker-tour": {
+   "title": "En el circuito de póker",
+   "kicker": "LAPT y WSOP",
+   "intro": "Póker de torneo, desde el Latin American Poker Tour hasta las Series Mundiales en Las Vegas: la mesa, las fichas, los duelos de miradas y las fotos con el trofeo, tomadas para los medios de póker."
+  },
+  "live-music": {
+   "title": "Música en vivo",
+   "kicker": "Escenarios y clubes",
+   "intro": "Escenarios chicos y grandes, casi todo en blanco y negro: el cantante frente al micrófono, el baterista bajo el estroboscopio, el público a un metro."
+  },
+  "portraits": {
+   "title": "Retratos",
+   "kicker": "Estudio y locación",
+   "intro": "Luz natural en la playa, luz dura en el estudio, un rostro entre la gente. Una colección en curso de personas frente al lente."
+  },
+  "tijuana-border-2019": {
+   "title": "Playas de Tijuana",
+   "kicker": "Tijuana, México · enero de 2019",
+   "intro": "Playas de Tijuana, donde el muro fronterizo baja por la playa y se mete al Pacífico. Familias en la costanera, acero pintado, alambre de púas y el mismo atardecer para todos."
+  },
+  "san-francisco-los-angeles": {
+   "title": "San Francisco y Los Ángeles",
+   "kicker": "California",
+   "intro": "Dos Californias: San Francisco desde Twin Peaks, los faroles de Chinatown, el Golden Gate al atardecer; Los Ángeles en Union Station, el Disney Hall, la autopista y los muelles de noche."
+  },
+  "las-vegas-nights": {
+   "title": "Noches de Las Vegas",
+   "kicker": "Las Vegas, Nevada",
+   "intro": "El Strip después del anochecer: el volcán del Mirage, el Caesars, el Venetian, estelas de luz en Las Vegas Boulevard y artistas callejeros trabajando con el público."
+  },
+  "san-diego-waterfront": {
+   "title": "Costanera y centro de San Diego",
+   "kicker": "San Diego, California · agosto de 2023",
+   "intro": "Torres de vidrio contra un cielo azul intenso, paseos bordeados de palmeras, el velero de mástiles altos en su muelle y el Embarcadero con luz de mediodía: una mañana caminando por la costanera de San Diego con el lente siempre bien abierto."
+  },
+  "aerial-drone": {
+   "title": "Aéreas y dron",
+   "kicker": "Chile y California",
+   "intro": "Desde arriba: La Serena y Coquimbo, Hermosa Beach y su muelle, Tijuana desde el cielo, una cuadrícula de ciudad de noche y la curva lenta de la costa del Pacífico."
+  },
+  "andes-glaciers": {
+   "title": "Los Andes y glaciares",
+   "kicker": "Cordillera, Chile",
+   "intro": "En lo alto de la cordillera chilena: un embalse turquesa bajo cerros pintados, penitentes como un campo de cuchillos congelados y un glaciar que descansa al sol a cuatro mil metros."
+  },
+  "coast-travel-wildlife": {
+   "title": "Costa, viajes y fauna",
+   "kicker": "Chile, California y las islas",
+   "intro": "Moáis de Rapa Nui, oleaje del Pacífico, pelícanos e iguanas, fuegos artificiales sobre la bahía, volcanes, muelles, siluetas de ciudades y el camino entre uno y otro: años de viaje con una cámara."
+  }
+ }
+}
