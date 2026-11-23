@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261126"
+CSS_V = "20261127"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
@@ -101,16 +101,18 @@ WA_ES = "https://wa.me/14423854585?text=Hola%2C%20encontr%C3%A9%20tapephoto.com%
 WA_ATTRS = 'target="_blank" rel="noopener"'
 
 # (English href, English text, Spanish href, Spanish text)
-NAV = [("/en/#work", "Work", "/#work", "Portafolio"),
-       ("../galleries/", "Galleries", "../galleries/", "Galer&iacute;as"),
-       ("../services.html", "Services", "../servicios.html", "Servicios"),
-       ("../licensing.html", "Licensing", "../licencias.html", "Licencias"),
-       ("../blog/", "Blog", "../blog/", "Blog"),
-       ("../prints.html", "Prints", "../impresiones.html", "Impresiones"),
-       ("../about.html", "About", "../sobre-mi.html", "Sobre m&iacute;"),
-       ("../contact.html", "Contact", "../contacto.html", "Contacto")]
-FOOT_NAV = NAV + [("../privacy.html", "Privacy", "../privacidad.html", "Privacidad"),
-                  ("../terms.html", "Terms", "../terminos.html", "T&eacute;rminos")]
+NAV = [("/galleries/", "Galleries", "/galleries/", "Galer&iacute;as"),
+       ("/services.html", "Services", "/servicios.html", "Servicios"),
+       ("/licensing.html", "Licensing", "/licencias.html", "Licencias"),
+       ("/prints.html", "Prints", "/impresiones.html", "Impresiones"),
+       ("/blog/", "Blog", "/blog/", "Blog"),
+       ("/about.html", "About", "/sobre-mi.html", "Sobre m&iacute;"),
+       ("/contact.html", "Contact", "/contacto.html", "Contacto")]
+# One footer link set on every page (home, inner pages, landings, blog, galleries): the nav, then the
+# language link, then Privacy and Terms. Keep in step with the static pages and blog-publish.js.
+FOOT_NAV = NAV + [("/", "Espa&ntilde;ol", "/en/", "English"),
+                  ("/privacy.html", "Privacy", "/privacidad.html", "Privacidad"),
+                  ("/terms.html", "Terms", "/terminos.html", "T&eacute;rminos")]
 
 
 def links(items, indent):
@@ -155,7 +157,7 @@ FOOTER = f"""    <footer class="footer">
 {links(FOOT_NAV, "                ")}            </div>
             <div class="footer-social">
                 <h3>{bi("Follow", "Sigue")}</h3>
-                <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="me noopener">Instagram &mdash; @tapephotocom</a>
+                <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="me noopener">Instagram</a>
                 <a href="https://www.facebook.com/tapephoto" target="_blank" rel="me noopener">Facebook</a>
             </div>
         </div>
@@ -278,7 +280,7 @@ def gallery_page(g, cat, order):
         <a class="lightbox-license" href="../licensing.html#inquiry">{bi("License this photo", "Licenciar esta foto")}</a>
     </div>
 
-    <script src="../main.js" defer></script>
+    <script src="../main.js?v=20261127" defer></script>
 </body>
 </html>
 """)
@@ -355,7 +357,7 @@ def index_page(M, order, by_cat):
             first_card = False
         out.append("            </div>\n        </section>")
     out.append("\n\n" + CTA % {"license": CTA_PLAIN} + "    </main>\n\n" + FOOTER + """
-    <script src="../main.js" defer></script>
+    <script src="../main.js?v=20261127" defer></script>
 </body>
 </html>
 """)

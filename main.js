@@ -403,4 +403,57 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, { passive: true });
     }
+
+    // Phone folds (Joni r7): <details class="fold"> are open on desktop and closed at 768px and under;
+    // [data-clamp] paragraphs show three lines on phones with a "Leer más" toggle.
+    const phone = window.matchMedia('(max-width: 768px)');
+    const folds = document.querySelectorAll('details.fold');
+    const syncFolds = () => folds.forEach((d) => {
+        d.open = !phone.matches;
+        const s = d.querySelector('summary');
+        if (s) s.tabIndex = phone.matches ? 0 : -1;
+    });
+    folds.forEach((d) => {
+        const s = d.querySelector('summary');
+        if (s) s.addEventListener('click', (e) => { if (!phone.matches) e.preventDefault(); });
+    });
+    const openHashFold = () => {
+        let t = null;
+        try { t = location.hash.length > 1 && document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (_) { /* bad hash */ }
+        if (!t) return;
+        const d = t.closest('details.fold') || t.querySelector('details.fold');
+        if (d && !d.open) { d.open = true; t.scrollIntoView(); }
+    };
+    syncFolds();
+    openHashFold();
+    window.addEventListener('hashchange', openHashFold);
+    const clamps = Array.from(document.querySelectorAll('[data-clamp]')).map((p) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'clamp-more';
+        b.setAttribute('aria-expanded', 'false');
+        const more = document.documentElement.lang === 'en' ? 'Read more' : 'Leer más';
+        const less = document.documentElement.lang === 'en' ? 'Read less' : 'Leer menos';
+        b.textContent = more;
+        p.insertAdjacentElement('afterend', b);
+        b.addEventListener('click', () => {
+            const open = b.getAttribute('aria-expanded') !== 'true';
+            b.setAttribute('aria-expanded', String(open));
+            b.textContent = open ? less : more;
+            p.classList.toggle('is-clamped', !open);
+        });
+        return { p, b };
+    });
+    const syncClamps = () => clamps.forEach(({ p, b }) => {
+        const expanded = b.getAttribute('aria-expanded') === 'true';
+        if (!phone.matches) { p.classList.remove('is-clamped'); b.hidden = true; return; }
+        p.classList.toggle('is-clamped', !expanded);
+        const fits = !expanded && p.scrollHeight <= p.clientHeight + 1;
+        if (fits) p.classList.remove('is-clamped');
+        b.hidden = fits;
+    });
+    syncClamps();
+    const syncAll = () => { syncFolds(); syncClamps(); };
+    if (phone.addEventListener) phone.addEventListener('change', syncAll); else phone.addListener(syncAll);
+    window.addEventListener('load', syncClamps);
 });

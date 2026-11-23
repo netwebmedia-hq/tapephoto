@@ -24,7 +24,7 @@
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css?v=20261126">
+    <link rel="stylesheet" href="style.css?v=20261127">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -141,13 +141,13 @@
             <span></span><span></span>
         </button>
         <nav class="nav" id="site-nav">
-            <a href="index.html#work">Portafolio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="licencias.html">Licencias</a>
-            <a href="blog/">Blog</a>
-            <a href="impresiones.html">Impresiones</a>
-            <a href="sobre-mi.html">Sobre m&iacute;</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="/galleries/">Galer&iacute;as</a>
+            <a href="/servicios.html">Servicios</a>
+            <a href="/licencias.html">Licencias</a>
+            <a href="/impresiones.html">Impresiones</a>
+            <a href="/blog/">Blog</a>
+            <a href="/sobre-mi.html">Sobre m&iacute;</a>
+            <a href="/contacto.html">Contacto</a>
         </nav>
         <nav class="lang-nav" aria-label="Idioma"><a href="fotografia-hoteles-turismo-la-serena.html" lang="es" hreflang="es" aria-current="page">ES</a><span aria-hidden="true">/</span><a href="en/" lang="en" hreflang="en" aria-label="EN: English version, goes to the English home page" title="English version: this page has no English counterpart, so this goes to the English home page">EN</a></nav>
     </header>
@@ -174,7 +174,7 @@
 
         <section class="lp-section">
             <h2>Compites en una grilla de miniaturas</h2>
-            <p class="lp-section-lead">
+            <p class="lp-section-lead" data-clamp>
                 En Booking, Airbnb o Google, tu alojamiento aparece junto a otros veinte del
                 mismo rango de precio. El viajero compara con el pulgar, en segundos, mirando
                 una miniatura. Cuando la foto de portada la tom&oacute; alguien con el tel&eacute;fono un
@@ -182,44 +182,54 @@
             </p>
             <div class="lp-benefits">
                 <div class="lp-benefit">
-                    <h3>La ubicaci&oacute;n es tu mejor activo</h3>
+                    <details class="fold" open>
+                    <summary><h3>La ubicaci&oacute;n es tu mejor activo</h3></summary>
                     <p>
                         Si est&aacute;s cerca de la playa, del valle o del centro, la toma a&eacute;rea lo
                         demuestra en un segundo. Es el argumento que tu competencia solo puede
                         escribir en texto.
                     </p>
+                    </details>
                 </div>
                 <div class="lp-benefit">
-                    <h3>Habitaciones que se ven como son</h3>
+                    <details class="fold" open>
+                    <summary><h3>Habitaciones que se ven como son</h3></summary>
                     <p>
                         Luz correcta, encuadre honesto y sensaci&oacute;n de espacio real. Fotos que
                         atraen al hu&eacute;sped correcto y bajan las rese&ntilde;as de &ldquo;no era lo que
                         esperaba&rdquo;.
                     </p>
+                    </details>
                 </div>
                 <div class="lp-benefit">
-                    <h3>Sin frenar la operaci&oacute;n</h3>
+                    <details class="fold" open>
+                    <summary><h3>Sin frenar la operaci&oacute;n</h3></summary>
                     <p>
                         Trabajamos en el bloque entre check-out y check-in y coordinamos la ruta
                         con recepci&oacute;n. El hotel sigue funcionando mientras fotografiamos.
                     </p>
+                    </details>
                 </div>
                 <div class="lp-benefit">
-                    <h3>Una sesi&oacute;n, contenido para meses</h3>
+                    <details class="fold" open>
+                    <summary><h3>Una sesi&oacute;n, contenido para meses</h3></summary>
                     <p>
                         El mismo set alimenta Booking, tu web, Instagram y el WhatsApp con el que
                         respondes consultas. No necesitas producir algo nuevo cada semana.
                     </p>
+                    </details>
                 </div>
             </div>
         </section>
 
         <section class="lp-section">
-            <h2>Trabajo a&eacute;reo reciente en La Serena y Coquimbo</h2>
+            <details class="fold" open>
+            <summary><h2>Trabajo a&eacute;reo reciente en La Serena y Coquimbo</h2></summary>
             <p class="lp-section-lead">
                 Estas son tomas propias del litoral, no im&aacute;genes compradas. Las habitaciones y &aacute;reas comunes de tu alojamiento se fotograf&iacute;an en la visita.
                 <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="noopener">Ver m&aacute;s en Instagram &rarr;</a>
             </p>
+            </details>
         </section>
 
         <section class="lp-proof">
@@ -237,8 +247,8 @@
             <h2>Qu&eacute; cubre la sesi&oacute;n</h2>
             <div class="services-grid">
                 <article class="service-card">
-                    <span class="service-tag">Alojamiento</span>
-                    <h3>Hoteles, Caba&ntilde;as y Hostales</h3>
+                    <details class="fold" open>
+                    <summary><span class="service-tag">Alojamiento</span> <h3>Hoteles, Caba&ntilde;as y Hostales</h3></summary>
                     <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
                     <p>
                         El recorrido completo del alojamiento, fotografiado en el horario en que
@@ -254,10 +264,11 @@
                         <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Necesito%20fotos%20para%20mi%20alojamiento%20(hotel%20%2F%20caba%C3%B1as)%20(tapephoto.com)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
                         <a class="btn-outline" href="#cotizar">Pide una cotizaci&oacute;n</a>
                     </div>
+                    </details>
                 </article>
                 <article class="service-card">
-                    <span class="service-tag">Turismo</span>
-                    <h3>Tour Operadores y Agencias</h3>
+                    <details class="fold" open>
+                    <summary><span class="service-tag">Turismo</span> <h3>Tour Operadores y Agencias</h3></summary>
                     <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
                     <p>
                         Tu experiencia fotografiada mientras ocurre: el valle, la costa, el cielo
@@ -273,17 +284,20 @@
                         <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Tengo%20una%20agencia%20de%20turismo%20y%20quiero%20fotos%20de%20mis%20tours%20(tapephoto.com)" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
                         <a class="btn-outline" href="#cotizar">Pide una cotizaci&oacute;n</a>
                     </div>
+                    </details>
                 </article>
             </div>
         </section>
 
         <section class="bundle-section">
             <div class="bundle-inner">
-                <h2>&iquest;Arriendas por temporada?</h2>
+                <details class="fold" open>
+                <summary><h2>&iquest;Arriendas por temporada?</h2></summary>
                 <p>
                     Pack Listing: fotos + reel para tu aviso antes del verano. Una sola visita, pensada para anfitriones y administradores con varias unidades.
                 </p>
                 <a class="btn-outline" href="fotos-airbnb-la-serena.html">Ver el Pack Listing &rarr;</a>
+                </details>
             </div>
         </section>
 
@@ -389,14 +403,16 @@
             </div>
             <div class="footer-links">
                 <h2>Navegaci&oacute;n</h2>
-                <a href="index.html#work">Portafolio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="licencias.html">Licencias</a>
-                <a href="impresiones.html">Impresiones</a>
-                <a href="sobre-mi.html">Sobre m&iacute;</a>
-                <a href="contacto.html">Contacto</a>
-                <a href="privacidad.html">Privacidad</a>
-                <a href="terminos.html">T&eacute;rminos</a>
+                <a href="/galleries/">Galer&iacute;as</a>
+                <a href="/servicios.html">Servicios</a>
+                <a href="/licencias.html">Licencias</a>
+                <a href="/impresiones.html">Impresiones</a>
+                <a href="/blog/">Blog</a>
+                <a href="/sobre-mi.html">Sobre m&iacute;</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/en/" lang="en" hreflang="en">English</a>
+                <a href="/privacidad.html">Privacidad</a>
+                <a href="/terminos.html">T&eacute;rminos</a>
             </div>
             <div class="footer-social">
                 <h2>S&iacute;gueme</h2>
@@ -416,6 +432,6 @@
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.010-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
         WhatsApp
     </a>
-    <script src="main.js" defer></script>
+    <script src="main.js?v=20261127" defer></script>
 </body>
 </html>

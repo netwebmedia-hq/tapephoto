@@ -374,7 +374,7 @@ a { color: inherit; }
 .close .label { max-width: 34ch; }
 .close .label__title { font-size: var(--sc-t-2xl); }
 .close__actions { display: flex; flex-wrap: wrap; gap: var(--sc-3); margin-top: var(--sc-6); }
-.foot { margin-top: var(--sc-9); padding: var(--sc-6) 0 calc(var(--strip-h) + var(--sc-6)); border-top: 1px solid var(--sc-hairline); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); }
+.foot { margin-top: var(--sc-9); padding: var(--sc-6) var(--sc-gutter) calc(var(--strip-h) + var(--sc-6)); border-top: 1px solid var(--sc-hairline); font-size: var(--sc-t-sm); color: var(--sc-ink-soft); }
 .foot__row { display: flex; flex-wrap: wrap; gap: var(--sc-3) var(--sc-6); align-items: center; justify-content: space-between; }
 .foot__row + .foot__row { margin-top: var(--sc-4); }
 .foot nav { display: flex; flex-wrap: wrap; gap: var(--sc-2) var(--sc-5); }
