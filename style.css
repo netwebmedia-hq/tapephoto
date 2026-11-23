@@ -1955,3 +1955,36 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
     .contact-details a, .contact-aside p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
     .contact-aside p { font-size: 0.9rem; opacity: 0.75; margin: 0; }
 }
+
+/* ============ Joni r4 (2026-11-23): hotels hero, contact credit, services pills ============ */
+
+/* Hotels hero: the scrim is lighter so the aerial photo reads; the text still sits on its darkest band. */
+.lp-hero--hotels::after { background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.82) 50%, rgba(10,10,10,0.42) 100%); }
+@media (min-width: 861px) {
+    .lp-hero--hotels::after { background: linear-gradient(to top, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0) 55%), linear-gradient(to right, rgba(10,10,10,0.84) 0%, rgba(10,10,10,0.74) 48%, rgba(10,10,10,0.08) 88%); }
+}
+.lp-hero--hotels h1 { text-shadow: 0 1px 14px rgba(0,0,0,0.55); }
+.lp-hero--hotels p { opacity: 0.92; text-shadow: 0 1px 10px rgba(0,0,0,0.6); }
+.lp-hero--hotels .cta-row { gap: 6px 22px; }
+.lp-hero--hotels .btn-quote { display: inline-flex; align-items: center; min-height: 44px; padding: 0 32px; background: var(--white); color: var(--black); border: 1px solid var(--white); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; text-decoration: none; }
+.lp-hero--hotels .btn-quote:hover { background: transparent; color: var(--white); }
+.lp-hero--hotels .cta-wa-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.85rem; color: #fff; text-decoration: underline; text-underline-offset: 4px; text-shadow: 0 1px 8px rgba(0,0,0,0.7); }
+.lp-hero--hotels .cta-wa-link:hover { color: #25D366; }
+
+/* Contact: the watermark is already inside the photograph, so the credit sits below it, not over it. */
+.contact-image { display: flex; flex-direction: column; }
+.contact-image img { flex: 1 1 auto; min-height: 0; }
+.contact-image .photo-credit { position: static; display: block; margin-top: 8px; font-size: 0.72rem; letter-spacing: 0.08em; color: #CFCFCF; text-shadow: none; }
+@media (min-width: 1100px) {
+    .contact-image { height: auto; }
+    .contact-image img { height: 330px; flex: none; }
+}
+
+/* Services pills: real gaps between pills and from the screen edge. */
+.services-chips { gap: 12px 10px; }
+.services-chips li { display: block; min-height: 44px; margin: 0; padding: 0; }
+.services-chips li a { display: flex; }
+@media (max-width: 860px) {
+    .services-chips { gap: 12px 10px; margin-top: 22px; }
+    .services-chips a { padding: 0 16px; }
+}
