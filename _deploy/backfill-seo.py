@@ -421,7 +421,7 @@ def patch_licence_copy():
         write(rel, text, nl, orig)
 
 
-CSS_V = "20261127"
+CSS_V = "20261130"
 
 
 def patch_footer_headings():
