@@ -2008,3 +2008,21 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
     .lp-hero { padding: 112px 24px 48px; }
     .lp-hero .lp-eyebrow { font-size: 0.78rem; letter-spacing: 0.1em; margin-bottom: 14px; }
 }
+
+/* ============ Joni r6 (2026-11-24) ============ */
+/* 1. Header: transparent gradient at the top of the page (the hero look), solid dark once scrolled
+   (main.js toggles .is-scrolled past 40px) so content never reads through the nav or logo.
+   No backdrop-filter on purpose: it would make the fixed mobile menu overlay size to the header. */
+.header { transition: background-color 0.25s ease, border-color 0.25s ease; border-bottom: 1px solid transparent; }
+.header.is-scrolled { background: #0a0a0a; border-bottom-color: rgba(255, 255, 255, 0.14); }
+/* No script, no class: keep the header solid always (never overprints). */
+@media (scripting: none) { .header { background: var(--black); border-bottom-color: rgba(255, 255, 255, 0.14); } }
+@media (prefers-reduced-motion: reduce) { .header { transition: none; } }
+
+/* 2. Proof tiles: the caption sat in the flow under a 100%-high image and was clipped by the tile. */
+.lp-proof figcaption { position: absolute; left: 18px; right: 18px; bottom: 16px; line-height: 1.4; }
+
+/* 3. Contact credit: the photo stays full-bleed on phones, the caption takes the form's side gutter. */
+@media (max-width: 768px) {
+    .contact-image .photo-credit { padding: 0 24px; }
+}
