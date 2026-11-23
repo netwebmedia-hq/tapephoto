@@ -19,12 +19,16 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261005"
+CSS_V = "20261123"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
 
 esc = lambda s: html.escape(s, quote=True)
+
+# Galleries whose CTA also offers a print request (matches the published pages).
+PRINT_GALLERIES = frozenset({"andes-glaciers", "coast-travel-wildlife"})
+CTA_PRINT = '            <a class="gallery-btn gallery-btn-ghost" href="../prints.html#frames">Request a print</a>\n'
 
 
 # --------------------------------------------------------------------------- bootstrap
@@ -81,7 +85,7 @@ HEADER = """    <header class="header">
             <a href="../prints.html">Prints</a>
             <a href="../about.html">About</a>
             <a href="../contact.html">Contact</a>
-            <a href="../servicios.html" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
+            <a href="/" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
         </nav>
     </header>
 """
@@ -94,7 +98,7 @@ CTA = """        <section class="gallery-cta">
         </section>
 """
 CTA_LICENSE = '<a class="gallery-btn" href="../licensing.html?ref=%s#inquiry">License this event</a>\n'
-CTA_PLAIN = '<a class="gallery-btn" href="../contact.html">Get in touch</a>\n'
+CTA_PLAIN = '<a class="gallery-btn" href="../prints.html">Prints from the archive</a>\n'
 
 FOOTER = """    <footer class="footer">
         <div class="footer-inner">
@@ -116,6 +120,7 @@ FOOTER = """    <footer class="footer">
                 <a href="../about.html">About</a>
                 <a href="../contact.html">Contact</a>
                 <a href="../privacy.html">Privacy</a>
+                <a href="../terms.html">Terms</a>
             </div>
             <div class="footer-social">
                 <h3>Follow</h3>
@@ -159,6 +164,7 @@ def head(title, desc, canonical, og_img, og_w, og_h, ld):
     <script type="application/ld+json">
 {json.dumps(ld, indent=2, ensure_ascii=False)}
     </script>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
     <script src="../analytics.js" defer></script>
 </head>
 """
@@ -204,6 +210,7 @@ def gallery_page(g, cat, order):
     out = [head(title, desc, url, f"{SITE}/galleries/{img_url(g, cover)}", cover["w"], cover["h"], ld)]
     out.append('<body class="gallery-body">\n' + HEADER + '\n    <main class="gallery-page">\n')
     out.append(f"""        <section class="gallery-hero">
+            <p class="gallery-es"><a href="/" lang="es" hreflang="es">Volver a TapePhoto en espa&ntilde;ol &rarr;</a></p>
             <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <a href="./">Galleries</a> / <a href="./#{cat['id']}">{esc(cat['name'])}</a> / <span>{esc(g['title'])}</span></nav>
             <p class="gallery-kicker">{esc(kicker)}</p>
             <h1>{esc(g['title'])}</h1>
@@ -234,7 +241,7 @@ def gallery_page(g, cat, order):
         <button class="lightbox-close" aria-label="Close">&times;</button>
         <button class="lightbox-prev" aria-label="Previous">&lsaquo;</button>
         <button class="lightbox-next" aria-label="Next">&rsaquo;</button>
-        <img src="" alt="" class="lightbox-img">
+        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="lightbox-img">
         <a class="lightbox-license" href="../licensing.html#inquiry">License this photo</a>
     </div>
 
@@ -281,6 +288,7 @@ def index_page(M, order, by_cat):
     out.append('<body class="gallery-body">\n' + HEADER + f"""
     <main class="gallery-page">
         <section class="gallery-hero">
+            <p class="gallery-es"><a href="/" lang="es" hreflang="es">Volver a TapePhoto en espa&ntilde;ol &rarr;</a></p>
             <nav class="gallery-crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> / <span>Galleries</span></nav>
             <p class="gallery-kicker">{total} photographs · {len(order)} galleries · {ncat} categories</p>
             <h1>Galleries</h1>

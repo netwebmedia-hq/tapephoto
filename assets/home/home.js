@@ -122,6 +122,8 @@
   var hero = $('#fr-01'), line = $('#work'), trayAct = $('#fr-09');
   // Fr. 01 plays a silent excerpt of the film; with reduced motion it stays on its poster frame.
   var film = $('.print__film', hero);
+  // Phones show a still of La Serena instead (home.css), so do not download the loop there.
+  if (film && window.matchMedia('(max-width: 860px)').matches) { film.pause(); film.removeAttribute('src'); film.load(); film = null; }
   if (film && reduce) { film.removeAttribute('autoplay'); film.pause(); }
   else if (film) {
     // Some browsers hold autoplay for a tab opened in the background; start it once the page is seen.

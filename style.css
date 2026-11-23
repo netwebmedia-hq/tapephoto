@@ -1856,3 +1856,29 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .print-steps a, .faq-item a { color: inherit; text-decoration: underline; }
 @media (max-width: 900px) { .print-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .print-grid { grid-template-columns: 1fr; padding: 0 16px; } }
+
+/* ============ Language link on gallery pages + phone touch targets (Joni r1, 2026-11-23) ============ */
+.gallery-es { margin: 0 0 14px; font-size: 0.8rem; letter-spacing: 0.04em; }
+.gallery-es a { color: var(--white); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.45); padding: 4px 0; }
+.gallery-es a:hover { border-bottom-color: var(--white); }
+@media (max-width: 768px) {
+    /* Every link and button in nav, hero, footer and forms is at least 44px tall at phone width. */
+    .menu-toggle { min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+    .header .logo, .footer-brand .logo { display: inline-flex; align-items: center; min-height: 44px; }
+    .nav a, .nav-es { display: flex; align-items: center; min-height: 44px; }
+    .lang-switch a { display: inline-flex; align-items: center; min-height: 44px; padding-bottom: 0; border-bottom: 0; text-decoration: underline; text-underline-offset: 4px; }
+    .footer-links a, .footer-social a, .footer-contact a { display: flex; align-items: center; min-height: 44px; padding-block: 0; }
+    .gallery-es a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border-bottom: 0; text-decoration: underline; text-underline-offset: 4px; }
+    .gallery-crumbs a { border-bottom: 0; text-decoration: underline; text-underline-offset: 3px; }
+    .gallery-btn, .btn, .cta-row a, .contact-form button, .contact-form input[type="submit"], .contact-form select, .contact-form input:not([type="hidden"]):not(.hp-field):not([type="checkbox"]) { min-height: 44px; }
+    .gallery-btn { display: inline-flex; align-items: center; justify-content: center; }
+    /* Inline text links: the hit area grows by padding, the line layout does not. */
+    .gallery-crumbs a, .gallery-cta p a, .footer-bottom p a, .nwm-credit a {
+        display: inline-block; padding-block: 14px; margin-block: -14px; position: relative;
+    }
+    .nwm-credit { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0 6px; }
+    .nwm-credit a { padding-block: 14px; margin-block: -14px; }
+    .gallery-more-links a { display: inline-flex; align-items: center; min-height: 44px; }
+    h3 > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
+    li > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
+}

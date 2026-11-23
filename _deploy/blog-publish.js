@@ -91,7 +91,7 @@ const FOOTER = `    <footer class="footer">
                 </div>
             </div>
             <div class="footer-links">
-                <h2></h2>
+                <h2>Navegaci&oacute;n</h2>
                 <a href="../index.html#work">Work</a>
                 <a href="../services.html">Services</a>
                 <a href="./">Blog</a>
@@ -102,7 +102,7 @@ const FOOTER = `    <footer class="footer">
                 <a href="../terms.html">Terms</a>
             </div>
             <div class="footer-social">
-                <h2></h2>
+                <h2>S&iacute;gueme</h2>
                 <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="noopener">Instagram</a>
                 <a href="https://www.facebook.com/tapephoto" target="_blank" rel="noopener">Facebook</a>
             </div>
@@ -111,7 +111,7 @@ const FOOTER = `    <footer class="footer">
             <p>&copy; 2026 TapePhoto. All rights reserved.</p>
             <p>Una empresa de <a href="https://dongaston.com/" rel="noopener">Don Gast&oacute;n</a></p>
         </div>
-    <div class="nwm-credit">Made by <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · est. 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">Want a site like this? Get a free audit →</a></div>
+    <div class="nwm-credit">Hecho por <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · desde 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">¿Quieres un sitio como este? Pide una auditoría gratis →</a></div>
     </footer>`;
 
 // ─── Article template ────────────────────────────────────────────────────────
@@ -199,7 +199,7 @@ function renderPost(post) {
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261005">
+    <link rel="stylesheet" href="../style.css?v=20261123">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -295,7 +295,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261005">
+    <link rel="stylesheet" href="../style.css?v=20261123">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>

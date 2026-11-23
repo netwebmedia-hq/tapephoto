@@ -421,7 +421,7 @@ def patch_licence_copy():
         write(rel, text, nl, orig)
 
 
-CSS_V = "20261005"
+CSS_V = "20261123"
 
 
 def patch_footer_headings():
@@ -434,7 +434,7 @@ def patch_footer_headings():
             continue
         text, nl = read(rel)
         orig = text
-        text = pat.sub(r"<h2></h2>", text)
+        text = pat.sub(r"<h2>\1</h2>", text)
         write(rel, text, nl, orig)
 
 
