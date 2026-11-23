@@ -2087,3 +2087,22 @@ details.fold > summary::-webkit-details-marker { display: none; }
     .lp-benefits:has(> :nth-child(5):last-child) > * { grid-column: span 2; }
     .lp-benefits:has(> :nth-child(5):last-child) > :nth-child(n+4) { grid-column: span 3; }
 }
+
+/* ============ ONE PRIMARY BUTTON (2026-11-28) ============
+   Every primary call to action is the home's safelight coral with dark ink (#170807 on #ff6450 = 6.9:1);
+   .btn-outline and .gallery-btn-ghost stay outlined secondaries. The WhatsApp link beside a form stays green. */
+.btn-quote, .submit-btn, .btn-whatsapp, .gallery-btn:not(.gallery-btn-ghost),
+.service-card .btn-quote, .service-card .btn-whatsapp, .lp-hero .btn-whatsapp, .lp-hero--hotels .btn-quote {
+    background: #ff6450;
+    color: #170807;
+    border: 1px solid #ff6450;
+}
+.btn-quote:hover, .submit-btn:hover, .btn-whatsapp:hover, .gallery-btn:not(.gallery-btn-ghost):hover,
+.service-card .btn-quote:hover, .service-card .btn-whatsapp:hover, .lp-hero .btn-whatsapp:hover, .lp-hero--hotels .btn-quote:hover {
+    background: #ff7a68;
+    border-color: #ff7a68;
+    color: #170807;
+    opacity: 1;
+}
+.contact-direct .btn-whatsapp { background: transparent; color: #25D366; border-color: rgba(37, 211, 102, 0.5); }
+.contact-direct .btn-whatsapp:hover { background: #25D366; border-color: #25D366; color: var(--black); }

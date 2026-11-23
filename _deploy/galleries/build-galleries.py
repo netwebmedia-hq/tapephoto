@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261129"
+CSS_V = "20261130"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
@@ -153,10 +153,10 @@ FOOTER = f"""    <footer class="footer">
                 </div>
             </div>
             <div class="footer-links">
-                <h3>{bi("Navigate", "Navegar")}</h3>
+                <h3>{bi("Navigate", "Navegaci&oacute;n")}</h3>
 {links(FOOT_NAV, "                ")}            </div>
             <div class="footer-social">
-                <h3>{bi("Follow", "Sigue")}</h3>
+                <h3>{bi("Follow", "S&iacute;gueme")}</h3>
                 <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="me noopener">Instagram</a>
                 <a href="https://www.facebook.com/tapephoto" target="_blank" rel="me noopener">Facebook</a>
             </div>

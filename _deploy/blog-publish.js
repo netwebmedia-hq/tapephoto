@@ -201,7 +201,7 @@ function renderPost(post) {
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261129">
+    <link rel="stylesheet" href="../style.css?v=20261130">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -297,7 +297,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261129">
+    <link rel="stylesheet" href="../style.css?v=20261130">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
