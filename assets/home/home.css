@@ -506,10 +506,7 @@ html.index-open, html.index-open body { overflow: hidden; }
 /* 1. Reveal is progressive enhancement. The resting state is visible; the rise-in only plays when the
       observer fires and the visitor has not asked for reduced motion. Nothing waits on JS to appear. */
 [data-sc-in], [data-sc-stagger] > * { opacity: 1; transform: none; transition: none; }
-@keyframes tp-rise { from { opacity: 0; transform: translate3d(0, 14px, 0); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: no-preference) {
-  html.sc-ready [data-sc-in].sc-in, html.sc-ready [data-sc-stagger] > .sc-in { animation: tp-rise 560ms var(--sc-ease-out) both; }
-}
+/* Joni r5: no develop-on-scroll anywhere on the home; the rise-in animation is gone. */
 
 /* 2. Hero: the print is a still of La Serena at every width (the film is one click away on its button). */
 .print .print__still { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #1a1b1c; }
@@ -587,7 +584,7 @@ html.index-open, html.index-open body { overflow: hidden; }
 
 /* ================= Joni r4 (2026-11-23): the close is a real frame, not a blank print ===== */
 .close__hang .print { padding: 1.5%; }
-.close__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 32%; background: #1a1b1c; }
+.close__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 32%; background: #e9e6df; }
 
 /* Phones: a shorter wall. Repeated caption text (region and "Encargo" on every commission, the
    note that restates the title) is collapsed, thumbnails are wider than tall, rhythm is tighter. */
@@ -626,4 +623,42 @@ html.index-open, html.index-open body { overflow: hidden; }
   .close__hang { width: 72%; }
   .close__actions { margin-top: var(--sc-4); gap: var(--sc-2); }
   .commissions__more { font-size: var(--sc-t-sm); }
+}
+
+/* ================= Joni r5 (2026-11-23) ===== */
+/* The close: the photo frame is paper-coloured until the picture paints (never a dark box), the text column
+   is as wide as the heading needs, and the heading holds on one line where it fits. */
+@media (min-width: 861px) {
+  .close .label { max-width: none; }
+  .close .label__note { max-width: 40ch; }
+}
+@media (min-width: 1100px) { .close .label__title { white-space: nowrap; } }
+
+/* Phones: four archive tiles, then "Ver todas las galerías". */
+@media (max-width: 860px) {
+  .archive__cats li:nth-child(n+5) { display: none; }
+}
+
+/* Phones: a shorter wall. The hero is only as tall as its content, the three commissions sit as a photo
+   beside its caption, section titles are smaller and the gaps between sections are tighter. */
+@media (max-width: 860px) {
+  .act-hero { height: auto !important; }
+  .act-hero .room { height: auto !important; min-height: 0 !important; padding: 96px 0 var(--sc-5); }
+  .act-hero .hang { position: relative; left: auto; top: auto; width: 90vw; margin-left: 5vw; }
+  .act-hero .placard { position: relative; left: auto; right: auto; bottom: auto; width: auto; margin: var(--sc-3) var(--sc-gutter) 0; }
+  .walltext h2 { font-size: clamp(1.9rem, 8.4vw, 2.4rem); }
+  .walltext p { margin-top: var(--sc-4); }
+  .objs { margin-top: var(--sc-6); }
+  .obj { grid-template-columns: minmax(0, 40%) minmax(0, 1fr); gap: var(--sc-4); align-items: start; }
+  .obj img { aspect-ratio: 1 / 1; }
+  .obj .label__note { -webkit-line-clamp: 3; }
+  .obj + .obj, .obj--b { margin-top: var(--sc-5); }
+  .archive h2, .notes h2 { font-size: var(--sc-t-xl); }
+  .archive__links .btn { padding-inline: var(--sc-4); }
+  .act-line .room--line { padding: var(--sc-6) 0 var(--sc-4); }
+  .act-tray .trayroom { padding-block: var(--sc-5); }
+  .notes { padding-block: var(--sc-5); }
+  .notes__grid { padding-top: var(--sc-5); }
+  .archive { padding-block: var(--sc-5); }
+  .archive__nums { margin: var(--sc-4) 0; }
 }

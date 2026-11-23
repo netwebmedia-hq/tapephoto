@@ -67,6 +67,7 @@
     document.addEventListener('click', function (e) {
         var b = e.target && e.target.closest ? e.target.closest('[data-lang-set]') : null;
         if (!b) return;
+        if (b.tagName === 'A') e.preventDefault();
         var lang = b.getAttribute('data-lang-set') === 'es' ? 'es' : 'en';
         write('localStorage', KEY, lang);
         apply(lang);
