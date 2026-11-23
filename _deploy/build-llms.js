@@ -16,8 +16,8 @@ function header(total) {
 
 ## About
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
-- Contact: carlos@netwebmedia.com · WhatsApp +1 (442) 385-4585 (https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot)
-- Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or WhatsApp. No prices are published on the site.
+- Contact: carlos@netwebmedia.com · Book a meeting: https://cal.com/carlos-martinez-net/discovery
+- Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or a booked meeting (https://cal.com/carlos-martinez-net/discovery). No prices are published on the site.
 - ${total} Spanish-language blog articles published so far.
 
 ## Main pages
@@ -31,9 +31,9 @@ function header(total) {
 - [Checklist para anfitriones: arriendo listo antes de febrero](${SITE}/checklist-airbnb-antes-de-febrero.html): month-by-month plan and room-by-room list for short-term rental hosts before the February peak
 - [Fotografía para empresas en La Serena y Coquimbo](${SITE}/fotografia-empresas-la-serena.html): team, premises and product photography instead of stock images
 - [Galleries](${SITE}/galleries/): 18 curated photo galleries in seven categories — Motorsport (WRC Rally Chile 2019, rally raid in the Atacama, Grand Prix of Long Beach 2018, ISDE enduro, MTB enduro), Events (Del Mar Opening Day, Hermosa Beach St. Patrick's parade, Lebowski Fest, poker tour, live music), Portraits, Street & Cities (Playas de Tijuana, San Francisco & Los Angeles, Las Vegas nights), Architecture & Cities (San Diego waterfront and downtown), Aerial & Drone, Landscapes & Travel (Andes & glaciers; coast, travel & wildlife)
-- [Licensing (English)](${SITE}/licensing.html): license photographs from the archive (editorial online and print, books and broadcast, advertising, local-business use); written quote within 24 hours via an inquiry form (usage, media, duration, territory, deadline) or WhatsApp
+- [Licensing (English)](${SITE}/licensing.html): license photographs from the archive (editorial online and print, books and broadcast, advertising, local-business use); written quote within 24 hours via an inquiry form (usage, media, duration, territory, deadline) or email
 - [Licencias (Español)](${SITE}/licencias.html): the same licensing page in Spanish, with the inquiry form
-- [Prints (English)](${SITE}/prints.html): request a print of landscape and coast photographs from the galleries (Andes, glaciers, sunsets, Easter Island moai, sea); no price list, every print is quoted via the contact form or WhatsApp
+- [Prints (English)](${SITE}/prints.html): request a print of landscape and coast photographs from the galleries (Andes, glaciers, sunsets, Easter Island moai, sea); no price list, every print is quoted via the contact form or email
 - [Impresiones (Español)](${SITE}/impresiones.html): the same prints page in Spanish
 - [About](${SITE}/about.html) · [Contact](${SITE}/contact.html) · [Contacto](${SITE}/contacto.html)
 - [Blog (Spanish)](${SITE}/blog/): practical guides for businesses, hotels and real estate brokers

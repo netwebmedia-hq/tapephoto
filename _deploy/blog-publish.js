@@ -87,7 +87,7 @@ const FOOTER = `    <footer class="footer">
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
                     <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
-                    <a href="https://wa.me/14423854585?text=Hola%2C%20vi%20tapephoto.com%20y%20quiero%20cotizar%20una%20sesi%C3%B3n%20de%20fotos" target="_blank" rel="noopener">WhatsApp +1 (442) 385-4585</a>
+                    <a href="https://cal.com/carlos-martinez-net/discovery" target="_blank" rel="noopener">Agenda una reuni&oacute;n</a>
                 </div>
             </div>
             <div class="footer-links">
@@ -201,7 +201,7 @@ function renderPost(post) {
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261127">
+    <link rel="stylesheet" href="../style.css?v=20261129">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -234,7 +234,7 @@ ${faqHtml}
 ${pack.wantsPackCta(post) ? pack.packCtaHtml() : ''}            <div class="article-cta">
                 <p class="article-cta-label">&iquest;Necesitas fotograf&iacute;a as&iacute; para tu propiedad o tu negocio?</p>
                 <div class="cta-row">
-                    <a class="btn-whatsapp" href="https://wa.me/14423854585?text=Hola!%20Le%C3%AD%20el%20art%C3%ADculo%20de%20TapePhoto%20(${encodeURIComponent(post.slug)})" target="_blank" rel="noopener">Escr&iacute;beme por WhatsApp</a>
+                    <a class="btn-whatsapp" href="https://cal.com/carlos-martinez-net/discovery" target="_blank" rel="noopener">Agenda una reuni&oacute;n</a>
                     <a class="btn-outline" href="../servicios.html">Ver servicios</a>
                 </div>
             </div>
@@ -245,7 +245,7 @@ ${pack.wantsPackCta(post) ? pack.packCtaHtml() : ''}            <div class="arti
 
 ${FOOTER}
 
-    <script src="../main.js?v=20261127" defer></script>
+    <script src="../main.js?v=20261129" defer></script>
 </body>
 </html>
 `;
@@ -297,7 +297,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261127">
+    <link rel="stylesheet" href="../style.css?v=20261129">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
@@ -326,7 +326,7 @@ ${cards}
 
 ${FOOTER}
 
-    <script src="../main.js?v=20261127" defer></script>
+    <script src="../main.js?v=20261129" defer></script>
 </body>
 </html>
 `;

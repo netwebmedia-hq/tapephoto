@@ -957,20 +957,20 @@ body {
 
 .btn-whatsapp {
     display: inline-block;
-    color: #25D366;
+    color: var(--white);
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     padding: 14px 36px;
-    border: 1px solid rgba(37, 211, 102, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     transition: all 0.4s var(--ease);
 }
 
 .btn-whatsapp:hover {
-    background: #25D366;
-    border-color: #25D366;
+    background: var(--white);
+    border-color: var(--white);
     color: var(--black);
 }
 
@@ -1443,15 +1443,15 @@ body {
    offered two same-looking buttons and no primary action. Filled treatment is
    scoped to the hero only, so the shared class doesn't paint every CTA green. */
 .lp-hero .btn-whatsapp {
-    background: #25D366;
+    background: var(--white);
     color: var(--black);
-    border-color: #25D366;
+    border-color: var(--white);
     font-weight: 700;
 }
 
 .lp-hero .btn-whatsapp:hover {
     background: transparent;
-    color: #25D366;
+    color: var(--white);
 }
 
 /* #4 — the header lost mix-blend-mode, so focus styles must be explicit. */
@@ -1507,8 +1507,8 @@ body {
     gap: 8px;
     padding: 13px 18px;
     border-radius: 999px;
-    background: #25D366;
-    color: #0A0A0A;
+    background: var(--white);
+    color: var(--black);
     text-decoration: none;
     font-size: 0.78rem;
     font-weight: 700;
@@ -1937,7 +1937,7 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
 .service-card .cta-row--stack { flex-direction: column; align-items: flex-start; gap: 6px; }
 .service-card .btn-quote { background: var(--white); color: var(--black); border-color: var(--white); min-height: 44px; display: inline-flex; align-items: center; }
 .service-card .btn-quote:hover { background: transparent; color: var(--white); }
-.service-card .cta-wa-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; color: #25D366; text-decoration: underline; text-underline-offset: 3px; }
+.service-card .cta-wa-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
 .service-card .cta-wa-link:hover { color: var(--white); }
 .contact-image .photo-credit { position: absolute; left: 14px; bottom: 10px; font-size: 0.7rem; letter-spacing: 0.08em; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,0.9); }
 .contact-image { margin: 0; }
@@ -1969,7 +1969,7 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
 .lp-hero--hotels .btn-quote { display: inline-flex; align-items: center; min-height: 44px; padding: 0 32px; background: var(--white); color: var(--black); border: 1px solid var(--white); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; text-decoration: none; }
 .lp-hero--hotels .btn-quote:hover { background: transparent; color: var(--white); }
 .lp-hero--hotels .cta-wa-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.85rem; color: #fff; text-decoration: underline; text-underline-offset: 4px; text-shadow: 0 1px 8px rgba(0,0,0,0.7); }
-.lp-hero--hotels .cta-wa-link:hover { color: #25D366; }
+.lp-hero--hotels .cta-wa-link:hover { color: var(--white); }
 
 /* Contact: the watermark is already inside the photograph, so the credit sits below it, not over it. */
 .contact-image { display: flex; flex-direction: column; }
