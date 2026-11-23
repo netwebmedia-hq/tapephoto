@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[2]
 GAL = ROOT / "galleries"
 MANIFEST = Path(__file__).with_name("manifest.json")
 SITE = "https://tapephoto.com"
-CSS_V = "20261127"
+CSS_V = "20261129"
 TODAY = date.today().isoformat()
 PERSON = {"@type": "Person", "@id": f"{SITE}/#carlos", "name": "Carlos Martinez", "url": f"{SITE}/"}
 LICENSE_PAGE = f"{SITE}/licensing.html"
@@ -96,8 +96,8 @@ def bootstrap():
 
 
 # --------------------------------------------------------------------------- shared chrome
-WA_EN = "https://wa.me/14423854585?text=Hi%2C%20I%20found%20tapephoto.com%20and%20want%20a%20quote%20for%20a%20photo%20shoot"
-WA_ES = "https://wa.me/14423854585?text=Hola%2C%20encontr%C3%A9%20tapephoto.com%20y%20quiero%20cotizar%20una%20sesi%C3%B3n%20de%20fotos"
+WA_EN = "https://cal.com/carlos-martinez-net/discovery"
+WA_ES = "https://cal.com/carlos-martinez-net/discovery"
 WA_ATTRS = 'target="_blank" rel="noopener"'
 
 # (English href, English text, Spanish href, Spanish text)
@@ -136,7 +136,7 @@ CTA = f"""        <section class="gallery-cta">
             <h2>{bi("Need coverage like this?", "&iquest;Necesitas una cobertura como esta?")}</h2>
             <p>{bi('Motorsport, events, aerials and commercial work &mdash; in Chile and abroad. Archive images available for <a href="../licensing.html">licensing</a>.', 'Automovilismo, eventos, tomas a&eacute;reas y trabajo comercial &mdash; en Chile y en el extranjero. Im&aacute;genes del archivo disponibles para <a href="../licencias.html">licenciar</a>.')}</p>
             @@LICENSE@@            {bia('href="../contact.html"', "Get in touch", 'href="../contacto.html"', "Escr&iacute;beme", "gallery-btn gallery-btn-ghost")}
-            {bia(f'href="{WA_EN}" {WA_ATTRS}', "WhatsApp", f'href="{WA_ES}" {WA_ATTRS}', "WhatsApp", "gallery-btn gallery-btn-ghost")}
+            {bia(f'href="{WA_EN}" {WA_ATTRS}', "Book a meeting", f'href="{WA_ES}" {WA_ATTRS}', "Agendar reuni&oacute;n", "gallery-btn gallery-btn-ghost")}
         </section>
 """.replace("&mdash;", "—").replace("%", "%%").replace("@@LICENSE@@", "%(license)s")
 CTA_LICENSE = (bia('href="../licensing.html?ref=%s#inquiry"', "License this event", 'href="../licencias.html?ref=%s#inquiry"', "Licenciar este evento", "gallery-btn") + "\n").replace("%s", "%(slug)s")
@@ -149,7 +149,7 @@ FOOTER = f"""    <footer class="footer">
                 <p>Carlos Martinez Photography<br>Coquimbo, Chile</p>
                 <div class="footer-contact">
                     <a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a>
-                    {bia(f'href="{WA_EN}" {WA_ATTRS}', "WhatsApp +1 (442) 385-4585", f'href="{WA_ES}" {WA_ATTRS}', "WhatsApp +1 (442) 385-4585")}
+                    {bia(f'href="{WA_EN}" {WA_ATTRS}', "Book a meeting", f'href="{WA_ES}" {WA_ATTRS}', "Agenda una reuni&oacute;n")}
                 </div>
             </div>
             <div class="footer-links">
@@ -280,7 +280,7 @@ def gallery_page(g, cat, order):
         <a class="lightbox-license" href="../licensing.html#inquiry">{bi("License this photo", "Licenciar esta foto")}</a>
     </div>
 
-    <script src="../main.js?v=20261127" defer></script>
+    <script src="../main.js?v=20261129" defer></script>
 </body>
 </html>
 """)
@@ -357,7 +357,7 @@ def index_page(M, order, by_cat):
             first_card = False
         out.append("            </div>\n        </section>")
     out.append("\n\n" + CTA % {"license": CTA_PLAIN} + "    </main>\n\n" + FOOTER + """
-    <script src="../main.js?v=20261127" defer></script>
+    <script src="../main.js?v=20261129" defer></script>
 </body>
 </html>
 """)
