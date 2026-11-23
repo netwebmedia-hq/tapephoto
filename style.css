@@ -1882,3 +1882,53 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
     h3 > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
     li > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
 }
+
+/* ============ Joni r2 (2026-11-23) ============ */
+/* Bilingual gallery pages: both languages are in the markup, gallery-lang.js sets <html lang>,
+   and this hides the one that does not match. */
+html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: none !important; }
+.gallery-langbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 14px; text-align: left; }
+.gallery-langbar .gallery-es { margin: 0; }
+.lang-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,0.5); border-radius: 999px; overflow: hidden; }
+.lang-btn { appearance: none; -webkit-appearance: none; background: transparent; color: var(--white); border: 0; font: inherit; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; min-width: 52px; min-height: 36px; padding: 0 14px; cursor: pointer; }
+.lang-btn[aria-pressed="true"] { background: var(--white); color: var(--black); }
+.lang-btn:focus-visible { outline: 2px solid var(--white); outline-offset: -4px; }
+@media (max-width: 768px) { .lang-btn { min-height: 44px; } }
+
+/* Contact page: the credit is part of the photograph (bottom right), so keep that corner when the
+   frame is cropped, and on phones show the whole photograph instead of a tall crop. */
+.contact-image img { object-position: 100% 100%; }
+@media (max-width: 860px) {
+    .contact-image { height: auto; }
+    .contact-image img { height: auto; aspect-ratio: 3 / 2; }
+}
+
+/* Services page: solid high-contrast text (7:1 or better) instead of faded white, lead + chips + photo up top. */
+.services-page .services-lead { opacity: 1; color: #ECECEC; font-size: 1.15rem; line-height: 1.6; }
+.services-intro-split { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; align-items: center; max-width: 1200px; padding: 0 24px; text-align: left; }
+.services-intro-split h1 { margin-bottom: 18px; }
+.services-photo { margin: 0; }
+.services-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid rgba(255,255,255,0.14); }
+.services-photo figcaption { margin-top: 8px; font-size: 0.75rem; letter-spacing: 0.06em; color: #CFCFCF; }
+.services-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; padding: 0; }
+.services-chips a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid rgba(255,255,255,0.55); border-radius: 999px; color: var(--white); text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+.services-chips a:hover, .services-chips a:focus-visible { background: var(--white); color: var(--black); }
+.services-page .services-grid { margin-top: 56px; }
+.services-page .service-card { scroll-margin-top: 96px; }
+.services-page .service-tag { opacity: 1; color: #D2D2D2; font-size: 0.72rem; }
+.services-page .service-price-note { opacity: 1; color: #E0E0E0; }
+.services-page .service-card p, .services-page .service-card ul { opacity: 1; color: #E0E0E0; }
+.services-page .service-card ul li::before { opacity: 1; color: #B8B8B8; }
+.services-page .bundle-inner { opacity: 1; color: #E0E0E0; }
+.services-page .faq-item p, .services-page .lp-section-lead, .services-page .lp-benefit p { opacity: 1; color: #E0E0E0; }
+@media (max-width: 860px) {
+    .services-intro-split { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* Licensing page: the availability note had no space above it and read as part of the paragraph. */
+.lic-inquiry-rights.lic-hold { margin-top: 28px; opacity: 1; color: #E6E6E6; }
+
+.services-page .bundle-inner p { opacity: 1; color: #E0E0E0; }
+.services-page .service-card p a, .services-page .bundle-inner p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+/* The footer "made by" line wraps on narrow phones instead of overflowing its box. */
+@media (max-width: 768px) { .nwm-credit-cta { white-space: normal; } }

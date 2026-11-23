@@ -24,7 +24,7 @@
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css?v=20261123">
+    <link rel="stylesheet" href="style.css?v=20261124">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,17 +100,25 @@
     <main class="services-page">
         <p class="lang-switch"><a href="servicios.html">Versi&oacute;n en espa&ntilde;ol &rarr;</a></p>
 
-        <section class="services-intro">
-            <h1>photography for businesses in La Serena and Coquimbo.</h1>
-            <p class="services-lead">
-                Professional photography for businesses and events in La Serena, Coquimbo and the
-                Coquimbo Region — aerial drone work, real estate, motorsport and brand sessions,
-                shot with the same cinematic eye you see in the portfolio.
-            </p>
+        <section class="services-intro services-intro-split">
+            <div class="services-intro-text">
+                <h1>photography for businesses in La Serena and Coquimbo.</h1>
+                <p class="services-lead">Professional photography for businesses and events in La Serena, Coquimbo and the Coquimbo Region.</p>
+                <ul class="services-chips" aria-label="Services">
+                    <li><a href="#aerial">Aerial drone work</a></li>
+                    <li><a href="#real-estate">Real estate</a></li>
+                    <li><a href="#motorsport">Motorsport</a></li>
+                    <li><a href="#business">Brand sessions</a></li>
+                </ul>
+            </div>
+            <figure class="services-photo">
+                <img src="assets/photos/turismo-atardecer.jpg" width="1000" height="667" alt="Aerial drone view at sunset over the bay" decoding="async" fetchpriority="high">
+                <figcaption>Photo: Carlos Martinez / TapePhoto</figcaption>
+            </figure>
         </section>
 
         <section class="services-grid">
-            <article class="service-card">
+            <article class="service-card" id="aerial">
                 <span class="service-tag">Aerial</span>
                 <h2>Aerial &amp; Drone Photography</h2>
                 <p class="service-price">Quoted per project <span class="service-price-note">&mdash; request yours by form or WhatsApp</span></p>
@@ -130,7 +138,7 @@
                 </div>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="real-estate">
                 <span class="service-tag">Real Estate</span>
                 <h2>Real Estate Photo + Drone Package</h2>
                 <p class="service-price">Quoted per project <span class="service-price-note">&mdash; request yours by form or WhatsApp</span></p>
@@ -151,7 +159,7 @@
                 <p>Once the photos are ready, <a href="https://marpolis.com/publicar.html" rel="noopener">list your property on Marpolis</a>, our sister real estate portal for La Serena and Coquimbo (in Spanish).</p>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="motorsport">
                 <span class="service-tag">Motorsport / Events</span>
                 <h2>Motorsport &amp; Event Coverage</h2>
                 <p class="service-price">Quoted per project <span class="service-price-note">&mdash; request yours by form or WhatsApp</span></p>
@@ -171,7 +179,7 @@
                 </div>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="business">
                 <span class="service-tag">Business</span>
                 <h2>Business &amp; Brand Sessions</h2>
                 <p class="service-price">Quoted per project <span class="service-price-note">&mdash; request yours by form or WhatsApp</span></p>

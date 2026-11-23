@@ -25,7 +25,7 @@
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css?v=20261123">
+    <link rel="stylesheet" href="style.css?v=20261124">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -100,17 +100,25 @@
     <main class="services-page">
         <p class="lang-switch"><a href="services.html" lang="en" hreflang="en">English version &rarr;</a></p>
 
-        <section class="services-intro">
-            <h1>fotograf&iacute;a para negocios en La Serena y Coquimbo.</h1>
-            <p class="services-lead">
-                Fotograf&iacute;a profesional para negocios y eventos en La Serena, Coquimbo y toda la
-                Regi&oacute;n de Coquimbo: fotograf&iacute;a a&eacute;rea con drone, inmobiliaria, motorsport y
-                sesiones de marca, con la misma mirada cinematogr&aacute;fica del portafolio.
-            </p>
+        <section class="services-intro services-intro-split">
+            <div class="services-intro-text">
+                <h1>fotograf&iacute;a para negocios en La Serena y Coquimbo.</h1>
+                <p class="services-lead">Fotograf&iacute;a profesional para negocios y eventos en La Serena, Coquimbo y toda la Regi&oacute;n de Coquimbo.</p>
+                <ul class="services-chips" aria-label="Servicios">
+                    <li><a href="#aerea">Fotograf&iacute;a a&eacute;rea con drone</a></li>
+                    <li><a href="#inmobiliaria">Inmobiliaria</a></li>
+                    <li><a href="#motorsport">Motorsport</a></li>
+                    <li><a href="#empresas">Sesiones de marca</a></li>
+                </ul>
+            </div>
+            <figure class="services-photo">
+                <img src="assets/photos/turismo-atardecer.jpg" width="1000" height="667" alt="Vista a&eacute;rea con drone al atardecer sobre la bah&iacute;a" decoding="async" fetchpriority="high">
+                <figcaption>Foto: Carlos Martinez / TapePhoto</figcaption>
+            </figure>
         </section>
 
         <section class="services-grid">
-            <article class="service-card">
+            <article class="service-card" id="aerea">
                 <span class="service-tag">A&eacute;rea</span>
                 <h2>Fotograf&iacute;a A&eacute;rea con Drone</h2>
                 <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
@@ -130,7 +138,7 @@
                 </div>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="inmobiliaria">
                 <span class="service-tag">Inmobiliaria</span>
                 <h2>Pack Inmobiliario: Fotos + Drone</h2>
                 <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
@@ -150,7 +158,7 @@
                 </div>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="motorsport">
                 <span class="service-tag">Motorsport / Eventos</span>
                 <h2>Motorsport y Cobertura de Eventos</h2>
                 <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
@@ -170,7 +178,7 @@
                 </div>
             </article>
 
-            <article class="service-card">
+            <article class="service-card" id="empresas">
                 <span class="service-tag">Empresas</span>
                 <h2>Sesiones para Empresas y Marcas</h2>
                 <p class="service-price">Cotizaci&oacute;n por proyecto <span class="service-price-note">&mdash; p&iacute;dela por formulario o WhatsApp</span></p>
