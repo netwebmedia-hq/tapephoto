@@ -89,6 +89,11 @@ a { color: inherit; }
   padding: var(--sc-4) var(--sc-gutter); pointer-events: none;
 }
 .bar > * { pointer-events: auto; }
+/* Joni r6: transparent over the hero, solid once main.js marks it .is-scrolled (past 40px) so the page never reads through the logo or links. */
+.bar { border-bottom: 1px solid transparent; transition: background-color 0.25s ease, border-color 0.25s ease; }
+.bar.is-scrolled { background: #0a0a0a; border-bottom-color: rgba(255, 255, 255, 0.14); }
+@media (scripting: none) { .bar { background: #0a0a0a; border-bottom-color: rgba(255, 255, 255, 0.14); } }
+@media (prefers-reduced-motion: reduce) { .bar { transition: none; } }
 .bar__mark { display: block; border-radius: var(--sc-r); }
 .bar__mark img { width: 118px; }
 .bar__right { display: flex; align-items: center; gap: var(--sc-4); }
@@ -661,4 +666,10 @@ html.index-open, html.index-open body { overflow: hidden; }
   .notes__grid { padding-top: var(--sc-5); }
   .archive { padding-block: var(--sc-5); }
   .archive__nums { margin: var(--sc-4) 0; }
+}
+
+/* Joni r6: the three archive figures fit a 360px phone (the English "categories" label pushed the page 15px wide). */
+@media (max-width: 400px) {
+  .archive__nums { gap: var(--sc-4); }
+  .archive__nums p { letter-spacing: 0.06em; }
 }

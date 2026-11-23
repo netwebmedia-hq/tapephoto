@@ -41,6 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         trackEvent('cta_click', { page_source: eventSource(), link_url: a.href });
     }, true);
 
+    // Header: transparent at the top, solid once the page has scrolled (see .is-scrolled in style.css).
+    const siteHeader = document.querySelector('.header, .bar');
+    if (siteHeader) {
+        const syncHeader = () => siteHeader.classList.toggle('is-scrolled', window.scrollY > 40);
+        syncHeader();
+        window.addEventListener('scroll', syncHeader, { passive: true });
+    }
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
