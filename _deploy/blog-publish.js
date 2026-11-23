@@ -208,7 +208,7 @@ ${JSON.stringify(faqLd, null, 2)}
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="../analytics.js" defer></script>
+    <script src="../analytics.js?v=3" defer></script>
 </head>
 <body>
 
@@ -301,7 +301,7 @@ ${JSON.stringify(ld, null, 2)}
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="../analytics.js" defer></script>
+    <script src="../analytics.js?v=3" defer></script>
 </head>
 <body>
 

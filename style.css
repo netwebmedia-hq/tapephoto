@@ -1932,3 +1932,26 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
 .services-page .service-card p a, .services-page .bundle-inner p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
 /* The footer "made by" line wraps on narrow phones instead of overflowing its box. */
 @media (max-width: 768px) { .nwm-credit-cta { white-space: normal; } }
+
+/* ============ Joni r3: services card CTA, contact second column ============ */
+.service-card .cta-row--stack { flex-direction: column; align-items: flex-start; gap: 6px; }
+.service-card .btn-quote { background: var(--white); color: var(--black); border-color: var(--white); min-height: 44px; display: inline-flex; align-items: center; }
+.service-card .btn-quote:hover { background: transparent; color: var(--white); }
+.service-card .cta-wa-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.8rem; color: #25D366; text-decoration: underline; text-underline-offset: 3px; }
+.service-card .cta-wa-link:hover { color: var(--white); }
+.contact-image .photo-credit { position: absolute; left: 14px; bottom: 10px; font-size: 0.7rem; letter-spacing: 0.08em; color: #fff; text-shadow: 0 1px 6px rgba(0,0,0,0.9); }
+.contact-image { margin: 0; }
+.contact-aside { display: none; }
+@media (min-width: 1100px) {
+    .contact-hero { display: grid; grid-template-columns: minmax(0, 500px) minmax(0, 460px); column-gap: 72px; justify-content: center; align-content: center; padding: 120px 24px 80px; }
+    .contact-text { grid-column: 1; grid-row: 1 / span 2; padding: 0; background: none; justify-content: flex-start; }
+    .contact-image { grid-column: 2; grid-row: 1; height: 330px; flex: none; align-self: start; }
+    .contact-aside { grid-column: 2; grid-row: 2; display: block; padding-top: 32px; }
+    .contact-direct { display: none; }
+    .contact-aside h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; margin: 0 0 18px; }
+    .contact-details { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 14px; }
+    .contact-details li { display: grid; gap: 4px; font-size: 0.95rem; }
+    .contact-details li > span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.15em; opacity: 0.6; }
+    .contact-details a, .contact-aside p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+    .contact-aside p { font-size: 0.9rem; opacity: 0.75; margin: 0; }
+}
