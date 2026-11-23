@@ -205,7 +205,7 @@ def head(title, desc, canonical, og_img, og_w, og_h, ld, title_es):
 {json.dumps(ld, indent=2, ensure_ascii=False)}
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <script src="../analytics.js" defer></script>
+    <script src="../analytics.js?v=3" defer></script>
 </head>
 """
 
@@ -390,8 +390,9 @@ def home_block(M, order, by_cat):
     for c in M["categories"]:
         gs = by_cat[c["id"]]
         cnt = sum(len(x["photos"]) for x in gs)
-        thumbs = "".join(f'<img src="galleries/{img_url(g, ph, sm=True)}" width="{ph["sw"]}" height="{ph["sh"]}" alt="" loading="lazy" decoding="async">'
-                         for g, ph in home_picks(gs))
+        # Joni r3: the first thumbnail loads eagerly (nothing blank in a full-page capture); the page shows one per category.
+        thumbs = "".join(f'<img src="galleries/{img_url(g, ph, sm=True)}" width="{ph["sw"]}" height="{ph["sh"]}" alt="" {"" if k == 0 else "loading=" + chr(34) + "lazy" + chr(34) + " "}decoding="async">'
+                         for k, (g, ph) in enumerate(home_picks(gs)))
         cats.append(f'                <li><a href="galleries/#{c["id"]}"><span class="c">{esc(c["name"])}</span>'
                     f'<span class="k">{plural(cnt, "photograph")} · {plural(len(gs), "gallery").replace("gallerys", "galleries")}</span>'
                     f'<span class="t">{thumbs}</span></a></li>\n')
@@ -402,9 +403,9 @@ def home_block(M, order, by_cat):
                 <h2>The archive</h2>
             </div>
             <div class="archive__nums">
-                <p><b data-sc-count="0 {total}">{total}</b>photographs</p>
-                <p><b data-sc-count="0 {len(order)}">{len(order)}</b>galleries</p>
-                <p><b data-sc-count="0 {len(M['categories'])}">{len(M['categories'])}</b>categories</p>
+                <p><b>{total}</b>photographs</p>
+                <p><b>{len(order)}</b>galleries</p>
+                <p><b>{len(M['categories'])}</b>categories</p>
             </div>
             <ul class="archive__cats">
 {''.join(cats)}            </ul>

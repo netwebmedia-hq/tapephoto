@@ -31,7 +31,7 @@
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="assets/home/scrollcraft.css?v=20261019">
-    <link rel="stylesheet" href="assets/home/home.css?v=20261124">
+    <link rel="stylesheet" href="assets/home/home.css?v=20261125">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -486,7 +486,7 @@
     </script>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="analytics.js" defer></script>
+    <script src="analytics.js?v=3" defer></script>
 </head>
 <body>
 
@@ -566,15 +566,14 @@
 
     <!-- Fr. 01. The darkroom, already lit by the safelight: print one hangs on the
          line, its label on the wall, a nearer print out of focus in front. -->
-    <section id="fr-01" class="act-hero" data-sc-act="pin" data-sc-span="2" data-span-key="hero" data-sc-drift="#0d0808" tabindex="-1">
+    <section id="fr-01" class="act-hero" data-sc-act="pin" data-sc-span="1.15" data-span-key="hero" data-sc-drift="#0d0808" tabindex="-1">
         <div data-sc-stage class="room">
             <div class="room__wall" aria-hidden="true"></div>
             <div class="hang">
                 <span class="wire" aria-hidden="true"></span>
                 <figure class="print">
                     <span class="peg peg--l" aria-hidden="true"></span><span class="peg peg--r" aria-hidden="true"></span>
-                    <video class="print__film" src="assets/home/film/film-loop.mp4" poster="assets/home/film/film-loop-poster.jpg" width="1080" height="720" muted autoplay loop playsinline preload="auto" aria-label="Fragmento en movimiento de TapePhoto: una película en fotografías. Rally en Concepción, Tower Bridge, surf en Chile, Mónaco, el volcán Osorno, Edimburgo, La Herradura, Rapa Nui y el valle del Elqui."></video>
-                    <img class="print__still" src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-41.jpg" width="1600" height="1200" alt="Nubes anaranjadas del atardecer sobre los cerros de La Serena, Chile, con un poste de luz en primer plano" decoding="async">
+                    <picture><source media="(min-width: 861px)" srcset="assets/photos/turismo-atardecer.jpg" width="1000" height="667"><img class="print__still" src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-41.jpg" width="1600" height="1200" alt="Fotografía de La Serena, Chile, al atardecer" decoding="async" fetchpriority="high"></picture>
                 </figure>
             </div>
             <div class="placard">
@@ -598,10 +597,10 @@
     </section>
 
     <!-- Fr. 02 to 08. The rest of the line, travelling sideways. -->
-    <section id="work" class="act-line" data-sc-act="pan" data-sc-span="3.2" data-span-key="line" data-sc-drift="#100908" aria-labelledby="work-h">
-        <div data-sc-stage class="room room--line">
+    <section id="work" class="act-line" data-sc-act="flow" data-sc-drift="#100908" aria-labelledby="work-h">
+        <div class="room room--line">
             <div class="room__wall" aria-hidden="true"></div>
-            <div class="line-rail" data-sc-pan="0.04">
+            <div class="line-rail" tabindex="0" role="region" aria-label="Del archivo: desliza para ver más fotos">
                 <span class="wire" aria-hidden="true"></span>
                 <div class="rail-lead">
                     <h2 id="work-h">Del archivo</h2>
@@ -708,8 +707,8 @@
 
     <!-- Fr. 09. THE PEAK. Authored hush first (dim room, empty tray), then a blank
          sheet goes in and the visitor's scroll develops it. Then the light. -->
-    <section id="fr-09" class="act-tray" data-sc-act="pin" data-sc-span="3.8" data-span-key="tray" data-sc-drift="#0a0606" tabindex="-1">
-        <div data-sc-stage class="trayroom">
+    <section id="fr-09" class="act-tray" data-sc-act="flow" data-sc-drift="#0a0606" tabindex="-1">
+        <div class="trayroom">
             <div class="trayroom__lamp" aria-hidden="true"></div>
             <div class="trayroom__day" aria-hidden="true"></div>
             <div class="tray">
@@ -724,7 +723,7 @@
             </div>
             <div class="safelight" aria-hidden="true"></div>
             <div class="sc-scrim sc-scrim--lead" aria-hidden="true"></div>
-            <div class="label sc-copy sc-copy--lead" data-sc-cue="0.86 1 0.05 0">
+            <div class="label sc-copy sc-copy--lead">
                 <p class="label__code">Fot. 09</p>
                 <p class="label__title">WRC Rally Chile 2019</p>
                 <p class="label__meta">Concepción, Chile · mayo de 2019 · Motorsport</p>
@@ -743,8 +742,8 @@
             </div>
             <div class="objs">
                 <article class="obj obj--a" id="fr-10" tabindex="-1">
-                    <figure data-sc-reveal="up" data-sc-reveal-at="0.16 0.34">
-                        <img src="galleries/img/aerial-drone/aerial-drone-03-sm.jpg" srcset="galleries/img/aerial-drone/aerial-drone-03-sm.jpg 800w, galleries/img/aerial-drone/aerial-drone-03.jpg 1600w" sizes="(max-width: 860px) 90vw, 54vw" width="800" height="533" alt="Vista aérea al atardecer sobre la ciudad y la costa" loading="lazy">
+                    <figure>
+                        <img src="galleries/img/aerial-drone/aerial-drone-03-sm.jpg" srcset="galleries/img/aerial-drone/aerial-drone-03-sm.jpg 800w, galleries/img/aerial-drone/aerial-drone-03.jpg 1600w" sizes="(max-width: 860px) 90vw, 54vw" width="800" height="533" alt="Vista aérea al atardecer sobre la ciudad y la costa">
                     </figure>
                     <div class="label">
                         <p class="label__code">Fot. 10</p>
@@ -755,8 +754,8 @@
                     </div>
                 </article>
                 <article class="obj obj--b" id="fr-11" tabindex="-1">
-                    <figure data-sc-reveal="left" data-sc-reveal-at="0.26 0.44">
-                        <img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-43-sm.jpg" srcset="galleries/img/coast-travel-wildlife/coast-travel-wildlife-43-sm.jpg 800w, galleries/img/coast-travel-wildlife/coast-travel-wildlife-43.jpg 1600w" sizes="(max-width: 860px) 90vw, 30vw" width="800" height="577" alt="Una playa desierta de La Serena al atardecer con palmeras y una torre de salvavidas" loading="lazy">
+                    <figure>
+                        <img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-43-sm.jpg" srcset="galleries/img/coast-travel-wildlife/coast-travel-wildlife-43-sm.jpg 800w, galleries/img/coast-travel-wildlife/coast-travel-wildlife-43.jpg 1600w" sizes="(max-width: 860px) 90vw, 30vw" width="800" height="577" alt="Una playa desierta de La Serena al atardecer con palmeras y una torre de salvavidas">
                     </figure>
                     <div class="label">
                         <p class="label__code">Fot. 11</p>
@@ -767,8 +766,8 @@
                     </div>
                 </article>
                 <article class="obj obj--c" id="fr-12" tabindex="-1">
-                    <figure data-sc-reveal="right" data-sc-reveal-at="0.40 0.58">
-                        <img src="galleries/img/portraits/portraits-08-sm.jpg" srcset="galleries/img/portraits/portraits-08-sm.jpg 800w, galleries/img/portraits/portraits-08.jpg 1600w" sizes="(max-width: 860px) 90vw, 30vw" width="800" height="533" alt="Retrato de una mujer sonriendo, fotografiada en terreno" loading="lazy">
+                    <figure>
+                        <img src="galleries/img/portraits/portraits-08-sm.jpg" srcset="galleries/img/portraits/portraits-08-sm.jpg 800w, galleries/img/portraits/portraits-08.jpg 1600w" sizes="(max-width: 860px) 90vw, 30vw" width="800" height="533" alt="Retrato de una mujer sonriendo, fotografiada en terreno">
                     </figure>
                     <div class="label">
                         <p class="label__code">Fot. 12</p>
@@ -789,18 +788,18 @@
                 <h2>El archivo</h2>
             </div>
             <div class="archive__nums">
-                <p><b data-sc-count="0 417">417</b>fotografías</p>
-                <p><b data-sc-count="0 18">18</b>galerías</p>
-                <p><b data-sc-count="0 7">7</b>categorías</p>
+                <p><b>417</b>fotografías</p>
+                <p><b>18</b>galerías</p>
+                <p><b>7</b>categorías</p>
             </div>
             <ul class="archive__cats">
-                <li><a href="galleries/#motorsport"><span class="c">Motorsport</span><span class="k">116 fotografías · 5 galerías</span><span class="t"><img src="galleries/img/wrc-rally-chile-2019/wrc-rally-chile-2019-01-sm.jpg" width="800" height="533" alt="WRC Rally Chile 2019: un World Rally Car en un tramo de ripio en el bosque cerca de Concepción" loading="lazy" decoding="async"><img src="galleries/img/rally-raid-atacama/rally-raid-atacama-02-sm.jpg" width="800" height="533" alt="Buggy de rally raid saltando sobre dunas del desierto en Atacama, Chile" loading="lazy" decoding="async"><img src="galleries/img/indycar-long-beach-2018/indycar-long-beach-2018-04-sm.jpg" width="800" height="533" alt="Foto con paneo de IndyCar en el Toyota Grand Prix de Long Beach 2018" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#events"><span class="c">Eventos &amp; En vivo</span><span class="k">127 fotografías · 5 galerías</span><span class="t"><img src="galleries/img/del-mar-opening-day-2018/del-mar-opening-day-2018-04-sm.jpg" width="800" height="533" alt="Multitud con sombreros y ropa de verano en el Opening Day del hipódromo de Del Mar" loading="lazy" decoding="async"><img src="galleries/img/st-patricks-parade-hermosa-beach/st-patricks-parade-hermosa-beach-08-sm.jpg" width="800" height="257" alt="Banda de música y autos clásicos en el desfile de San Patricio de Hermosa Beach" loading="lazy" decoding="async"><img src="galleries/img/lebowski-fest-la-2013/lebowski-fest-la-2013-01-sm.jpg" width="800" height="286" alt="Fans disfrazados del Lebowski Fest en Los Ángeles, 2013" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#portraits"><span class="c">Retratos</span><span class="k">12 fotografías · 1 galería</span><span class="t"><img src="galleries/img/portraits/portraits-04-sm.jpg" width="533" height="800" alt="Retrato en blanco y negro de un hombre y una mujer sosteniendo un diario de Blink-182" loading="lazy" decoding="async"><img src="galleries/img/portraits/portraits-03-sm.jpg" width="621" height="800" alt="Retrato en blanco y negro de un hombre con polera blanca levantando dos dedos" loading="lazy" decoding="async"><img src="galleries/img/portraits/portraits-10-sm.jpg" width="620" height="800" alt="Retrato de cerca de una mujer de pelo largo y labial rosado intenso" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#street"><span class="c">Calle &amp; Ciudades</span><span class="k">64 fotografías · 3 galerías</span><span class="t"><img src="galleries/img/tijuana-border-2019/tijuana-border-2019-07-sm.jpg" width="800" height="533" alt="La valla fronteriza entrando al Pacífico en Playas de Tijuana al atardecer" loading="lazy" decoding="async"><img src="galleries/img/san-francisco-los-angeles/san-francisco-los-angeles-07-sm.jpg" width="800" height="273" alt="Skyline de San Francisco desde Twin Peaks" loading="lazy" decoding="async"><img src="galleries/img/las-vegas-nights/las-vegas-nights-13-sm.jpg" width="800" height="533" alt="El Strip de Las Vegas de noche con estelas de luz" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#architecture"><span class="c">Arquitectura &amp; Ciudades</span><span class="k">7 fotografías · 1 galería</span><span class="t"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-01-sm.jpg" width="600" height="800" alt="Torres residenciales de vidrio y palmeras en una calle de San Diego bajo un cielo azul intenso" loading="lazy" decoding="async"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-03-sm.jpg" width="800" height="600" alt="Edificios de oficinas modernos frente al agua y un paseo de la marina en el centro de San Diego" loading="lazy" decoding="async"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-06-sm.jpg" width="600" height="800" alt="Dos torres de San Diego vistas a través del pasto del Embarcadero Marina Park" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#aerial"><span class="c">Aérea &amp; Drone</span><span class="k">17 fotografías · 1 galería</span><span class="t"><img src="galleries/img/aerial-drone/aerial-drone-01-sm.jpg" width="800" height="251" alt="Vista aérea con drone de casas de playa y calles a lo largo de la costa" loading="lazy" decoding="async"><img src="galleries/img/aerial-drone/aerial-drone-06-sm.jpg" width="800" height="338" alt="Vista aérea con drone del oleaje rompiendo en una bahía rocosa de la costa" loading="lazy" decoding="async"><img src="galleries/img/aerial-drone/aerial-drone-14-sm.jpg" width="800" height="533" alt="Vista aérea con drone de un pueblo costero iluminado por luces de calle de noche" loading="lazy" decoding="async"></span></a></li>
-                <li><a href="galleries/#landscapes"><span class="c">Paisajes &amp; Viajes</span><span class="k">74 fotografías · 2 galerías</span><span class="t"><img src="galleries/img/andes-glaciers/andes-glaciers-10-sm.jpg" width="800" height="212" alt="Glaciar y penitentes en los Andes chilenos bajo un cielo azul intenso" loading="lazy" decoding="async"><img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-15-sm.jpg" width="800" height="533" alt="Luna creciente naranja sobre una ciudad iluminada en un cerro, con un monumento en la cima" loading="lazy" decoding="async"><img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-18-sm.jpg" width="800" height="533" alt="Surfista montando una ola verde que rompe" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#motorsport"><span class="c">Motorsport</span><span class="k">116 fotografías · 5 galerías</span><span class="t"><img src="galleries/img/wrc-rally-chile-2019/wrc-rally-chile-2019-01-sm.jpg" width="800" height="533" alt="WRC Rally Chile 2019: un World Rally Car en un tramo de ripio en el bosque cerca de Concepción" decoding="async"><img src="galleries/img/rally-raid-atacama/rally-raid-atacama-02-sm.jpg" width="800" height="533" alt="Buggy de rally raid saltando sobre dunas del desierto en Atacama, Chile" loading="lazy" decoding="async"><img src="galleries/img/indycar-long-beach-2018/indycar-long-beach-2018-04-sm.jpg" width="800" height="533" alt="Foto con paneo de IndyCar en el Toyota Grand Prix de Long Beach 2018" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#events"><span class="c">Eventos &amp; En vivo</span><span class="k">127 fotografías · 5 galerías</span><span class="t"><img src="galleries/img/del-mar-opening-day-2018/del-mar-opening-day-2018-04-sm.jpg" width="800" height="533" alt="Multitud con sombreros y ropa de verano en el Opening Day del hipódromo de Del Mar" decoding="async"><img src="galleries/img/st-patricks-parade-hermosa-beach/st-patricks-parade-hermosa-beach-08-sm.jpg" width="800" height="257" alt="Banda de música y autos clásicos en el desfile de San Patricio de Hermosa Beach" loading="lazy" decoding="async"><img src="galleries/img/lebowski-fest-la-2013/lebowski-fest-la-2013-01-sm.jpg" width="800" height="286" alt="Fans disfrazados del Lebowski Fest en Los Ángeles, 2013" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#portraits"><span class="c">Retratos</span><span class="k">12 fotografías · 1 galería</span><span class="t"><img src="galleries/img/portraits/portraits-04-sm.jpg" width="533" height="800" alt="Retrato en blanco y negro de un hombre y una mujer sosteniendo un diario de Blink-182" decoding="async"><img src="galleries/img/portraits/portraits-03-sm.jpg" width="621" height="800" alt="Retrato en blanco y negro de un hombre con polera blanca levantando dos dedos" loading="lazy" decoding="async"><img src="galleries/img/portraits/portraits-10-sm.jpg" width="620" height="800" alt="Retrato de cerca de una mujer de pelo largo y labial rosado intenso" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#street"><span class="c">Calle &amp; Ciudades</span><span class="k">64 fotografías · 3 galerías</span><span class="t"><img src="galleries/img/tijuana-border-2019/tijuana-border-2019-07-sm.jpg" width="800" height="533" alt="La valla fronteriza entrando al Pacífico en Playas de Tijuana al atardecer" decoding="async"><img src="galleries/img/san-francisco-los-angeles/san-francisco-los-angeles-07-sm.jpg" width="800" height="273" alt="Skyline de San Francisco desde Twin Peaks" loading="lazy" decoding="async"><img src="galleries/img/las-vegas-nights/las-vegas-nights-13-sm.jpg" width="800" height="533" alt="El Strip de Las Vegas de noche con estelas de luz" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#architecture"><span class="c">Arquitectura &amp; Ciudades</span><span class="k">7 fotografías · 1 galería</span><span class="t"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-01-sm.jpg" width="600" height="800" alt="Torres residenciales de vidrio y palmeras en una calle de San Diego bajo un cielo azul intenso" decoding="async"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-03-sm.jpg" width="800" height="600" alt="Edificios de oficinas modernos frente al agua y un paseo de la marina en el centro de San Diego" loading="lazy" decoding="async"><img src="galleries/img/san-diego-waterfront/san-diego-waterfront-06-sm.jpg" width="600" height="800" alt="Dos torres de San Diego vistas a través del pasto del Embarcadero Marina Park" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#aerial"><span class="c">Aérea &amp; Drone</span><span class="k">17 fotografías · 1 galería</span><span class="t"><img src="galleries/img/aerial-drone/aerial-drone-01-sm.jpg" width="800" height="251" alt="Vista aérea con drone de casas de playa y calles a lo largo de la costa" decoding="async"><img src="galleries/img/aerial-drone/aerial-drone-06-sm.jpg" width="800" height="338" alt="Vista aérea con drone del oleaje rompiendo en una bahía rocosa de la costa" loading="lazy" decoding="async"><img src="galleries/img/aerial-drone/aerial-drone-14-sm.jpg" width="800" height="533" alt="Vista aérea con drone de un pueblo costero iluminado por luces de calle de noche" loading="lazy" decoding="async"></span></a></li>
+                <li><a href="galleries/#landscapes"><span class="c">Paisajes &amp; Viajes</span><span class="k">74 fotografías · 2 galerías</span><span class="t"><img src="galleries/img/andes-glaciers/andes-glaciers-10-sm.jpg" width="800" height="212" alt="Glaciar y penitentes en los Andes chilenos bajo un cielo azul intenso" decoding="async"><img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-15-sm.jpg" width="800" height="533" alt="Luna creciente naranja sobre una ciudad iluminada en un cerro, con un monumento en la cima" loading="lazy" decoding="async"><img src="galleries/img/coast-travel-wildlife/coast-travel-wildlife-18-sm.jpg" width="800" height="533" alt="Surfista montando una ola verde que rompe" loading="lazy" decoding="async"></span></a></li>
             </ul>
             <p class="archive__links"><a class="btn" href="galleries/">Todas las galerías</a> <a class="btn" href="licencias.html">Cómo funcionan las licencias</a> <a class="btn" href="impresiones.html">Impresiones</a></p>
         </div>
@@ -885,7 +884,7 @@
 
 </main>
 <script src="assets/home/scrollcraft.js?v=20261019"></script>
-<script src="assets/home/home.js?v=20261123"></script>
+<script src="assets/home/home.js?v=20261125"></script>
 <script src="main.js?v=20261005" defer></script>
 </body>
 </html>

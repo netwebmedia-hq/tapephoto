@@ -464,7 +464,7 @@ html.index-open, html.index-open body { overflow: hidden; }
    natural flow and then jumped to the pinned layout: a whole-viewport shift (CLS 1.0 in the
    2026-11-10 Lighthouse run). These rules give the same geometry before the script runs.
    The engine's own inline heights and .sc-stage rules land on identical values, so nothing
-   moves when it starts. Spans mirror data-sc-span in index.html (2, 3.2, 3.8). */
+   moves when it starts. Spans mirror data-sc-span in index.html (only the hero is pinned now: 1.15). */
 [data-sc-act="pin"], [data-sc-act="pan"], [data-sc-act="scrub"] { position: relative; }
 [data-sc-act="pin"] > [data-sc-stage], [data-sc-act="pan"] > [data-sc-stage], [data-sc-act="scrub"] > [data-sc-stage] {
   position: sticky; top: 0;
@@ -472,9 +472,7 @@ html.index-open, html.index-open body { overflow: hidden; }
   overflow: clip;
   z-index: var(--sc-z-stage);
 }
-[data-sc-act="pin"][data-sc-span="2"], [data-sc-act="pan"][data-sc-span="2"] { height: 200vh; }
-[data-sc-act="pin"][data-sc-span="3.2"], [data-sc-act="pan"][data-sc-span="3.2"] { height: 320vh; }
-[data-sc-act="pin"][data-sc-span="3.8"], [data-sc-act="pan"][data-sc-span="3.8"] { height: 380vh; }
+[data-sc-act="pin"][data-sc-span="1.15"] { height: 115vh; }
 
 /* ================= Joni r1 (2026-11-23): phone hero still, floating print, touch targets ===== */
 .print .print__still { display: none; }
@@ -502,3 +500,87 @@ html.index-open, html.index-open body { overflow: hidden; }
 .hang .wire { right: -4vw; -webkit-mask-image: linear-gradient(90deg, #000 78%, transparent); mask-image: linear-gradient(90deg, #000 78%, transparent); }
 /* The blurred floating print was cut off at the top right and ran under the header controls; it is decoration, so it is gone. */
 .near { display: none; }
+
+/* ================= Joni r3 (2026-11-23): everything visible without JS, a much shorter page ===== */
+
+/* 1. Reveal is progressive enhancement. The resting state is visible; the rise-in only plays when the
+      observer fires and the visitor has not asked for reduced motion. Nothing waits on JS to appear. */
+[data-sc-in], [data-sc-stagger] > * { opacity: 1; transform: none; transition: none; }
+@keyframes tp-rise { from { opacity: 0; transform: translate3d(0, 14px, 0); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  html.sc-ready [data-sc-in].sc-in, html.sc-ready [data-sc-stagger] > .sc-in { animation: tp-rise 560ms var(--sc-ease-out) both; }
+}
+
+/* 2. Hero: the print is a still of La Serena at every width (the film is one click away on its button). */
+.print .print__still { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #1a1b1c; }
+.print picture { display: block; }
+
+/* 3. The line: a native horizontal scroll-snap row, not a pinned act. Fades at both edges say "more". */
+.act-line .room--line { position: relative; overflow: clip; padding: var(--sc-8) 0 var(--sc-6); }
+.act-line .line-rail {
+  position: relative; top: auto; left: auto; width: auto; display: flex; align-items: flex-start;
+  gap: clamp(1.5rem, 4vw, 4rem); padding: 28px var(--sc-gutter) var(--sc-6);
+  overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: var(--sc-gutter);
+  scrollbar-width: thin; scrollbar-color: #4a3d3a transparent;
+  background: linear-gradient(var(--wire), #5a5250) 0 38px / 100% 2px no-repeat; background-attachment: local;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 64px), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 14px, #000 calc(100% - 64px), transparent 100%);
+}
+.act-line .line-rail:focus-visible { outline: 2px solid var(--sc-accent); outline-offset: -2px; }
+.act-line .line-rail > .wire { display: none; }
+.act-line .line-rail .item { --drop: 0px; scroll-snap-align: start; }
+.act-line .line-rail .item:not(.item--tall) { --w: min(30vw, 27rem); }
+.act-line .line-rail .item--tall { --w: min(19vw, 17rem); }
+.act-line .rail-lead { width: min(27vw, 22rem); margin-top: 0; scroll-snap-align: start; }
+.act-line .rail-end { width: min(24vw, 17rem); margin-top: var(--sc-6); }
+
+/* 4. The tray: the developed print, standing still, with its label beside it. */
+.act-tray .trayroom {
+  position: relative; overflow: clip; min-height: 0; padding: var(--sc-8) var(--sc-gutter);
+  display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: var(--sc-7); align-items: center;
+  --safe: 0; --day: 1; --tray-o: 1; --scrim-o: 0; --label-o: 1; --tilt3d: 12deg;
+}
+.act-tray .tray { width: 100%; translate: none; }
+.act-tray .sheet { opacity: 1; }
+.act-tray .sheet__img { filter: none; }
+.act-tray .trayroom .sc-scrim { display: none; }
+.act-tray .trayroom .label.sc-copy { position: static; inset: auto; max-width: 34ch; will-change: auto; }
+
+/* 5. Shorter flow sections. */
+.commissions { padding-top: var(--sc-8); }
+.commissions__more { margin-top: var(--sc-7); }
+.archive { padding-block: var(--sc-8); }
+.archive__nums { margin: var(--sc-6) 0 var(--sc-7); }
+.close { min-height: 0; padding-top: var(--sc-8); }
+.close__hang { width: 80%; }
+.foot { margin-top: var(--sc-8); }
+@media (min-width: 861px) {
+  .objs { margin-top: var(--sc-7); row-gap: var(--sc-6); align-items: start; }
+  .obj--a { grid-column: 1 / span 4; }
+  .obj--b { grid-column: 5 / span 4; margin-top: 0; }
+  .obj--c { grid-column: 9 / span 4; grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .obj img { aspect-ratio: 3 / 2; object-fit: cover; }
+  .archive__cats { columns: 3; column-gap: var(--sc-7); }
+}
+
+/* 6. Phones: rows instead of long strips, one thumbnail per category, tighter rhythm. */
+@media (max-width: 860px) {
+  .act-line .room--line { padding: var(--sc-7) 0 var(--sc-5); }
+  .act-line .line-rail { gap: 1.25rem; }
+  .act-line .line-rail .item:not(.item--tall) { --w: 78vw; }
+  .act-line .line-rail .item--tall { --w: 56vw; }
+  .act-line .rail-lead { width: 62vw; }
+  .act-line .rail-end { width: 60vw; margin-top: var(--sc-5); }
+  .act-tray .trayroom { grid-template-columns: minmax(0, 1fr); gap: var(--sc-6); padding-block: var(--sc-7); }
+  .commissions { padding-top: var(--sc-7); }
+  .obj + .obj, .obj--b { margin-top: var(--sc-6); }
+  .archive { padding-block: var(--sc-7); }
+  .archive__cats a { padding-bottom: var(--sc-4); }
+  .close__hang { width: 100%; }
+  .close, .close__wall { gap: var(--sc-6); }
+}
+
+/* One thumbnail per category (the other two stay in the markup, lazy and unloaded): faster, shorter, nothing blank. */
+.archive__cats .t { grid-template-columns: minmax(0, 1fr); }
+.archive__cats .t > :nth-child(n+2) { display: none; }
+.archive__cats .t img { aspect-ratio: 21 / 9; }

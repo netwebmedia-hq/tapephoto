@@ -24,10 +24,10 @@
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="style.css?v=20261124">
+    <link rel="stylesheet" href="style.css?v=20261125">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <!-- Analytics: the GA4 Measurement ID lives in analytics.js (one place, whole site). -->
-    <script src="analytics.js" defer></script>
+    <script src="analytics.js?v=3" defer></script>
 </head>
 <body>
 
@@ -50,9 +50,10 @@
     </header>
 
     <main class="contact-hero">
-        <div class="contact-image">
+        <figure class="contact-image">
             <img src="images/coastal_aerial.jpg" alt="Aerial Photography - Chile Coast">
-        </div>
+            <figcaption class="photo-credit">Photo: Carlos Martinez &middot; TapePhoto</figcaption>
+        </figure>
         <div class="contact-text">
             <p class="lang-switch"><a href="contacto.html">Versi&oacute;n en espa&ntilde;ol &rarr;</a></p>
             <h1>let's connect.</h1>
@@ -87,6 +88,15 @@
                 </div>
             </div>
         </div>
+        <aside class="contact-aside" aria-labelledby="ca-h">
+            <h2 id="ca-h">Direct contact</h2>
+            <ul class="contact-details">
+                <li><span>WhatsApp</span><a href="https://wa.me/14423854585?text=Hi!%20I%20found%20you%20on%20tapephoto.com" target="_blank" rel="noopener">+1 (442) 385-4585</a></li>
+                <li><span>Email</span><a href="mailto:carlos@netwebmedia.com">carlos@netwebmedia.com</a></li>
+                <li><span>Service area</span>Based in Coquimbo. Shoots in La Serena, Coquimbo and across the Coquimbo Region, Chile.</li>
+            </ul>
+            <p>Carlos replies on WhatsApp with a quote for your shoot. <a href="services.html">See all services</a></p>
+        </aside>
     </main>
 
     <footer class="footer">

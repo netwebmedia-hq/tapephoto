@@ -14,11 +14,9 @@
   var ss = function (a, b, v) { var t = clamp((v - a) / (b - a), 0, 1); return t * t * (3 - 2 * t); };
   var r2 = function (v) { return Math.round(v * 100) / 100; };
 
-  // Spans are authored per device before the engine reads them: a phone rail is
-  // several screens wide, and with reduced motion the hero has nothing to travel.
-  // shortcut: read once at load, so rotating across 860px keeps the first spans; fine for a homepage.
-  var spans = { hero: phone ? 1.6 : 2, line: phone ? 4.2 : 3.2, tray: phone ? 4.8 : 3.8 };
-  if (reduce) { spans.hero = 1.2; spans.line = 1.3; spans.tray = 3; }
+  // Only the hero is pinned now (Joni r3): the line is a native scroll-snap row and the tray is
+  // a static developed print, so nothing waits on scroll to show up and the page stays short.
+  var spans = { hero: reduce ? 1.1 : 1.15 };
   Object.keys(spans).forEach(function (k) {
     var el = $('[data-span-key="' + k + '"]');
     if (el) el.setAttribute('data-sc-span', String(spans[k]));
@@ -69,19 +67,10 @@
     if (!el) return null;
     var y = window.scrollY;
     if (id === 'fr-01') return 0;
-    var act = el.closest('[data-sc-act="pan"]');
-    if (act) {
-      var rail = $('[data-sc-pan]', act);
-      var over = rail.scrollWidth - vw();
-      var extra = parseFloat(rail.getAttribute('data-sc-pan')) || 0;
-      var x = el.offsetLeft + el.offsetWidth / 2 - vw() / 2;
-      var p = over > 0 ? clamp(x / (over * (1 + extra)), 0, 1) : 0;
-      var top = act.getBoundingClientRect().top + y;
-      return top + p * (act.offsetHeight - vh());
-    }
-    if (id === 'fr-09') {
-      var t = el.getBoundingClientRect().top + y;
-      return t + 0.97 * (el.offsetHeight - vh());
+    var lineRail = el.closest('.line-rail');
+    if (lineRail) {                                    // a frame in the row: slide the row, then the page
+      lineRail.scrollTo({ left: el.offsetLeft - parseFloat(getComputedStyle(lineRail).paddingLeft), behavior: reduce ? 'auto' : 'smooth' });
+      return lineRail.getBoundingClientRect().top + y - vh() * 0.2;
     }
     return el.getBoundingClientRect().top + y - vh() * 0.12;
   }
@@ -97,20 +86,6 @@
     var el = document.getElementById(id);
     if (el) el.focus({ preventScroll: true });
     history.replaceState(null, '', '#' + id);
-  });
-
-  // Keyboard focus inside the rail or the tray label: the engine cannot centre a
-  // control in a sideways or pinned act, so park the act where that frame shows.
-  document.addEventListener('focusin', function (e) {
-    var item = e.target.closest && e.target.closest('.line-rail .item, #fr-09 .label');
-    if (!item) return;
-    var id = item.id || 'fr-09';
-    var top = frameTop(id);
-    if (top === null) return;
-    // The browser's own focus scroll can start after this event; land again a frame later to cancel it.
-    var park = function () { if (Math.abs(window.scrollY - top) > 4) window.scrollTo({ top: top, behavior: 'instant' }); };
-    park();
-    requestAnimationFrame(function () { requestAnimationFrame(park); });
   });
 
   // ------------------------------------------------------------ the strip
@@ -194,6 +169,7 @@
   var stage = $('.trayroom'), tray = $('.tray', stage), sheet = $('.sheet', stage), img = $('.sheet__img', stage);
   var lastY = window.scrollY, agit = 0, trayState = '';
   function develop() {
+    if (trayAct.getAttribute('data-sc-act') !== 'pin') return;   // static developed print (Joni r3)
     var tr = trayAct.getBoundingClientRect();
     if (tr.bottom < -vh() || tr.top > vh() * 2) return;
     var p = progress(trayAct);
