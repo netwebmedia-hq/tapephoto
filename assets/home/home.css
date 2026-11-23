@@ -584,3 +584,46 @@ html.index-open, html.index-open body { overflow: hidden; }
 .archive__cats .t { grid-template-columns: minmax(0, 1fr); }
 .archive__cats .t > :nth-child(n+2) { display: none; }
 .archive__cats .t img { aspect-ratio: 21 / 9; }
+
+/* ================= Joni r4 (2026-11-23): the close is a real frame, not a blank print ===== */
+.close__hang .print { padding: 1.5%; }
+.close__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 32%; background: #1a1b1c; }
+
+/* Phones: a shorter wall. Repeated caption text (region and "Encargo" on every commission, the
+   note that restates the title) is collapsed, thumbnails are wider than tall, rhythm is tighter. */
+@media (max-width: 860px) {
+  .obj img { aspect-ratio: 16 / 9; object-fit: cover; }
+  .obj + .obj, .obj--b { margin-top: var(--sc-5); }
+  .obj .label__meta { display: none; }
+  .obj .label__note { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .commissions { padding-top: var(--sc-6); }
+  .commissions__more { margin-top: var(--sc-5); }
+  .archive { padding-block: var(--sc-6); }
+  .archive__nums { display: flex; flex-wrap: nowrap; gap: var(--sc-5); margin: var(--sc-5) 0; }
+  .archive__nums p { margin: 0; }
+  .archive__nums b { font-size: var(--sc-t-2xl); }
+  .archive__cats .t img { aspect-ratio: 3 / 1; }
+  .archive__cats a { padding-bottom: var(--sc-3); }
+  .archive__links { display: flex; flex-wrap: wrap; gap: var(--sc-3); }
+  .act-tray .trayroom { padding-block: var(--sc-6); gap: var(--sc-5); }
+  .notes { padding-block: var(--sc-6); }
+  .close { padding-top: var(--sc-6); }
+  .close__hang { width: 84%; }
+  .close, .close__wall { gap: var(--sc-5); }
+  .foot { margin-top: var(--sc-6); }
+}
+@media (max-width: 860px) {
+  /* Two thumbnails per row; the count drops under the name instead of beside it. */
+  .archive__cats { columns: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--sc-4); }
+  .archive__cats .c { font-size: var(--sc-t-lg); }
+  .archive__cats .k { white-space: normal; flex-basis: 100%; font-size: 0.75rem; }
+  .archive__cats a { gap: 2px var(--sc-3); }
+  .archive__cats .t img { aspect-ratio: 3 / 2; }
+}
+@media (max-width: 860px) {
+  .obj img { aspect-ratio: 2 / 1; }
+  .obj { gap: var(--sc-3); }
+  .close__hang { width: 72%; }
+  .close__actions { margin-top: var(--sc-4); gap: var(--sc-2); }
+  .commissions__more { font-size: var(--sc-t-sm); }
+}
