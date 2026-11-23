@@ -375,8 +375,8 @@ def patch_home():
 
 def patch_service_h1s():
     for rel, old, new in (
-        ("services.html", "<h1>photography services.</h1>", "<h1>photography for businesses in La Serena and Coquimbo.</h1>"),
-        ("servicios.html", "<h1>servicios de fotograf&iacute;a.</h1>", "<h1>fotograf&iacute;a para negocios en La Serena y Coquimbo.</h1>"),
+        ("services.html", "<h1>photography services.</h1>", "<h1>Photography for businesses in La Serena and Coquimbo.</h1>"),
+        ("servicios.html", "<h1>servicios de fotograf&iacute;a.</h1>", "<h1>Fotograf&iacute;a para negocios en La Serena y Coquimbo.</h1>"),
     ):
         text, nl = read(rel)
         orig = text
@@ -421,7 +421,7 @@ def patch_licence_copy():
         write(rel, text, nl, orig)
 
 
-CSS_V = "20261124"
+CSS_V = "20261127"
 
 
 def patch_footer_headings():

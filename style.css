@@ -2026,3 +2026,64 @@ html[lang="es"] .bi[lang="en"], html:not([lang="es"]) .bi[lang="es"] { display: 
 @media (max-width: 768px) {
     .contact-image .photo-credit { padding: 0 24px; }
 }
+
+/* ============ Joni r7 (2026-11-24) ============ */
+/* 1. Four cards in a row of three left one alone: four cards sit 2 x 2 (never 3 + 1 at any width). */
+@media (min-width: 640px) {
+    .lp-benefits:has(> :nth-child(4):last-child) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* 4. Phone folds: <details class="fold"> is open and inert on desktop, a tap-to-open accordion on phones
+   (main.js closes them at 768px and under). Headings stay visible as the summaries. */
+details.fold { display: flex; flex-direction: column; flex: 1 1 auto; }
+details.fold::details-content { display: flex; flex-direction: column; flex: 1 1 auto; }
+details.fold > summary { display: flex; flex-direction: column; list-style: none; pointer-events: none; cursor: default; }
+details.fold > summary::-webkit-details-marker { display: none; }
+@media (max-width: 768px) {
+    details.fold > summary { pointer-events: auto; cursor: pointer; position: relative; min-height: 44px; justify-content: center; padding-right: 36px; }
+    details.fold > summary::after { content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 1.3rem; opacity: 0.6; }
+    details.fold[open] > summary::after { content: '\2013'; }
+    details.fold > summary h2, details.fold > summary h3 { margin-bottom: 0; }
+    details.fold > summary .service-tag { margin-bottom: 6px; }
+    details.fold[open] > summary { margin-bottom: 14px; }
+    details.fold > summary:focus-visible { outline: 2px solid var(--white); outline-offset: 4px; }
+    .service-card:has(> details.fold:not([open])) { padding-top: 22px; padding-bottom: 22px; }
+}
+
+/* Long explanatory paragraphs: three lines on phones, the rest behind "Leer más" (main.js adds the button). */
+.clamp-more { display: none; }
+@media (max-width: 768px) {
+    [data-clamp].is-clamped { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 0; }
+    .clamp-more { display: inline-flex; align-items: center; min-height: 44px; margin-bottom: 20px; padding: 0; background: none; border: 0; color: var(--white); font: inherit; font-size: 0.9rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+    .clamp-more[hidden] { display: none; }
+}
+
+/* 2. One longer footer link list: two columns on phones keeps it from growing a whole screen. */
+@media (max-width: 768px) {
+    .footer-links, .footer-social { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; align-content: start; }
+    .footer-links > h2, .footer-links > h3, .footer-social > h2, .footer-social > h3 { grid-column: 1 / -1; }
+}
+
+/* Folded headings keep the section-heading look; closed cards and boxes shrink to their heading. */
+.lp-section > details.fold > summary > h2 { font-family: var(--serif); font-size: clamp(1.8rem, 3.4vw, 2.6rem); font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
+@media (max-width: 768px) {
+    .lp-section > details.fold > summary > h2 { font-size: 1.6rem; margin-bottom: 0; }
+    .lp-section > details.fold[open] > summary > h2 { margin-bottom: 0; }
+    .lp-benefits:has(details.fold:not([open])) { gap: 10px; }
+    .lp-benefit:has(> details.fold:not([open])) { padding: 14px 20px; }
+    .bundle-inner:has(> details.fold:not([open])) { padding: 18px 20px; }
+    .bundle-inner > details.fold > summary { text-align: left; }
+    .bundle-inner > details.fold > summary h2 { font-size: 1.35rem; margin-bottom: 0; }
+}
+@media (max-width: 768px) {
+    .lp-section:has(> details.fold:not([open])) { padding-top: 28px; padding-bottom: 28px; }
+}
+@media (max-width: 768px) {
+    .service-card > details.fold > summary h2, .service-card > details.fold > summary h3 { font-size: 1.4rem; line-height: 1.25; }
+}
+@media (min-width: 900px) {
+    /* Five cards: three over two wide ones, so the second row has no empty cell. */
+    .lp-benefits:has(> :nth-child(5):last-child) { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .lp-benefits:has(> :nth-child(5):last-child) > * { grid-column: span 2; }
+    .lp-benefits:has(> :nth-child(5):last-child) > :nth-child(n+4) { grid-column: span 3; }
+}

@@ -60,7 +60,7 @@ function dateLabel(iso) {
 }
 
 // ─── Shared chrome ───────────────────────────────────────────────────────────
-// Header/footer mirror services.html exactly (with ../ paths) so a blog page
+// Header/footer carry the same nav and footer link set as every other page (root-absolute paths) so a blog page
 // is indistinguishable from the rest of the site. If the site chrome changes,
 // change it here too.
 
@@ -70,13 +70,13 @@ const HEADER = `    <header class="header">
             <span></span><span></span>
         </button>
         <nav class="nav" id="site-nav">
-            <a href="../index.html#work">Work</a>
-            <a href="../services.html">Services</a>
-            <a href="./">Blog</a>
-            <a href="../prints.html">Prints</a>
-            <a href="../about.html">About</a>
-            <a href="../contacto.html">Contact</a>
-            <a href="../servicios.html" class="nav-es" lang="es" hreflang="es">Espa&ntilde;ol</a>
+            <a href="/galleries/">Galer&iacute;as</a>
+            <a href="/servicios.html">Servicios</a>
+            <a href="/licencias.html">Licencias</a>
+            <a href="/impresiones.html">Impresiones</a>
+            <a href="/blog/">Blog</a>
+            <a href="/sobre-mi.html">Sobre m&iacute;</a>
+            <a href="/contacto.html">Contacto</a>
         </nav>
     </header>`;
 
@@ -92,14 +92,16 @@ const FOOTER = `    <footer class="footer">
             </div>
             <div class="footer-links">
                 <h2>Navegaci&oacute;n</h2>
-                <a href="../index.html#work">Work</a>
-                <a href="../services.html">Services</a>
-                <a href="./">Blog</a>
-                <a href="../prints.html">Prints</a>
-                <a href="../about.html">About</a>
-                <a href="../contacto.html">Contact</a>
-                <a href="../privacy.html">Privacy</a>
-                <a href="../terms.html">Terms</a>
+                <a href="/galleries/">Galer&iacute;as</a>
+                <a href="/servicios.html">Servicios</a>
+                <a href="/licencias.html">Licencias</a>
+                <a href="/impresiones.html">Impresiones</a>
+                <a href="/blog/">Blog</a>
+                <a href="/sobre-mi.html">Sobre m&iacute;</a>
+                <a href="/contacto.html">Contacto</a>
+                <a href="/en/" lang="en" hreflang="en">English</a>
+                <a href="/privacidad.html">Privacidad</a>
+                <a href="/terminos.html">T&eacute;rminos</a>
             </div>
             <div class="footer-social">
                 <h2>S&iacute;gueme</h2>
@@ -108,7 +110,7 @@ const FOOTER = `    <footer class="footer">
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 TapePhoto. All rights reserved.</p>
+            <p>&copy; 2026 TapePhoto. Todos los derechos reservados.</p>
             <p>Una empresa de <a href="https://dongaston.com/" rel="noopener">Don Gast&oacute;n</a></p>
         </div>
     <div class="nwm-credit">Hecho por <a href="https://netwebmedia.com/?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">NetWebMedia</a> · desde 2006 · <a class="nwm-credit-cta" href="https://netwebmedia.com/free-audit.html?utm_source=tapephoto&amp;utm_medium=footer&amp;utm_campaign=made-by" rel="noopener">¿Quieres un sitio como este? Pide una auditoría gratis →</a></div>
@@ -199,7 +201,7 @@ function renderPost(post) {
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261124">
+    <link rel="stylesheet" href="../style.css?v=20261127">
     <script type="application/ld+json">
 ${JSON.stringify(articleLd, null, 2)}
     </script>
@@ -243,7 +245,7 @@ ${pack.wantsPackCta(post) ? pack.packCtaHtml() : ''}            <div class="arti
 
 ${FOOTER}
 
-    <script src="../main.js" defer></script>
+    <script src="../main.js?v=20261127" defer></script>
 </body>
 </html>
 `;
@@ -295,7 +297,7 @@ ${it.img ? `                <a class="blog-card-thumb" href="${esc(it.slug)}.htm
     <!-- Fonts are self-hosted (@font-face at the top of style.css); preload the two above-the-fold faces. -->
     <link rel="preload" href="/fonts/inter-300-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/playfair-display-400-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="../style.css?v=20261124">
+    <link rel="stylesheet" href="../style.css?v=20261127">
     <script type="application/ld+json">
 ${JSON.stringify(ld, null, 2)}
     </script>
@@ -324,7 +326,7 @@ ${cards}
 
 ${FOOTER}
 
-    <script src="../main.js" defer></script>
+    <script src="../main.js?v=20261127" defer></script>
 </body>
 </html>
 `;
