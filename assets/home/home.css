@@ -475,3 +475,24 @@ html.index-open, html.index-open body { overflow: hidden; }
 [data-sc-act="pin"][data-sc-span="2"], [data-sc-act="pan"][data-sc-span="2"] { height: 200vh; }
 [data-sc-act="pin"][data-sc-span="3.2"], [data-sc-act="pan"][data-sc-span="3.2"] { height: 320vh; }
 [data-sc-act="pin"][data-sc-span="3.8"], [data-sc-act="pan"][data-sc-span="3.8"] { height: 380vh; }
+
+/* ================= Joni r1 (2026-11-23): phone hero still, floating print, touch targets ===== */
+.print .print__still { display: none; }
+@media (max-width: 860px) {
+  /* The headline says La Serena / Coquimbo, so the phone hero is a still of La Serena, not the film loop. */
+  .print__film { display: none; }
+  .print .print__still { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #1a1b1c; }
+  /* The blurred floating print lives in the top band, clear of the headline at 360 and 390 wide. */
+  .near { width: 40vw; right: -14vw; top: 3vh; }
+  .near .print { overflow: hidden; }
+  /* Every link and button in the bar, hero, footer and forms is at least 44px tall. */
+  .bar__mark { display: inline-flex; align-items: center; min-height: 44px; }
+  .bar__lang a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 0 0.3em; }
+  .bar__lang { gap: 0; }
+  .btn { min-height: 44px; }
+  .label__links a { display: inline-flex; align-items: center; min-height: 44px; }
+  .label__links { gap: 0 var(--sc-4); }
+  .foot nav a, .foot__row > a { display: inline-flex; align-items: center; min-height: 44px; }
+  .foot nav { gap: 0 var(--sc-5); }
+  .foot p a, .nwm-credit a, .commissions__more a { display: inline-block; padding-block: 14px; margin-block: -14px; }
+}
