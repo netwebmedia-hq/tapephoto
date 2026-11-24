@@ -6,7 +6,7 @@
 - Author: Carlos Martinez, photographer (Coquimbo, Chile). Instagram: https://www.instagram.com/tapephotocom/
 - Contact: carlos@netwebmedia.com · Book a meeting: https://cal.com/carlos-martinez-net/discovery
 - Quotes: every session is quoted per project; request one through the contact form (https://tapephoto.com/contact.html) or a booked meeting (https://cal.com/carlos-martinez-net/discovery). No prices are published on the site.
-- 143 Spanish-language blog articles published so far.
+- 144 Spanish-language blog articles published so far.
 
 ## Main pages
 - [Inicio (Español)](https://tapephoto.com/): home page in Spanish, selected work, local business photography overview, FAQ
@@ -28,6 +28,7 @@
 
 ## Latest blog articles (Spanish, newest first)
 
+- [Fotografía para caletas, pesca y cultivos marinos](https://tapephoto.com/blog/fotografia-pesca-acuicultura-guia.html) [Empresas]: Guía para productores de pesca y acuicultura sobre cómo la fotografía profesional vende producto, documenta operaciones y construye confianza con compradores.
 - [Preparar tu heladería para una sesión de fotos](https://tapephoto.com/blog/preparar-heladeria-sesion-de-fotos-antes-del-verano.html) [Empresas]: Cómo preparar una heladería o local de helados artesanales en La Serena y Coquimbo para una sesión de fotos antes del verano: vitrina, sabores, horario, permisos y errores comunes.
 - [Fotos para postular a un fondo concursable](https://tapephoto.com/blog/fotos-para-postular-a-un-fondo-concursable-la-serena-coquimbo.html) [Empresas]: Qué imágenes preparar para postular un proyecto a un fondo concursable o una licitación en La Serena y Coquimbo: estado actual, equipo, producto, lugar y rendición.
 - [Fotografía para museos y galerías: qué contratar y por qué](https://tapephoto.com/blog/fotografia-museos-centros-culturales-guia.html) [Empresas]: Guía para directores y curadores: cómo la fotografía profesional documenta colecciones, promociona exposiciones y atrae visitantes.
@@ -47,7 +48,6 @@
 - [Cómo preparar una ferretería para una sesión de fotos](https://tapephoto.com/blog/preparar-ferreteria-tienda-de-barrio-sesion-de-fotos.html) [Empresas]: Qué decidir y qué ordenar en una ferretería o tienda de barrio de La Serena o Coquimbo antes de que llegue el fotógrafo, para que las fotos sirvan en Google, redes y sitio web.
 - [Celular vs fotógrafo profesional: qué esperar al contratar](https://tapephoto.com/blog/celular-vs-fotografo-que-esperar.html) [Técnica]: Diferencias reales entre fotos con celular y sesión profesional. Cómo funciona el proceso: agenda, duración y entrega de archivos.
 - [Cada cuánto renovar las fotos de tu negocio](https://tapephoto.com/blog/cada-cuanto-renovar-fotos-guia.html) [Empresas]: Guía para saber cuándo es momento de actualizar las fotografías de tu negocio. Criterios, señales y frecuencia recomendada.
-- [La foto de portada: cómo elegir la primera imagen](https://tapephoto.com/blog/como-elegir-la-foto-de-portada-de-tu-publicacion.html) [Técnica]: La primera foto es lo que se ve en el listado y la miniatura, y decide si te consultan o siguen de largo. Cómo elegirla en portales, Booking, Airbnb y Google.
 
 ## More
 - Every article, one line each: https://tapephoto.com/llms-full.txt

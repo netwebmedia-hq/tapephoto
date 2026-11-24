@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "items": [
+    {
+      "slug": "fotografia-pesca-acuicultura-guia",
+      "title": "Fotografía para caletas, pesca y cultivos marinos",
+      "tag": "Empresas",
+      "description": "Guía para productores de pesca y acuicultura sobre cómo la fotografía profesional vende producto, documenta operaciones y construye confianza con compradores.",
+      "readTime": "9 min",
+      "published": "2026-11-24",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
     {
       "slug": "preparar-heladeria-sesion-de-fotos-antes-del-verano",
       "title": "Preparar tu heladería para una sesión de fotos",
