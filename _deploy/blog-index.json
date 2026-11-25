@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "items": [
+    {
+      "slug": "fotos-marca-empleadora-que-esperar",
+      "title": "Fotografía para reclutar: mostrar tu equipo y lugar de trabajo",
+      "tag": "Empresas",
+      "description": "Qué esperar al contratar fotos profesionales de tu empresa para reclutar: proceso, duración, entrega y cómo preparar el equipo.",
+      "readTime": "8 min",
+      "published": "2026-11-25",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
     {
       "slug": "fotografia-talleres-mecanicos-checklist",
       "title": "Checklist para fotografiar tu taller mecánico",
