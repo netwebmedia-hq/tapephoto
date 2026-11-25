@@ -159,6 +159,7 @@ FOOTER = f"""    <footer class="footer">
                 <h3>{bi("Follow", "S&iacute;gueme")}</h3>
                 <a href="https://www.instagram.com/tapephotocom/" target="_blank" rel="me noopener">Instagram</a>
                 <a href="https://www.facebook.com/tapephoto" target="_blank" rel="me noopener">Facebook</a>
+                <a href="https://discord.gg/NHrM2rjP6D" target="_blank" rel="noopener">Discord</a>
             </div>
         </div>
         <div class="footer-bottom">
