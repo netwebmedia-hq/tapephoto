@@ -2,6 +2,16 @@
   "updated": "2026-11-26",
   "items": [
     {
+      "slug": "fotos-para-prensa-errores",
+      "title": "Fotos para prensa: errores que rechazan editores",
+      "tag": "Empresas",
+      "description": "Por qué los comunicados de prensa fracasan en medios locales. Qué fotos aceptan editores y cuáles descartan de inmediato.",
+      "readTime": "8 min",
+      "published": "2026-11-26",
+      "img": "/assets/photos/empresas-calle-sm.jpg",
+      "imgAlt": "Escena urbana en una estación"
+    },
+    {
       "slug": "lista-de-tomas-antes-de-la-sesion-de-fotos-como-armarla",
       "title": "Lista de tomas antes de la sesión de fotos: cómo armarla",
       "tag": "Técnica",
