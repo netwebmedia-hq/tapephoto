@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "items": [
+    {
+      "slug": "fotos-para-licitaciones-checklist",
+      "title": "Checklist antes de fotografiar tu propuesta comercial",
+      "tag": "Empresas",
+      "description": "Prepara tu espacio, equipo y detalles antes de la sesión de fotos para licitaciones. Una guía práctica para maximizar resultados.",
+      "readTime": "8 min",
+      "published": "2026-11-26",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotos-para-franquicias-vale-la-pena",
       "title": "Fotografía coherente en franquicias: cuándo invertir y cuándo no",
