@@ -603,7 +603,7 @@ html.index-open, html.index-open body { overflow: hidden; }
 
 /* ================= Joni r4 (2026-11-23): the close is a real frame, not a blank print ===== */
 .close__hang .print { padding: 1.5%; }
-.close__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 32%; background: #e9e6df; }
+.close__img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: right center; background: #e9e6df; }
 
 /* Phones: a shorter wall. Repeated caption text (region and "Encargo" on every commission, the
    note that restates the title) is collapsed, thumbnails are wider than tall, rhythm is tighter. */
