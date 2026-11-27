@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "items": [
+    {
+      "slug": "guia-de-estilo-fotografico-checklist",
+      "title": "Checklist previo a la sesión: qué dejar listo para fotos de marca",
+      "tag": "Empresas",
+      "description": "Prepara tu negocio antes de la sesión fotográfica. Checklist de detalles que garantizan coherencia visual en todas tus imágenes.",
+      "readTime": "8 min",
+      "published": "2026-11-27",
+      "img": "/assets/photos/empresas-retrato-sm.jpg",
+      "imgAlt": "Retrato en exteriores con luz natural"
+    },
     {
       "slug": "fotos-para-prensa-errores",
       "title": "Fotos para prensa: errores que rechazan editores",
