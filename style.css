@@ -1877,7 +1877,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
         display: inline-block; padding-block: 14px; margin-block: -14px; position: relative;
     }
     .nwm-credit { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0 6px; }
-    .nwm-credit a { padding-block: 14px; margin-block: -14px; }
+    /* No negative margin here: it made the two credit links (and the footer link above) overlap, which fails target-size. */
+    .nwm-credit a { padding-block: 14px; margin-block: 0; }
     .gallery-more-links a { display: inline-flex; align-items: center; min-height: 44px; }
     h3 > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
     li > a { display: inline-block; padding-block: 14px; margin-block: -14px; }
