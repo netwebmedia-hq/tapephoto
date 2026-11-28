@@ -1,6 +1,16 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "items": [
+    {
+      "slug": "fotografia-muebleria-taller-muebles-a-medida-preparar-sesion",
+      "title": "Fotos para una mueblería o taller de muebles a medida: cómo preparar la sesión",
+      "tag": "Empresas",
+      "description": "Qué dejar listo en el taller y en el showroom para que las vetas, las uniones y las terminaciones de tus muebles a medida se vean bien en la foto.",
+      "readTime": "7 min",
+      "published": "2026-11-28",
+      "img": "/assets/photos/empresas-retrato-2-sm.jpg",
+      "imgAlt": "Retrato en primer plano con luz de tarde"
+    },
     {
       "slug": "imagenes-ia-vs-fotos-reales-vale-la-pena",
       "title": "Fotos reales vs. IA: cuándo vale invertir en fotografía profesional",
